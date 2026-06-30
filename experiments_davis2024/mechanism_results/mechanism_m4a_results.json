@@ -1,0 +1,115 @@
+{
+  "fold_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "per_fold": {
+    "0": {
+      "exp7a": {
+        "compactness": 0.39902290776615856,
+        "silhouette": 0.28103281687098286,
+        "r2_vdet": 0.9213127646051366,
+        "r2_density": 0.8114894380362098,
+        "embedding_dim": 256
+      },
+      "exp7c": {
+        "compactness": 12.135536612114969,
+        "silhouette": 0.19943803609881383,
+        "r2_vdet": 0.9695054270088943,
+        "r2_density": 0.5475538917924291,
+        "embedding_dim": 256
+      }
+    },
+    "1": {
+      "exp7a": {
+        "compactness": 0.3962023333431243,
+        "silhouette": 0.24998482277446538,
+        "r2_vdet": 0.9353882962500004,
+        "r2_density": 0.8517929966125204,
+        "embedding_dim": 256
+      },
+      "exp7c": {
+        "compactness": 11.587614554505178,
+        "silhouette": 0.21605742306848433,
+        "r2_vdet": 0.9641520316600247,
+        "r2_density": 0.6221725713437014,
+        "embedding_dim": 256
+      }
+    },
+    "2": {
+      "exp7a": {
+        "compactness": 0.3959486297943007,
+        "silhouette": 0.28798828763799317,
+        "r2_vdet": 0.9159431638675144,
+        "r2_density": 0.7809932977522801,
+        "embedding_dim": 256
+      },
+      "exp7c": {
+        "compactness": 12.40838641063779,
+        "silhouette": 0.2301037958583005,
+        "r2_vdet": 0.9551880424007597,
+        "r2_density": 0.6299423160823716,
+        "embedding_dim": 256
+      }
+    },
+    "3": {
+      "exp7a": {
+        "compactness": 0.40039634400531804,
+        "silhouette": 0.26738148619226343,
+        "r2_vdet": 0.9443822487227225,
+        "r2_density": 0.8016475122328234,
+        "embedding_dim": 256
+      },
+      "exp7c": {
+        "compactness": 11.938612685109208,
+        "silhouette": 0.23922484967355553,
+        "r2_vdet": 0.9695331037007144,
+        "r2_density": 0.5453220553451315,
+        "embedding_dim": 256
+      }
+    },
+    "4": {
+      "exp7a": {
+        "compactness": 0.4101129172787293,
+        "silhouette": 0.23087667860264807,
+        "r2_vdet": 0.9176106431405218,
+        "r2_density": 0.9131745106582573,
+        "embedding_dim": 256
+      },
+      "exp7c": {
+        "compactness": 12.50529629038293,
+        "silhouette": 0.23707350205286526,
+        "r2_vdet": 0.8993897445090835,
+        "r2_density": 0.6692723154243629,
+        "embedding_dim": 256
+      }
+    }
+  },
+  "aggregated": {
+    "exp7a": {
+      "compactness": 0.4003366264375262,
+      "compactness_std_across_folds": 0.005170148537103585,
+      "silhouette": 0.2628180308704997,
+      "silhouette_std_across_folds": 0.020828210762599234,
+      "r2_vdet": 0.9269274233171793,
+      "r2_vdet_std_across_folds": 0.011092682648428822,
+      "r2_density": 0.8318195510584182,
+      "r2_density_std_across_folds": 0.04674300252727207,
+      "embedding_dim": 256
+    },
+    "exp7c": {
+      "compactness": 12.115089310550015,
+      "compactness_std_across_folds": 0.3310819795044867,
+      "silhouette": 0.21917413377715736,
+      "silhouette_std_across_folds": 0.014870260549886799,
+      "r2_vdet": 0.9515536698558954,
+      "r2_vdet_std_across_folds": 0.026602737144101718,
+      "r2_density": 0.6028526299975993,
+      "r2_density_std_across_folds": 0.04875736519728214,
+      "embedding_dim": 256
+    }
+  }
+}

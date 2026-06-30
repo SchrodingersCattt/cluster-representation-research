@@ -1,0 +1,81 @@
+{
+  "exp7a": {
+    "spearman_rho": 0.8415384615384615,
+    "spearman_p": 1.3585646020796046e-07,
+    "mean_model_std": 122.10697198684714,
+    "mean_abs_error": 120.96912085399174
+  },
+  "exp7a_lr1e4": {
+    "spearman_rho": 0.8207692307692308,
+    "spearman_p": 5.026212792756227e-07,
+    "mean_model_std": 101.91952189210538,
+    "mean_abs_error": 57.221054832924054,
+    "n_materials": 25
+  },
+  "exp7a_lr5e6": {
+    "spearman_rho": 0.6137931034482758,
+    "spearman_p": 0.00039821108721194517,
+    "mean_model_std": 91.33240444133146,
+    "mean_abs_error": 195.02773706451694
+  },
+  "exp7b": {
+    "spearman_rho": 0.7535038932146829,
+    "spearman_p": 1.538149079690888e-06,
+    "mean_model_std": 115.29591965220145,
+    "mean_abs_error": 110.77893039354339,
+    "n_materials": 30
+  },
+  "exp7b_lr1e4": {
+    "spearman_rho": 0.6823136818687431,
+    "spearman_p": 3.279670257842983e-05,
+    "mean_model_std": 92.57318744698112,
+    "mean_abs_error": 59.08264812322405,
+    "n_materials": 30
+  },
+  "exp7b_lr5e6": {
+    "spearman_rho": 0.6667408231368186,
+    "spearman_p": 5.741580181716001e-05,
+    "mean_model_std": 85.83468454462016,
+    "mean_abs_error": 162.32803925285003,
+    "n_materials": 30
+  },
+  "exp7c": {
+    "spearman_rho": 0.5669950738916255,
+    "spearman_p": 0.0013404283937960937,
+    "mean_model_std": 120.0989181932835,
+    "mean_abs_error": 192.75403646887452
+  },
+  "exp7c_lr1e4": {
+    "spearman_rho": 0.9238461538461539,
+    "spearman_p": 4.5210136842228584e-11,
+    "mean_model_std": 105.85064386629153,
+    "mean_abs_error": 53.46860922584008,
+    "n_materials": 25
+  },
+  "exp7d": {
+    "spearman_rho": 0.7369458128078816,
+    "spearman_p": 5.136666695124825e-06,
+    "mean_model_std": 118.6713112381456,
+    "mean_abs_error": 199.82514934924015
+  },
+  "exp7d_lr1e4": {
+    "spearman_rho": 0.7069230769230769,
+    "spearman_p": 7.793136179947949e-05,
+    "mean_model_std": 101.60638631882108,
+    "mean_abs_error": 76.59235779846793,
+    "n_materials": 25
+  },
+  "exp8a": {
+    "spearman_rho": 0.16600985221674872,
+    "spearman_p": 0.3894248052313538,
+    "mean_model_std": 178.2627503932559,
+    "mean_abs_error": 1332.7507146392525
+  },
+  "exp9a": {
+    "spearman_rho": 0.8630769230769231,
+    "spearman_p": 2.829239256413404e-08,
+    "mean_model_std": 106.74810887248778,
+    "mean_abs_error": 118.05413435742557,
+    "n_materials": 25
+  }
+}

@@ -1,0 +1,3345 @@
+{
+  "exp1a_crystal_dpa32": {
+    "model_branch": "Omat24",
+    "num_train_systems": 10623,
+    "num_val_systems": 1875
+  },
+  "exp1b_molecule_dpa32": {
+    "model_branch": "Omat24",
+    "num_train_systems": 10623,
+    "num_val_systems": 1875
+  },
+  "exp2_theory2exp_dpa32": {
+    "model_branch": "Omat24",
+    "num_train_systems": 12498,
+    "num_val_systems": 58
+  },
+  "exp3a_crystal_deepems": {
+    "model_branch": null,
+    "num_train_systems": 10623,
+    "num_val_systems": 1875
+  },
+  "exp3b_molecule_deepems": {
+    "model_branch": null,
+    "num_train_systems": 10623,
+    "num_val_systems": 1875
+  },
+  "exp4a_multitask_deepems": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "david2024_vdet_exp": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "david2024_vdet_exp": 12498
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "david2024_vdet_exp": 58
+    }
+  },
+  "exp4b_multitask_deepems": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875
+    }
+  },
+  "exp4c_multitask_deepems_mol": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "david2024_vdet_exp": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "david2024_vdet_exp": 12498
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "david2024_vdet_exp": 58
+    }
+  },
+  "exp4d_multitask_deepems_mol": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875
+    }
+  },
+  "exp5_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-2",
+      "DAP-4",
+      "DAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 39
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 12
+    }
+  },
+  "exp5_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "PAP-M4",
+      "PAP-H5",
+      "PAP-H4",
+      "DAP-O4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 39
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 12
+    }
+  },
+  "exp5_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-X1",
+      "DAN-2"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 42
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 9
+    }
+  },
+  "exp5_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "PAP-5",
+      "PAP-M5",
+      "DAP-3"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 42
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 9
+    }
+  },
+  "exp5_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "PAP-4",
+      "DAI-4",
+      "DAP-2"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 42
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 9
+    }
+  },
+  "exp5v2_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp6_allpems": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "pems_all_materials": [
+      "DAI-1",
+      "DAI-2",
+      "DAI-4",
+      "DAI-X1",
+      "DAN-2",
+      "DAI-1",
+      "DAP-2",
+      "DAP-3",
+      "DAP-4",
+      "DAP-5",
+      "DAP-6",
+      "DAP-7",
+      "DAP-M4",
+      "DAP-O2",
+      "DAP-O4",
+      "PAN-2",
+      "PAN-H2",
+      "PAN-M2",
+      "PAP-1",
+      "PAP-4",
+      "PAP-5",
+      "PAP-H4",
+      "PAP-H5",
+      "PAP-M4",
+      "PAP-M5"
+    ],
+    "pems_val_split": "none",
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 75
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 0
+    }
+  },
+  "exp5v1_fold0": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v1_fold1": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v1_fold2": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v1_fold3": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v1_fold4": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp6v1_allpems": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "pems_all_materials": [
+      "DAI-1",
+      "DAI-2",
+      "DAI-4",
+      "DAI-X1",
+      "DAN-2",
+      "DAI-1",
+      "DAP-2",
+      "DAP-3",
+      "DAP-4",
+      "DAP-5",
+      "DAP-6",
+      "DAP-7",
+      "DAP-M4",
+      "DAP-O2",
+      "DAP-O4",
+      "PAN-2",
+      "PAN-H2",
+      "PAN-M2",
+      "PAP-1",
+      "PAP-4",
+      "PAP-5",
+      "PAP-H4",
+      "PAP-H5",
+      "PAP-M4",
+      "PAP-M5"
+    ],
+    "pems_val_split": "none",
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 75
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 0
+    }
+  },
+  "exp5v3_fold0": {
+    "model_branch": null,
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v3_fold1": {
+    "model_branch": null,
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v3_fold2": {
+    "model_branch": null,
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v3_fold3": {
+    "model_branch": null,
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v3_fold4": {
+    "model_branch": null,
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v2fair_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.25,
+      "david2024_vdet_kj": 0.25,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2fair_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.25,
+      "david2024_vdet_kj": 0.25,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2fair_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.25,
+      "david2024_vdet_kj": 0.25,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2fair_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.25,
+      "david2024_vdet_kj": 0.25,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v2fair_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.25,
+      "david2024_vdet_kj": 0.25,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4b_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.4,
+      "david2024_vdet_kj": 0.1,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4b_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.4,
+      "david2024_vdet_kj": 0.1,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4b_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.4,
+      "david2024_vdet_kj": 0.1,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4b_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.4,
+      "david2024_vdet_kj": 0.1,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4b_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.4,
+      "david2024_vdet_kj": 0.1,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4d_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.1,
+      "david2024_vdet_kj": 0.4,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4d_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.1,
+      "david2024_vdet_kj": 0.4,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4d_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.1,
+      "david2024_vdet_kj": 0.4,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4d_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.1,
+      "david2024_vdet_kj": 0.4,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4d_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.1,
+      "david2024_vdet_kj": 0.4,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4e_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.05,
+      "david2024_vdet_kj": 0.45,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4e_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.05,
+      "david2024_vdet_kj": 0.45,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4e_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.05,
+      "david2024_vdet_kj": 0.45,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4e_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.05,
+      "david2024_vdet_kj": 0.45,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v4e_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.05,
+      "david2024_vdet_kj": 0.45,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp5v5_fold0": {
+    "model_branch": null,
+    "train_from_scratch": true,
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v5_fold1": {
+    "model_branch": null,
+    "train_from_scratch": true,
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v5_fold2": {
+    "model_branch": null,
+    "train_from_scratch": true,
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v5_fold3": {
+    "model_branch": null,
+    "train_from_scratch": true,
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp5v5_fold4": {
+    "model_branch": null,
+    "train_from_scratch": true,
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": 60,
+    "num_val_systems": 15
+  },
+  "exp7a_fold0": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_fold1": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_fold2": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_fold3": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_fold4": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7b_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7c_fold0": {
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ]
+  },
+  "exp7c_fold1": {
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ]
+  },
+  "exp7c_fold2": {
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ]
+  },
+  "exp7c_fold3": {
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ]
+  },
+  "exp7c_fold4": {
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ]
+  },
+  "exp7d_fold0": {
+    "from_scratch": true,
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ]
+  },
+  "exp7d_fold1": {
+    "from_scratch": true,
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ]
+  },
+  "exp7d_fold2": {
+    "from_scratch": true,
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ]
+  },
+  "exp7d_fold3": {
+    "from_scratch": true,
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ]
+  },
+  "exp7d_fold4": {
+    "from_scratch": true,
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ]
+  },
+  "exp7a_lr5e6_fold0": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr5e6_fold1": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr5e6_fold2": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr5e6_fold3": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr5e6_fold4": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7b_lr5e6_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_lr5e6_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_lr5e6_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_lr5e6_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7b_lr5e6_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 7500
+  },
+  "exp7c_lr1e4_fold0": {
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ]
+  },
+  "exp7c_lr1e4_fold1": {
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ]
+  },
+  "exp7c_lr1e4_fold2": {
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ]
+  },
+  "exp7c_lr1e4_fold3": {
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ]
+  },
+  "exp7c_lr1e4_fold4": {
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ]
+  },
+  "exp7d_lr1e4_fold0": {
+    "from_scratch": true,
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ]
+  },
+  "exp7d_lr1e4_fold1": {
+    "from_scratch": true,
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ]
+  },
+  "exp7d_lr1e4_fold2": {
+    "from_scratch": true,
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ]
+  },
+  "exp7d_lr1e4_fold3": {
+    "from_scratch": true,
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ]
+  },
+  "exp7d_lr1e4_fold4": {
+    "from_scratch": true,
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ]
+  },
+  "exp7a_lr1e4_fold0": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr1e4_fold1": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr1e4_fold2": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr1e4_fold3": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7a_lr1e4_fold4": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp7b_lr1e4_fold0": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 1500
+  },
+  "exp7b_lr1e4_fold1": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 1500
+  },
+  "exp7b_lr1e4_fold2": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 1500
+  },
+  "exp7b_lr1e4_fold3": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 1500
+  },
+  "exp7b_lr1e4_fold4": {
+    "model_branch": null,
+    "num_heads": 3,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "david2024_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "model_prob": {
+      "deepems_vanilla": 0.5,
+      "david2024_vdet_kj": 0.5,
+      "pems_vdet_kj": 0.5
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "david2024_vdet_kj": 10623,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "david2024_vdet_kj": 1875,
+      "pems_vdet_kj": 15
+    },
+    "numb_steps": 600000,
+    "decay_steps": 1500
+  },
+  "exp6v2_allpems": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": null,
+    "pems_val_materials": [],
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 75
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 0
+    },
+    "_comment": "exp6v2: 2-head, LR=1e-4, decay_steps=1000, pref_f=1, all 25 PEMs, no val"
+  },
+  "exp8a_fold0": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "PAN-H2",
+      "DAP-M4",
+      "DAP-5",
+      "PAP-4",
+      "PAP-1"
+    ],
+    "pems_representation": "crystal",
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 20
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 5
+    }
+  },
+  "exp8a_fold1": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAI-1",
+      "DAP-6",
+      "PAN-2",
+      "PAP-H4"
+    ],
+    "pems_representation": "crystal",
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 20
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 5
+    }
+  },
+  "exp8a_fold2": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-7",
+      "PAN-M2",
+      "DAI-2",
+      "DAP-O4",
+      "PAP-H5"
+    ],
+    "pems_representation": "crystal",
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 20
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 5
+    }
+  },
+  "exp8a_fold3": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-O2",
+      "DAI-4",
+      "PAP-M4",
+      "DAN-2",
+      "PAP-M5"
+    ],
+    "pems_representation": "crystal",
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 20
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 5
+    }
+  },
+  "exp8a_fold4": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "DAP-3",
+      "DAP-4",
+      "DAI-1",
+      "DAI-X1",
+      "PAP-5"
+    ],
+    "pems_representation": "crystal",
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 20
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 5
+    }
+  },
+  "exp9a_fold0": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 0,
+    "pems_val_materials": [
+      "DAI-1",
+      "PAP-M5",
+      "DAP-5",
+      "PAN-2",
+      "DAN-2"
+    ],
+    "pems_representation": "cluster_n1n2n3",
+    "fold_strategy": "dd_ranked",
+    "lr": 2e-05,
+    "decay_steps": 5000,
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp9a_fold1": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 1,
+    "pems_val_materials": [
+      "DAP-2",
+      "DAP-M4",
+      "PAP-1",
+      "DAP-O2",
+      "DAI-2"
+    ],
+    "pems_representation": "cluster_n1n2n3",
+    "fold_strategy": "dd_ranked",
+    "lr": 2e-05,
+    "decay_steps": 5000,
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp9a_fold2": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 2,
+    "pems_val_materials": [
+      "DAP-3",
+      "PAP-M4",
+      "PAP-H4",
+      "PAN-H2",
+      "DAI-4"
+    ],
+    "pems_representation": "cluster_n1n2n3",
+    "fold_strategy": "dd_ranked",
+    "lr": 2e-05,
+    "decay_steps": 5000,
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp9a_fold3": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 3,
+    "pems_val_materials": [
+      "DAP-4",
+      "DAP-7",
+      "PAP-H5",
+      "DAP-O4",
+      "DAI-1"
+    ],
+    "pems_representation": "cluster_n1n2n3",
+    "fold_strategy": "dd_ranked",
+    "lr": 2e-05,
+    "decay_steps": 5000,
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  },
+  "exp9a_fold4": {
+    "model_branch": null,
+    "num_heads": 2,
+    "heads": {
+      "deepems_vanilla": {
+        "branch_arg": "",
+        "type": "ener"
+      },
+      "pems_vdet_kj": {
+        "branch_arg": "RANDOM",
+        "type": "property"
+      }
+    },
+    "fold": 4,
+    "pems_val_materials": [
+      "PAP-5",
+      "DAP-6",
+      "PAN-M2",
+      "PAP-4",
+      "DAI-X1"
+    ],
+    "pems_representation": "cluster_n1n2n3",
+    "fold_strategy": "dd_ranked",
+    "lr": 2e-05,
+    "decay_steps": 5000,
+    "num_train_systems": {
+      "deepems_vanilla": 67,
+      "pems_vdet_kj": 60
+    },
+    "num_val_systems": {
+      "deepems_vanilla": 16,
+      "pems_vdet_kj": 15
+    }
+  }
+}

@@ -1,0 +1,686 @@
+{
+  "description": "M3b: Linear vs nonlinear (KernelRidge RBF) probe on embeddings (5-fold CV matching exp7 splits)",
+  "krr_config": {
+    "pipeline": "StandardScaler \u2192 KernelRidge(kernel='rbf')",
+    "kernel": "rbf",
+    "alpha_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0
+    ],
+    "gamma_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "inner_cv": "min(3, n_train-1) folds",
+    "_note": "KernelRidge(RBF) has only n dual parameters, so it cannot overfit more than Ridge. Inner GridSearchCV selects (alpha, gamma) on training fold only (no leakage). StandardScaler fit on train fold only. No PCA needed."
+  },
+  "cv_splits": "pems_5fold_splits_v2.json",
+  "results": {
+    "fold_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "per_checkpoint_fold": {
+      "0": {
+        "exp7a": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.9004805759150076,
+              "r2_krr": 0.9432176293347506,
+              "r2_krr_best_alpha": 0.0082,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": 0.04273705341974299
+            },
+            "frac_N": {
+              "r2_linear": 0.9163236790710098,
+              "r2_krr": 0.9186644328678114,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9887800704498741,
+              "gap": 0.0023407537968016534
+            },
+            "frac_O": {
+              "r2_linear": 0.9527316716879479,
+              "r2_krr": 0.8359272974930205,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": -0.1168043741949274
+            },
+            "n_atoms": {
+              "r2_linear": 0.955466398377113,
+              "r2_krr": 0.7977773874573241,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.15768901091978893
+            },
+            "density": {
+              "r2_linear": 0.6872370514005404,
+              "r2_krr": 0.7301780365606401,
+              "r2_krr_best_alpha": 0.20259999999999995,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.0429409851600997
+            },
+            "OB": {
+              "r2_linear": 0.9344125868690365,
+              "r2_krr": 0.9428111071593857,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9442309399526924,
+              "gap": 0.008398520290349154
+            }
+          }
+        },
+        "exp7c": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.9527032907155908,
+              "r2_krr": 0.9527067791696358,
+              "r2_krr_best_alpha": 0.0028,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": 3.4884540449642287e-06
+            },
+            "frac_N": {
+              "r2_linear": 0.9413692323869612,
+              "r2_krr": 0.6073537675864471,
+              "r2_krr_best_alpha": 0.40059999999999996,
+              "r2_krr_best_gamma": 0.0008200000000000001,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.33401546480051414
+            },
+            "frac_O": {
+              "r2_linear": 0.5315839251099954,
+              "r2_krr": 0.6396499951456454,
+              "r2_krr_best_alpha": 0.020800000000000003,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": 0.10806607003564994
+            },
+            "n_atoms": {
+              "r2_linear": 0.7393515662286354,
+              "r2_krr": -0.0469666886270903,
+              "r2_krr_best_alpha": 0.0082,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.7863182548557257
+            },
+            "density": {
+              "r2_linear": 0.3602265038421931,
+              "r2_krr": 0.5556482973791753,
+              "r2_krr_best_alpha": 0.20259999999999995,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.1954217935369822
+            },
+            "OB": {
+              "r2_linear": 0.8291815946886544,
+              "r2_krr": 0.8327063638467801,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0008200000000000001,
+              "r2_composition": 0.9442309399526924,
+              "gap": 0.003524769158125718
+            }
+          }
+        }
+      },
+      "1": {
+        "exp7a": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.9325142017897703,
+              "r2_krr": 0.9434067467876422,
+              "r2_krr_best_alpha": 0.0064,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": 0.010892544997871956
+            },
+            "frac_N": {
+              "r2_linear": 0.9512660550301488,
+              "r2_krr": 0.9282068453456693,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.023059209684479498
+            },
+            "frac_O": {
+              "r2_linear": 0.9412179790746134,
+              "r2_krr": 0.7662241128691302,
+              "r2_krr_best_alpha": 0.0028000000000000004,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": -0.17499386620548318
+            },
+            "n_atoms": {
+              "r2_linear": 0.9596144405530956,
+              "r2_krr": 0.7932633216557669,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.1663511188973288
+            },
+            "density": {
+              "r2_linear": 0.7398038078279274,
+              "r2_krr": 0.7408229390118198,
+              "r2_krr_best_alpha": 0.20259999999999995,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.0010191311838924078
+            },
+            "OB": {
+              "r2_linear": 0.9002559173357552,
+              "r2_krr": 0.9279510015019966,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9442309399526924,
+              "gap": 0.027695084166241446
+            }
+          }
+        },
+        "exp7c": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.8190441403088176,
+              "r2_krr": 0.9566103634555719,
+              "r2_krr_best_alpha": 0.0028,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": 0.13756622314675437
+            },
+            "frac_N": {
+              "r2_linear": 0.9025405719782321,
+              "r2_krr": 0.7874133523128064,
+              "r2_krr_best_alpha": 0.20259999999999997,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.11512721966542572
+            },
+            "frac_O": {
+              "r2_linear": 0.4139748528455883,
+              "r2_krr": 0.8693160138792537,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": 0.4553411610336654
+            },
+            "n_atoms": {
+              "r2_linear": 0.6334863921105591,
+              "r2_krr": 0.051426804647046076,
+              "r2_krr_best_alpha": 0.0064,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.582059587463513
+            },
+            "density": {
+              "r2_linear": 0.36895242198653844,
+              "r2_krr": 0.7191866049077793,
+              "r2_krr_best_alpha": 0.0028,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.35023418292124087
+            },
+            "OB": {
+              "r2_linear": 0.6318342300925972,
+              "r2_krr": 0.8443365663290534,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0008200000000000001,
+              "r2_composition": 0.9442309399526924,
+              "gap": 0.2125023362364562
+            }
+          }
+        }
+      },
+      "2": {
+        "exp7a": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.8921367606844112,
+              "r2_krr": 0.9470262125414705,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": 0.05488945185705929
+            },
+            "frac_N": {
+              "r2_linear": 0.9363114980546849,
+              "r2_krr": 0.9151119912578191,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0006399999999999999,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.021199506796865886
+            },
+            "frac_O": {
+              "r2_linear": 0.9461127144724566,
+              "r2_krr": 0.8108880354216077,
+              "r2_krr_best_alpha": 0.0028000000000000004,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": -0.1352246790508489
+            },
+            "n_atoms": {
+              "r2_linear": 0.9506433794410016,
+              "r2_krr": 0.7995851730171436,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.15105820642385803
+            },
+            "density": {
+              "r2_linear": 0.6544202427469183,
+              "r2_krr": 0.7352040794385684,
+              "r2_krr_best_alpha": 0.20259999999999995,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.08078383669165001
+            },
+            "OB": {
+              "r2_linear": 0.9426155290560055,
+              "r2_krr": 0.9498608189533427,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9442309399526924,
+              "gap": 0.007245289897337193
+            }
+          }
+        },
+        "exp7c": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.885999860550399,
+              "r2_krr": 0.96482511877883,
+              "r2_krr_best_alpha": 0.0028000000000000004,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": 0.078825258228431
+            },
+            "frac_N": {
+              "r2_linear": 0.9116084738182106,
+              "r2_krr": 0.7126061209825232,
+              "r2_krr_best_alpha": 0.20079999999999995,
+              "r2_krr_best_gamma": 0.00064,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.19900235283568746
+            },
+            "frac_O": {
+              "r2_linear": 0.3568439317391854,
+              "r2_krr": 0.8286220065508525,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": 0.4717780748116671
+            },
+            "n_atoms": {
+              "r2_linear": 0.8184748422475846,
+              "r2_krr": -0.14462369254954566,
+              "r2_krr_best_alpha": 0.0064,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.9630985347971303
+            },
+            "density": {
+              "r2_linear": 0.4782816980739565,
+              "r2_krr": 0.7032570418341256,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.22497534376016914
+            },
+            "OB": {
+              "r2_linear": 0.6839905704850078,
+              "r2_krr": 0.8057979559004257,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0008200000000000001,
+              "r2_composition": 0.9442309399526924,
+              "gap": 0.12180738541541791
+            }
+          }
+        }
+      },
+      "3": {
+        "exp7a": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.9477787442908371,
+              "r2_krr": 0.9206380599783827,
+              "r2_krr_best_alpha": 0.0082,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": -0.02714068431245442
+            },
+            "frac_N": {
+              "r2_linear": 0.946974594732474,
+              "r2_krr": 0.9240742335572425,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0008200000000000001,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.02290036117523153
+            },
+            "frac_O": {
+              "r2_linear": 0.9431053147719639,
+              "r2_krr": 0.766694701050731,
+              "r2_krr_best_alpha": 0.0028000000000000004,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": -0.1764106137212329
+            },
+            "n_atoms": {
+              "r2_linear": 0.9511974376263858,
+              "r2_krr": 0.7837136406978971,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.1674837969284887
+            },
+            "density": {
+              "r2_linear": 0.686823090800379,
+              "r2_krr": 0.7415701930035827,
+              "r2_krr_best_alpha": 0.022600000000000002,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.05474710220320378
+            },
+            "OB": {
+              "r2_linear": 0.8858255184558232,
+              "r2_krr": 0.9272192573987584,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9442309399526924,
+              "gap": 0.04139373894293519
+            }
+          }
+        },
+        "exp7c": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.9273160943579379,
+              "r2_krr": 0.8964160436573041,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": -0.03090005070063384
+            },
+            "frac_N": {
+              "r2_linear": 0.928283070067024,
+              "r2_krr": 0.6324035829960812,
+              "r2_krr_best_alpha": 0.40059999999999996,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.2958794870709428
+            },
+            "frac_O": {
+              "r2_linear": 0.634046573968065,
+              "r2_krr": 0.6330975550849978,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": -0.0009490188830671986
+            },
+            "n_atoms": {
+              "r2_linear": 0.6115179029397186,
+              "r2_krr": 0.02442505189156674,
+              "r2_krr_best_alpha": 0.0064,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.5870928510481519
+            },
+            "density": {
+              "r2_linear": 0.08882698243520248,
+              "r2_krr": 0.21095485573677186,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.12212787330156938
+            },
+            "OB": {
+              "r2_linear": 0.844862514897061,
+              "r2_krr": 0.8051973133115655,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.0008200000000000001,
+              "r2_composition": 0.9442309399526924,
+              "gap": -0.03966520158549547
+            }
+          }
+        }
+      },
+      "4": {
+        "exp7a": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.924718332803573,
+              "r2_krr": 0.9524062687465542,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": 0.027687935942981245
+            },
+            "frac_N": {
+              "r2_linear": 0.8208149847316069,
+              "r2_krr": 0.9353084642129741,
+              "r2_krr_best_alpha": 0.0064,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9887800704498741,
+              "gap": 0.11449347948136723
+            },
+            "frac_O": {
+              "r2_linear": 0.8924496111217673,
+              "r2_krr": 0.7389276311816214,
+              "r2_krr_best_alpha": 0.0028000000000000004,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": -0.15352197994014594
+            },
+            "n_atoms": {
+              "r2_linear": 0.9629768961690118,
+              "r2_krr": 0.3489839139709139,
+              "r2_krr_best_alpha": 0.020800000000000003,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.613992982198098
+            },
+            "density": {
+              "r2_linear": 0.8166217247087361,
+              "r2_krr": 0.7947970556576942,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": -0.021824669051041856
+            },
+            "OB": {
+              "r2_linear": 0.9282484414526766,
+              "r2_krr": 0.9214538993458818,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9442309399526924,
+              "gap": -0.006794542106794754
+            }
+          }
+        },
+        "exp7c": {
+          "probe_results": {
+            "Vdet": {
+              "r2_linear": 0.7798777603053864,
+              "r2_krr": 0.5395310028247784,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.8738471448900688,
+              "gap": -0.24034675748060796
+            },
+            "frac_N": {
+              "r2_linear": 0.9307266540797879,
+              "r2_krr": 0.760576129069676,
+              "r2_krr_best_alpha": 0.4006,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9887800704498741,
+              "gap": -0.17015052501011196
+            },
+            "frac_O": {
+              "r2_linear": 0.6764810648535746,
+              "r2_krr": 0.3920188225857332,
+              "r2_krr_best_alpha": 0.020800000000000003,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.9800596694580835,
+              "gap": -0.28446224226784145
+            },
+            "n_atoms": {
+              "r2_linear": 0.734404766889221,
+              "r2_krr": -0.09354073155045506,
+              "r2_krr_best_alpha": 0.0028,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.6260858219954504,
+              "gap": -0.827945498439676
+            },
+            "density": {
+              "r2_linear": 0.5202520566666249,
+              "r2_krr": 0.5919557507853153,
+              "r2_krr_best_alpha": 0.0046,
+              "r2_krr_best_gamma": 0.0001,
+              "r2_composition": 0.7788529888419657,
+              "gap": 0.07170369411869038
+            },
+            "OB": {
+              "r2_linear": 0.9143494789515053,
+              "r2_krr": 0.872531799165013,
+              "r2_krr_best_alpha": 0.001,
+              "r2_krr_best_gamma": 0.001,
+              "r2_composition": 0.9442309399526924,
+              "gap": -0.04181767978649231
+            }
+          }
+        }
+      }
+    },
+    "aggregated": {
+      "exp7a": {
+        "probe_results": {
+          "frac_O": {
+            "r2_linear": 0.9351234582257499,
+            "r2_linear_std_across_ckpt_folds": 0.021692041762553217,
+            "r2_krr": 0.7837323556032222,
+            "r2_krr_std_across_ckpt_folds": 0.034831096658186324,
+            "r2_composition": 0.9800596694580836,
+            "r2_composition_std_across_ckpt_folds": 1.1102230246251565e-16,
+            "gap": -0.15139110262252775
+          },
+          "Vdet": {
+            "r2_linear": 0.9195257230967198,
+            "r2_linear_std_across_ckpt_folds": 0.02052690855496125,
+            "r2_krr": 0.94133898347776,
+            "r2_krr_std_across_ckpt_folds": 0.010873477518556225,
+            "r2_composition": 0.8738471448900688,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": 0.021813260381040256
+          },
+          "frac_N": {
+            "r2_linear": 0.9143381623239849,
+            "r2_linear_std_across_ckpt_folds": 0.04829525957469137,
+            "r2_krr": 0.9242731934483033,
+            "r2_krr_std_across_ckpt_folds": 0.007108814584186496,
+            "r2_composition": 0.988780070449874,
+            "r2_composition_std_across_ckpt_folds": 1.1102230246251565e-16,
+            "gap": 0.009935031124318372
+          },
+          "OB": {
+            "r2_linear": 0.9182715986338593,
+            "r2_linear_std_across_ckpt_folds": 0.021587073603396158,
+            "r2_krr": 0.933859216871873,
+            "r2_krr_std_across_ckpt_folds": 0.010668416775468332,
+            "r2_composition": 0.9442309399526924,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": 0.01558761823801369
+          },
+          "n_atoms": {
+            "r2_linear": 0.9559797104333215,
+            "r2_linear_std_across_ckpt_folds": 0.004770365231089569,
+            "r2_krr": 0.704664687359809,
+            "r2_krr_std_across_ckpt_folds": 0.1779253445118782,
+            "r2_composition": 0.6260858219954504,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": -0.2513150230735125
+          },
+          "density": {
+            "r2_linear": 0.7169811834969003,
+            "r2_linear_std_across_ckpt_folds": 0.0568457648222331,
+            "r2_krr": 0.748514460734461,
+            "r2_krr_std_across_ckpt_folds": 0.02350681456633546,
+            "r2_composition": 0.7788529888419657,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": 0.03153327723756072
+          }
+        }
+      },
+      "exp7c": {
+        "probe_results": {
+          "frac_O": {
+            "r2_linear": 0.5225860697032817,
+            "r2_linear_std_across_ckpt_folds": 0.12284537245611413,
+            "r2_krr": 0.6725408786492965,
+            "r2_krr_std_across_ckpt_folds": 0.16994821697291648,
+            "r2_composition": 0.9800596694580836,
+            "r2_composition_std_across_ckpt_folds": 1.1102230246251565e-16,
+            "gap": 0.14995480894601476
+          },
+          "Vdet": {
+            "r2_linear": 0.8729882292476263,
+            "r2_linear_std_across_ckpt_folds": 0.06489196353867989,
+            "r2_krr": 0.8620178615772239,
+            "r2_krr_std_across_ckpt_folds": 0.16304757730027136,
+            "r2_composition": 0.8738471448900688,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": -0.010970367670402381
+          },
+          "frac_N": {
+            "r2_linear": 0.9229056004660432,
+            "r2_linear_std_across_ckpt_folds": 0.013952427878016154,
+            "r2_krr": 0.7000705905895067,
+            "r2_krr_std_across_ckpt_folds": 0.07017414184568554,
+            "r2_composition": 0.988780070449874,
+            "r2_composition_std_across_ckpt_folds": 1.1102230246251565e-16,
+            "gap": -0.22283500987653648
+          },
+          "OB": {
+            "r2_linear": 0.780843677822965,
+            "r2_linear_std_across_ckpt_folds": 0.10568169619771853,
+            "r2_krr": 0.8321139997105675,
+            "r2_krr_std_across_ckpt_folds": 0.0252997340352522,
+            "r2_composition": 0.9442309399526924,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": 0.0512703218876025
+          },
+          "n_atoms": {
+            "r2_linear": 0.7074470940831438,
+            "r2_linear_std_across_ckpt_folds": 0.07582132612685924,
+            "r2_krr": -0.04185585123769564,
+            "r2_krr_std_across_ckpt_folds": 0.07259957124970434,
+            "r2_composition": 0.6260858219954504,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": -0.7493029453208394
+          },
+          "density": {
+            "r2_linear": 0.3633079326009031,
+            "r2_linear_std_across_ckpt_folds": 0.15048692454382523,
+            "r2_krr": 0.5562005101286335,
+            "r2_krr_std_across_ckpt_folds": 0.1836645826818049,
+            "r2_composition": 0.7788529888419657,
+            "r2_composition_std_across_ckpt_folds": 0.0,
+            "gap": 0.19289257752773037
+          }
+        }
+      }
+    }
+  }
+}

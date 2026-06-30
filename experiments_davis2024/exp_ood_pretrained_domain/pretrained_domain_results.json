@@ -1,0 +1,1190 @@
+{
+  "pretrained_domain_mt": {
+    "exp_name": "pretrained_domain_mt",
+    "config_type": "mt",
+    "ckpt_path": "experiments_davis2024/exp_ood_pretrained_domain/pretrained_domain_mt/model.ckpt.pt",
+    "train_materials": [
+      "DAI-1",
+      "DAI-2",
+      "DAI-4",
+      "DAI-X1",
+      "DAN-2",
+      "DAP-O2",
+      "DAP-O4",
+      "PAN-2",
+      "PAN-H2",
+      "PAN-M2",
+      "PAP-1",
+      "PAP-4",
+      "PAP-5",
+      "PAP-H4",
+      "PAP-H5",
+      "PAP-M4",
+      "PAP-M5"
+    ],
+    "test_materials": [
+      "DAP-1",
+      "DAP-2",
+      "DAP-3",
+      "DAP-4",
+      "DAP-5",
+      "DAP-6",
+      "DAP-7",
+      "DAP-M4"
+    ],
+    "n_train": 17,
+    "n_test": 8,
+    "dap_mae_m_s": 143.50336283171976,
+    "dap_rmse_m_s": 165.17419041526745,
+    "n_dap_with_exp": 8,
+    "dap_material_results": {
+      "DAP-1": {
+        "material": "DAP-1",
+        "exp_m_s": 8781.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8638.223565030945,
+          "pems_cluster_n2_systems": 8666.614437159093,
+          "pems_cluster_n3_systems": 8636.537837762357
+        },
+        "grand_mean_m_s": 8647.125279984131,
+        "grand_std_m_s": 13.79808814410592,
+        "error_m_s": -133.87472001586866,
+        "abs_error_m_s": 133.87472001586866,
+        "n_clusters": 3
+      },
+      "DAP-2": {
+        "material": "DAP-2",
+        "exp_m_s": 8591.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8505.265221981585,
+          "pems_cluster_n2_systems": 8498.566282457678,
+          "pems_cluster_n3_systems": 8498.515602420448
+        },
+        "grand_mean_m_s": 8500.782368953236,
+        "grand_std_m_s": 3.1699232979016094,
+        "error_m_s": -90.21763104676393,
+        "abs_error_m_s": 90.21763104676393,
+        "n_clusters": 3
+      },
+      "DAP-3": {
+        "material": "DAP-3",
+        "exp_m_s": 8425.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8527.371477932584,
+          "pems_cluster_n2_systems": 8566.283983933985,
+          "pems_cluster_n3_systems": 8532.802602706974
+        },
+        "grand_mean_m_s": 8542.15268819118,
+        "grand_std_m_s": 17.206856283639897,
+        "error_m_s": 117.15268819117955,
+        "abs_error_m_s": 117.15268819117955,
+        "n_clusters": 3
+      },
+      "DAP-4": {
+        "material": "DAP-4",
+        "exp_m_s": 8806.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8783.977104613006,
+          "pems_cluster_n2_systems": 8746.496957745027,
+          "pems_cluster_n3_systems": 8755.393412817948
+        },
+        "grand_mean_m_s": 8761.955825058662,
+        "grand_std_m_s": 15.9893567334466,
+        "error_m_s": -44.0441749413385,
+        "abs_error_m_s": 44.0441749413385,
+        "n_clusters": 3
+      },
+      "DAP-5": {
+        "material": "DAP-5",
+        "exp_m_s": 8534.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8746.244879448312,
+          "pems_cluster_n2_systems": 8735.860470626274,
+          "pems_cluster_n3_systems": 8745.914183475847
+        },
+        "grand_mean_m_s": 8742.673177850143,
+        "grand_std_m_s": 4.819202890186956,
+        "error_m_s": 208.67317785014347,
+        "abs_error_m_s": 208.67317785014347,
+        "n_clusters": 3
+      },
+      "DAP-6": {
+        "material": "DAP-6",
+        "exp_m_s": 9123.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8821.553188045666,
+          "pems_cluster_n2_systems": 8840.358747691978,
+          "pems_cluster_n3_systems": 8810.385564164837
+        },
+        "grand_mean_m_s": 8824.09916663416,
+        "grand_std_m_s": 12.36822374521984,
+        "error_m_s": -298.9008333658403,
+        "abs_error_m_s": 298.9008333658403,
+        "n_clusters": 3
+      },
+      "DAP-7": {
+        "material": "DAP-7",
+        "exp_m_s": 8883.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8807.613116710621,
+          "pems_cluster_n2_systems": 8856.944259401042,
+          "pems_cluster_n3_systems": 8825.12509334335
+        },
+        "grand_mean_m_s": 8829.894156485003,
+        "grand_std_m_s": 20.419735261464844,
+        "error_m_s": -53.105843514997105,
+        "abs_error_m_s": 53.105843514997105,
+        "n_clusters": 3
+      },
+      "DAP-M4": {
+        "material": "DAP-M4",
+        "exp_m_s": 8085.000000000001,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8287.829023148293,
+          "pems_cluster_n2_systems": 8301.1445345423,
+          "pems_cluster_n3_systems": 8272.199943492287
+        },
+        "grand_mean_m_s": 8287.057833727627,
+        "grand_std_m_s": 11.829155720930338,
+        "error_m_s": 202.05783372762653,
+        "abs_error_m_s": 202.05783372762653,
+        "n_clusters": 3
+      }
+    },
+    "non_dap_mae_m_s": 14.13332216506061,
+    "non_dap_rmse_m_s": 40.16838849833334,
+    "n_non_dap_with_exp": 17,
+    "non_dap_material_results": {
+      "DAI-1": {
+        "material": "DAI-1",
+        "exp_m_s": 6438.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6434.928575068004,
+          "pems_cluster_n2_systems": 6438.012609393753,
+          "pems_cluster_n3_systems": 6447.900499232599
+        },
+        "grand_mean_m_s": 6440.280561231452,
+        "grand_std_m_s": 5.5332575267855555,
+        "error_m_s": 2.2805612314523387,
+        "abs_error_m_s": 2.2805612314523387,
+        "n_clusters": 3
+      },
+      "DAI-2": {
+        "material": "DAI-2",
+        "exp_m_s": 6331.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6330.987230151026,
+          "pems_cluster_n2_systems": 6332.433801805954,
+          "pems_cluster_n3_systems": 6329.5789148981075
+        },
+        "grand_mean_m_s": 6330.99998228503,
+        "grand_std_m_s": 1.1655375803579398,
+        "error_m_s": -1.771497045410797e-05,
+        "abs_error_m_s": 1.771497045410797e-05,
+        "n_clusters": 3
+      },
+      "DAI-4": {
+        "material": "DAI-4",
+        "exp_m_s": 6558.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6557.879117487007,
+          "pems_cluster_n2_systems": 6551.935815645425,
+          "pems_cluster_n3_systems": 6558.927985195043
+        },
+        "grand_mean_m_s": 6556.247639442491,
+        "grand_std_m_s": 3.078841688033004,
+        "error_m_s": -1.7523605575088368,
+        "abs_error_m_s": 1.7523605575088368,
+        "n_clusters": 3
+      },
+      "DAI-X1": {
+        "material": "DAI-X1",
+        "exp_m_s": 7070.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7069.981045753155,
+          "pems_cluster_n2_systems": 7070.773036604257,
+          "pems_cluster_n3_systems": 7065.441760621541
+        },
+        "grand_mean_m_s": 7068.73194765965,
+        "grand_std_m_s": 2.348873550785136,
+        "error_m_s": -1.2680523403496409,
+        "abs_error_m_s": 1.2680523403496409,
+        "n_clusters": 3
+      },
+      "DAN-2": {
+        "material": "DAN-2",
+        "exp_m_s": 7651.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7650.981260866573,
+          "pems_cluster_n2_systems": 7650.981260297467,
+          "pems_cluster_n3_systems": 7650.981260252714
+        },
+        "grand_mean_m_s": 7650.981260472251,
+        "grand_std_m_s": 2.7942574653331183e-07,
+        "error_m_s": -0.018739527748948603,
+        "abs_error_m_s": 0.018739527748948603,
+        "n_clusters": 3
+      },
+      "DAP-O2": {
+        "material": "DAP-O2",
+        "exp_m_s": 8327.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8340.740215375981,
+          "pems_cluster_n2_systems": 8326.915868354648,
+          "pems_cluster_n3_systems": 8301.832462254959
+        },
+        "grand_mean_m_s": 8323.162848661863,
+        "grand_std_m_s": 16.104185394744075,
+        "error_m_s": -3.8371513381371187,
+        "abs_error_m_s": 3.8371513381371187,
+        "n_clusters": 3
+      },
+      "DAP-O4": {
+        "material": "DAP-O4",
+        "exp_m_s": 8900.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8894.898505901248,
+          "pems_cluster_n2_systems": 8899.994752015387,
+          "pems_cluster_n3_systems": 8904.564910509895
+        },
+        "grand_mean_m_s": 8899.81938947551,
+        "grand_std_m_s": 3.9482408344145887,
+        "error_m_s": -0.18061052449047565,
+        "abs_error_m_s": 0.18061052449047565,
+        "n_clusters": 3
+      },
+      "PAN-2": {
+        "material": "PAN-2",
+        "exp_m_s": 8140.000000000001,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8012.912605275677,
+          "pems_cluster_n2_systems": 7905.881268875568,
+          "pems_cluster_n3_systems": 8012.912605275678
+        },
+        "grand_mean_m_s": 7977.235493142308,
+        "grand_std_m_s": 50.455055845317524,
+        "error_m_s": -162.76450685769305,
+        "abs_error_m_s": 162.76450685769305,
+        "n_clusters": 3
+      },
+      "PAN-H2": {
+        "material": "PAN-H2",
+        "exp_m_s": 7500.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7519.070315362878,
+          "pems_cluster_n2_systems": 7519.070315362878,
+          "pems_cluster_n3_systems": 7519.070315362878
+        },
+        "grand_mean_m_s": 7519.070315362878,
+        "grand_std_m_s": 0.0,
+        "error_m_s": 19.07031536287832,
+        "abs_error_m_s": 19.07031536287832,
+        "n_clusters": 3
+      },
+      "PAN-M2": {
+        "material": "PAN-M2",
+        "exp_m_s": 7200.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7199.97746722449,
+          "pems_cluster_n2_systems": 7199.977467224491,
+          "pems_cluster_n3_systems": 7199.977467224491
+        },
+        "grand_mean_m_s": 7199.977467224492,
+        "grand_std_m_s": 1.2862197421537486e-12,
+        "error_m_s": -0.022532775507897895,
+        "abs_error_m_s": 0.022532775507897895,
+        "n_clusters": 3
+      },
+      "PAP-1": {
+        "material": "PAP-1",
+        "exp_m_s": 8917.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8930.144415277426,
+          "pems_cluster_n2_systems": 8916.944581364498,
+          "pems_cluster_n3_systems": 8916.944581364498
+        },
+        "grand_mean_m_s": 8921.34452600214,
+        "grand_std_m_s": 6.222461380244898,
+        "error_m_s": 4.344526002139901,
+        "abs_error_m_s": 4.344526002139901,
+        "n_clusters": 3
+      },
+      "PAP-4": {
+        "material": "PAP-4",
+        "exp_m_s": 8629.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8611.791043625317,
+          "pems_cluster_n2_systems": 8649.486531289425,
+          "pems_cluster_n3_systems": 8629.025560707316
+        },
+        "grand_mean_m_s": 8630.101045207351,
+        "grand_std_m_s": 15.407897276853463,
+        "error_m_s": 1.1010452073514898,
+        "abs_error_m_s": 1.1010452073514898,
+        "n_clusters": 3
+      },
+      "PAP-5": {
+        "material": "PAP-5",
+        "exp_m_s": 8961.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8980.903448944713,
+          "pems_cluster_n2_systems": 8961.015403083542,
+          "pems_cluster_n3_systems": 8980.903448944713
+        },
+        "grand_mean_m_s": 8974.274100324323,
+        "grand_std_m_s": 9.375314728655434,
+        "error_m_s": 13.274100324322717,
+        "abs_error_m_s": 13.274100324322717,
+        "n_clusters": 3
+      },
+      "PAP-H4": {
+        "material": "PAP-H4",
+        "exp_m_s": 8756.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8757.4241463921,
+          "pems_cluster_n2_systems": 8755.568532868669,
+          "pems_cluster_n3_systems": 8752.015617261368
+        },
+        "grand_mean_m_s": 8755.002765507379,
+        "grand_std_m_s": 2.2439721284397876,
+        "error_m_s": -0.9972344926209189,
+        "abs_error_m_s": 0.9972344926209189,
+        "n_clusters": 3
+      },
+      "PAP-H5": {
+        "material": "PAP-H5",
+        "exp_m_s": 8756.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8755.994609170866,
+          "pems_cluster_n2_systems": 8754.30417988673,
+          "pems_cluster_n3_systems": 8716.879814251843
+        },
+        "grand_mean_m_s": 8742.392867769813,
+        "grand_std_m_s": 18.053648064390156,
+        "error_m_s": -13.607132230186835,
+        "abs_error_m_s": 13.607132230186835,
+        "n_clusters": 3
+      },
+      "PAP-M4": {
+        "material": "PAP-M4",
+        "exp_m_s": 8311.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8310.128401854241,
+          "pems_cluster_n2_systems": 8349.333631820042,
+          "pems_cluster_n3_systems": 8310.982338543157
+        },
+        "grand_mean_m_s": 8323.481457405813,
+        "grand_std_m_s": 18.283571741227764,
+        "error_m_s": 12.481457405812762,
+        "abs_error_m_s": 12.481457405812762,
+        "n_clusters": 3
+      },
+      "PAP-M5": {
+        "material": "PAP-M5",
+        "exp_m_s": 8778.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8779.099973227261,
+          "pems_cluster_n2_systems": 8777.965766352403,
+          "pems_cluster_n3_systems": 8767.135861681762
+        },
+        "grand_mean_m_s": 8774.733867087141,
+        "grand_std_m_s": 5.392517712156748,
+        "error_m_s": -3.266132912858666,
+        "abs_error_m_s": 3.266132912858666,
+        "n_clusters": 3
+      }
+    }
+  },
+  "pretrained_domain_st": {
+    "exp_name": "pretrained_domain_st",
+    "config_type": "st",
+    "ckpt_path": "experiments_davis2024/exp_ood_pretrained_domain/pretrained_domain_st/model.ckpt.pt",
+    "train_materials": [
+      "DAI-1",
+      "DAI-2",
+      "DAI-4",
+      "DAI-X1",
+      "DAN-2",
+      "DAP-O2",
+      "DAP-O4",
+      "PAN-2",
+      "PAN-H2",
+      "PAN-M2",
+      "PAP-1",
+      "PAP-4",
+      "PAP-5",
+      "PAP-H4",
+      "PAP-H5",
+      "PAP-M4",
+      "PAP-M5"
+    ],
+    "test_materials": [
+      "DAP-1",
+      "DAP-2",
+      "DAP-3",
+      "DAP-4",
+      "DAP-5",
+      "DAP-6",
+      "DAP-7",
+      "DAP-M4"
+    ],
+    "n_train": 17,
+    "n_test": 8,
+    "dap_mae_m_s": 162.51008119057974,
+    "dap_rmse_m_s": 198.42642708726046,
+    "n_dap_with_exp": 8,
+    "dap_material_results": {
+      "DAP-1": {
+        "material": "DAP-1",
+        "exp_m_s": 8781.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8435.29962041773,
+          "pems_cluster_n2_systems": 8450.875308897294,
+          "pems_cluster_n3_systems": 8419.859277928721
+        },
+        "grand_mean_m_s": 8435.344735747914,
+        "grand_std_m_s": 12.662281806099713,
+        "error_m_s": -345.65526425208554,
+        "abs_error_m_s": 345.65526425208554,
+        "n_clusters": 3
+      },
+      "DAP-2": {
+        "material": "DAP-2",
+        "exp_m_s": 8591.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8494.178473783219,
+          "pems_cluster_n2_systems": 8500.231247436139,
+          "pems_cluster_n3_systems": 8504.649705879434
+        },
+        "grand_mean_m_s": 8499.686475699598,
+        "grand_std_m_s": 4.292183406061415,
+        "error_m_s": -91.3135243004017,
+        "abs_error_m_s": 91.3135243004017,
+        "n_clusters": 3
+      },
+      "DAP-3": {
+        "material": "DAP-3",
+        "exp_m_s": 8425.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8458.405119118863,
+          "pems_cluster_n2_systems": 8468.725292077412,
+          "pems_cluster_n3_systems": 8452.713516691578
+        },
+        "grand_mean_m_s": 8459.947975962617,
+        "grand_std_m_s": 6.627193633398682,
+        "error_m_s": 34.94797596261742,
+        "abs_error_m_s": 34.94797596261742,
+        "n_clusters": 3
+      },
+      "DAP-4": {
+        "material": "DAP-4",
+        "exp_m_s": 8806.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8656.72311046586,
+          "pems_cluster_n2_systems": 8624.188679914745,
+          "pems_cluster_n3_systems": 8638.133890697178
+        },
+        "grand_mean_m_s": 8639.681893692594,
+        "grand_std_m_s": 13.327153428913473,
+        "error_m_s": -166.3181063074062,
+        "abs_error_m_s": 166.3181063074062,
+        "n_clusters": 3
+      },
+      "DAP-5": {
+        "material": "DAP-5",
+        "exp_m_s": 8534.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8596.580899051314,
+          "pems_cluster_n2_systems": 8574.171644947979,
+          "pems_cluster_n3_systems": 8566.691107425408
+        },
+        "grand_mean_m_s": 8579.147883808233,
+        "grand_std_m_s": 12.69966208883159,
+        "error_m_s": 45.14788380823302,
+        "abs_error_m_s": 45.14788380823302,
+        "n_clusters": 3
+      },
+      "DAP-6": {
+        "material": "DAP-6",
+        "exp_m_s": 9123.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8776.708621661168,
+          "pems_cluster_n2_systems": 8800.938169737165,
+          "pems_cluster_n3_systems": 8759.505970689735
+        },
+        "grand_mean_m_s": 8779.050920696021,
+        "grand_std_m_s": 16.99552005780655,
+        "error_m_s": -343.9490793039786,
+        "abs_error_m_s": 343.9490793039786,
+        "n_clusters": 3
+      },
+      "DAP-7": {
+        "material": "DAP-7",
+        "exp_m_s": 8883.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8964.226163892348,
+          "pems_cluster_n2_systems": 9043.815614730402,
+          "pems_cluster_n3_systems": 8991.974223787454
+        },
+        "grand_mean_m_s": 9000.005334136733,
+        "grand_std_m_s": 32.984786606934094,
+        "error_m_s": 117.00533413673293,
+        "abs_error_m_s": 117.00533413673293,
+        "n_clusters": 3
+      },
+      "DAP-M4": {
+        "material": "DAP-M4",
+        "exp_m_s": 8085.000000000001,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7922.8947887445265,
+          "pems_cluster_n2_systems": 7966.627407085442,
+          "pems_cluster_n3_systems": 7898.247359810483
+        },
+        "grand_mean_m_s": 7929.256518546818,
+        "grand_std_m_s": 28.276155100360025,
+        "error_m_s": -155.74348145318254,
+        "abs_error_m_s": 155.74348145318254,
+        "n_clusters": 3
+      }
+    },
+    "non_dap_mae_m_s": 9.89092692284275,
+    "non_dap_rmse_m_s": 16.320365905288135,
+    "n_non_dap_with_exp": 17,
+    "non_dap_material_results": {
+      "DAI-1": {
+        "material": "DAI-1",
+        "exp_m_s": 6438.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6437.855023693266,
+          "pems_cluster_n2_systems": 6437.984223501006,
+          "pems_cluster_n3_systems": 6458.845591327705
+        },
+        "grand_mean_m_s": 6444.894946173993,
+        "grand_std_m_s": 9.864736803421877,
+        "error_m_s": 6.894946173993048,
+        "abs_error_m_s": 6.894946173993048,
+        "n_clusters": 3
+      },
+      "DAI-2": {
+        "material": "DAI-2",
+        "exp_m_s": 6331.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6330.874343872281,
+          "pems_cluster_n2_systems": 6321.446927501374,
+          "pems_cluster_n3_systems": 6335.478245913073
+        },
+        "grand_mean_m_s": 6329.2665057622435,
+        "grand_std_m_s": 5.839996097811852,
+        "error_m_s": -1.7334942377565312,
+        "abs_error_m_s": 1.7334942377565312,
+        "n_clusters": 3
+      },
+      "DAI-4": {
+        "material": "DAI-4",
+        "exp_m_s": 6558.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6558.094948532283,
+          "pems_cluster_n2_systems": 6556.149936298934,
+          "pems_cluster_n3_systems": 6562.556986200637
+        },
+        "grand_mean_m_s": 6558.933957010618,
+        "grand_std_m_s": 2.6821040907920883,
+        "error_m_s": 0.9339570106176325,
+        "abs_error_m_s": 0.9339570106176325,
+        "n_clusters": 3
+      },
+      "DAI-X1": {
+        "material": "DAI-X1",
+        "exp_m_s": 7070.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7082.491403429122,
+          "pems_cluster_n2_systems": 7032.781196818074,
+          "pems_cluster_n3_systems": 7070.015372937341
+        },
+        "grand_mean_m_s": 7061.76265772818,
+        "grand_std_m_s": 21.116449221257668,
+        "error_m_s": -8.237342271820125,
+        "abs_error_m_s": 8.237342271820125,
+        "n_clusters": 3
+      },
+      "DAN-2": {
+        "material": "DAN-2",
+        "exp_m_s": 7651.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7651.003985523493,
+          "pems_cluster_n2_systems": 7651.003985206603,
+          "pems_cluster_n3_systems": 7651.003982444097
+        },
+        "grand_mean_m_s": 7651.003984391398,
+        "grand_std_m_s": 1.3830132936746912e-06,
+        "error_m_s": 0.0039843913982622325,
+        "abs_error_m_s": 0.0039843913982622325,
+        "n_clusters": 3
+      },
+      "DAP-O2": {
+        "material": "DAP-O2",
+        "exp_m_s": 8327.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8351.981436639686,
+          "pems_cluster_n2_systems": 8327.322896922948,
+          "pems_cluster_n3_systems": 8265.994273938066
+        },
+        "grand_mean_m_s": 8315.099535833566,
+        "grand_std_m_s": 36.152509867778825,
+        "error_m_s": -11.900464166434176,
+        "abs_error_m_s": 11.900464166434176,
+        "n_clusters": 3
+      },
+      "DAP-O4": {
+        "material": "DAP-O4",
+        "exp_m_s": 8900.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8899.594620025528,
+          "pems_cluster_n2_systems": 8892.992419865228,
+          "pems_cluster_n3_systems": 8901.656718307506
+        },
+        "grand_mean_m_s": 8898.081252732754,
+        "grand_std_m_s": 3.6955132522508762,
+        "error_m_s": -1.9187472672456352,
+        "abs_error_m_s": 1.9187472672456352,
+        "n_clusters": 3
+      },
+      "PAN-2": {
+        "material": "PAN-2",
+        "exp_m_s": 8140.000000000001,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8140.290652115346,
+          "pems_cluster_n2_systems": 8022.531058832188,
+          "pems_cluster_n3_systems": 8140.290652115346
+        },
+        "grand_mean_m_s": 8101.037454354293,
+        "grand_std_m_s": 55.51240464019399,
+        "error_m_s": -38.962545645707905,
+        "abs_error_m_s": 38.962545645707905,
+        "n_clusters": 3
+      },
+      "PAN-H2": {
+        "material": "PAN-H2",
+        "exp_m_s": 7500.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7500.026213472665,
+          "pems_cluster_n2_systems": 7500.026213472665,
+          "pems_cluster_n3_systems": 7500.026213472665
+        },
+        "grand_mean_m_s": 7500.026213472665,
+        "grand_std_m_s": 0.0,
+        "error_m_s": 0.02621347266540397,
+        "abs_error_m_s": 0.02621347266540397,
+        "n_clusters": 3
+      },
+      "PAN-M2": {
+        "material": "PAN-M2",
+        "exp_m_s": 7200.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7199.972233883266,
+          "pems_cluster_n2_systems": 7199.972233883266,
+          "pems_cluster_n3_systems": 7199.972233883266
+        },
+        "grand_mean_m_s": 7199.972233883266,
+        "grand_std_m_s": 0.0,
+        "error_m_s": -0.027766116733801027,
+        "abs_error_m_s": 0.027766116733801027,
+        "n_clusters": 3
+      },
+      "PAP-1": {
+        "material": "PAP-1",
+        "exp_m_s": 8917.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8920.830732597617,
+          "pems_cluster_n2_systems": 8914.00989113253,
+          "pems_cluster_n3_systems": 8914.00989113253
+        },
+        "grand_mean_m_s": 8916.283504954225,
+        "grand_std_m_s": 3.2153755022410024,
+        "error_m_s": -0.7164950457754458,
+        "abs_error_m_s": 0.7164950457754458,
+        "n_clusters": 3
+      },
+      "PAP-4": {
+        "material": "PAP-4",
+        "exp_m_s": 8629.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8590.878760789015,
+          "pems_cluster_n2_systems": 8629.022489273228,
+          "pems_cluster_n3_systems": 8657.58570238041
+        },
+        "grand_mean_m_s": 8625.82898414755,
+        "grand_std_m_s": 27.326456903645607,
+        "error_m_s": -3.1710158524492726,
+        "abs_error_m_s": 3.1710158524492726,
+        "n_clusters": 3
+      },
+      "PAP-5": {
+        "material": "PAP-5",
+        "exp_m_s": 8961.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8961.195721791652,
+          "pems_cluster_n2_systems": 8928.843525965438,
+          "pems_cluster_n3_systems": 8961.195721791652
+        },
+        "grand_mean_m_s": 8950.411656516248,
+        "grand_std_m_s": 15.250971369993824,
+        "error_m_s": -10.588343483752396,
+        "abs_error_m_s": 10.588343483752396,
+        "n_clusters": 3
+      },
+      "PAP-H4": {
+        "material": "PAP-H4",
+        "exp_m_s": 8756.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8751.462049698477,
+          "pems_cluster_n2_systems": 8725.093619469459,
+          "pems_cluster_n3_systems": 8754.582413164766
+        },
+        "grand_mean_m_s": 8743.712694110902,
+        "grand_std_m_s": 13.227159493963601,
+        "error_m_s": -12.287305889098207,
+        "abs_error_m_s": 12.287305889098207,
+        "n_clusters": 3
+      },
+      "PAP-H5": {
+        "material": "PAP-H5",
+        "exp_m_s": 8756.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8829.599273778493,
+          "pems_cluster_n2_systems": 8790.667386393709,
+          "pems_cluster_n3_systems": 8741.397616667902
+        },
+        "grand_mean_m_s": 8787.221425613368,
+        "grand_std_m_s": 36.09052565922051,
+        "error_m_s": 31.22142561336841,
+        "abs_error_m_s": 31.22142561336841,
+        "n_clusters": 3
+      },
+      "PAP-M4": {
+        "material": "PAP-M4",
+        "exp_m_s": 8311.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8311.257365942143,
+          "pems_cluster_n2_systems": 8424.603913974137,
+          "pems_cluster_n3_systems": 8313.181910671257
+        },
+        "grand_mean_m_s": 8349.681063529179,
+        "grand_std_m_s": 52.984281362190956,
+        "error_m_s": 38.68106352917857,
+        "abs_error_m_s": 38.68106352917857,
+        "n_clusters": 3
+      },
+      "PAP-M5": {
+        "material": "PAP-M5",
+        "exp_m_s": 8778.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8778.19679413559,
+          "pems_cluster_n2_systems": 8776.145147409652,
+          "pems_cluster_n3_systems": 8777.13611589376
+        },
+        "grand_mean_m_s": 8777.159352479668,
+        "grand_std_m_s": 0.837742413158556,
+        "error_m_s": -0.8406475203319133,
+        "abs_error_m_s": 0.8406475203319133,
+        "n_clusters": 3
+      }
+    }
+  },
+  "pretrained_domain_sd": {
+    "exp_name": "pretrained_domain_sd",
+    "config_type": "sd",
+    "ckpt_path": "experiments_davis2024/exp_ood_pretrained_domain/pretrained_domain_sd/model.ckpt.pt",
+    "train_materials": [
+      "DAI-1",
+      "DAI-2",
+      "DAI-4",
+      "DAI-X1",
+      "DAN-2",
+      "DAP-O2",
+      "DAP-O4",
+      "PAN-2",
+      "PAN-H2",
+      "PAN-M2",
+      "PAP-1",
+      "PAP-4",
+      "PAP-5",
+      "PAP-H4",
+      "PAP-H5",
+      "PAP-M4",
+      "PAP-M5"
+    ],
+    "test_materials": [
+      "DAP-1",
+      "DAP-2",
+      "DAP-3",
+      "DAP-4",
+      "DAP-5",
+      "DAP-6",
+      "DAP-7",
+      "DAP-M4"
+    ],
+    "n_train": 17,
+    "n_test": 8,
+    "dap_mae_m_s": 296.791533559781,
+    "dap_rmse_m_s": 340.8474281525628,
+    "n_dap_with_exp": 8,
+    "dap_material_results": {
+      "DAP-1": {
+        "material": "DAP-1",
+        "exp_m_s": 8781.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8640.255206123615,
+          "pems_cluster_n2_systems": 8665.348592990982,
+          "pems_cluster_n3_systems": 8668.34178850387
+        },
+        "grand_mean_m_s": 8657.98186253949,
+        "grand_std_m_s": 12.59406118267499,
+        "error_m_s": -123.01813746051084,
+        "abs_error_m_s": 123.01813746051084,
+        "n_clusters": 3
+      },
+      "DAP-2": {
+        "material": "DAP-2",
+        "exp_m_s": 8591.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8346.922643022674,
+          "pems_cluster_n2_systems": 8347.429824914288,
+          "pems_cluster_n3_systems": 8320.016680993427
+        },
+        "grand_mean_m_s": 8338.123049643464,
+        "grand_std_m_s": 12.804810232514141,
+        "error_m_s": -252.87695035653633,
+        "abs_error_m_s": 252.87695035653633,
+        "n_clusters": 3
+      },
+      "DAP-3": {
+        "material": "DAP-3",
+        "exp_m_s": 8425.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8569.880872736194,
+          "pems_cluster_n2_systems": 8564.276690409612,
+          "pems_cluster_n3_systems": 8569.46659825804
+        },
+        "grand_mean_m_s": 8567.874720467948,
+        "grand_std_m_s": 2.549806667355498,
+        "error_m_s": 142.87472046794755,
+        "abs_error_m_s": 142.87472046794755,
+        "n_clusters": 3
+      },
+      "DAP-4": {
+        "material": "DAP-4",
+        "exp_m_s": 8806.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8472.023502266897,
+          "pems_cluster_n2_systems": 8428.631051602377,
+          "pems_cluster_n3_systems": 8454.371833858226
+        },
+        "grand_mean_m_s": 8451.675462575833,
+        "grand_std_m_s": 17.81720156174142,
+        "error_m_s": -354.3245374241669,
+        "abs_error_m_s": 354.3245374241669,
+        "n_clusters": 3
+      },
+      "DAP-5": {
+        "material": "DAP-5",
+        "exp_m_s": 8534.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8730.223482376914,
+          "pems_cluster_n2_systems": 8677.318836462224,
+          "pems_cluster_n3_systems": 8706.450419742723
+        },
+        "grand_mean_m_s": 8704.664246193954,
+        "grand_std_m_s": 21.635128869494185,
+        "error_m_s": 170.66424619395366,
+        "abs_error_m_s": 170.66424619395366,
+        "n_clusters": 3
+      },
+      "DAP-6": {
+        "material": "DAP-6",
+        "exp_m_s": 9123.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8477.879063133856,
+          "pems_cluster_n2_systems": 8486.354626531303,
+          "pems_cluster_n3_systems": 8476.556876481955
+        },
+        "grand_mean_m_s": 8480.26352204904,
+        "grand_std_m_s": 4.340753371326382,
+        "error_m_s": -642.7364779509608,
+        "abs_error_m_s": 642.7364779509608,
+        "n_clusters": 3
+      },
+      "DAP-7": {
+        "material": "DAP-7",
+        "exp_m_s": 8883.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8417.626618457778,
+          "pems_cluster_n2_systems": 8447.55809241532,
+          "pems_cluster_n3_systems": 8412.780807729736
+        },
+        "grand_mean_m_s": 8425.988506200943,
+        "grand_std_m_s": 15.37976500682053,
+        "error_m_s": -457.01149379905655,
+        "abs_error_m_s": 457.01149379905655,
+        "n_clusters": 3
+      },
+      "DAP-M4": {
+        "material": "DAP-M4",
+        "exp_m_s": 8085.000000000001,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8313.84146376543,
+          "pems_cluster_n2_systems": 8320.032120085629,
+          "pems_cluster_n3_systems": 8313.603530624288
+        },
+        "grand_mean_m_s": 8315.825704825116,
+        "grand_std_m_s": 2.975970435877125,
+        "error_m_s": 230.82570482511528,
+        "abs_error_m_s": 230.82570482511528,
+        "n_clusters": 3
+      }
+    },
+    "non_dap_mae_m_s": 128.61824765626437,
+    "non_dap_rmse_m_s": 204.66135162576316,
+    "n_non_dap_with_exp": 17,
+    "non_dap_material_results": {
+      "DAI-1": {
+        "material": "DAI-1",
+        "exp_m_s": 6438.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6592.387364978758,
+          "pems_cluster_n2_systems": 6602.573542873464,
+          "pems_cluster_n3_systems": 6632.123577308022
+        },
+        "grand_mean_m_s": 6609.028161720082,
+        "grand_std_m_s": 16.85206655795073,
+        "error_m_s": 171.0281617200817,
+        "abs_error_m_s": 171.0281617200817,
+        "n_clusters": 3
+      },
+      "DAI-2": {
+        "material": "DAI-2",
+        "exp_m_s": 6331.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6277.349645126032,
+          "pems_cluster_n2_systems": 6274.764632384067,
+          "pems_cluster_n3_systems": 6312.40516599478
+        },
+        "grand_mean_m_s": 6288.17314783496,
+        "grand_std_m_s": 17.16709256673801,
+        "error_m_s": -42.82685216503978,
+        "abs_error_m_s": 42.82685216503978,
+        "n_clusters": 3
+      },
+      "DAI-4": {
+        "material": "DAI-4",
+        "exp_m_s": 6558.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 6560.116805314521,
+          "pems_cluster_n2_systems": 6526.423283479846,
+          "pems_cluster_n3_systems": 6558.100411840802
+        },
+        "grand_mean_m_s": 6548.213500211724,
+        "grand_std_m_s": 15.42998422070583,
+        "error_m_s": -9.78649978827616,
+        "abs_error_m_s": 9.78649978827616,
+        "n_clusters": 3
+      },
+      "DAI-X1": {
+        "material": "DAI-X1",
+        "exp_m_s": 7070.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7069.887759625645,
+          "pems_cluster_n2_systems": 7007.352503110908,
+          "pems_cluster_n3_systems": 7071.267099194553
+        },
+        "grand_mean_m_s": 7049.502453977036,
+        "grand_std_m_s": 29.809835210595573,
+        "error_m_s": -20.497546022964343,
+        "abs_error_m_s": 20.497546022964343,
+        "n_clusters": 3
+      },
+      "DAN-2": {
+        "material": "DAN-2",
+        "exp_m_s": 7651.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7499.2211281675745,
+          "pems_cluster_n2_systems": 7499.221128394877,
+          "pems_cluster_n3_systems": 7499.2211278142595
+        },
+        "grand_mean_m_s": 7499.22112812557,
+        "grand_std_m_s": 2.3888980727167394e-07,
+        "error_m_s": -151.77887187442957,
+        "abs_error_m_s": 151.77887187442957,
+        "n_clusters": 3
+      },
+      "DAP-O2": {
+        "material": "DAP-O2",
+        "exp_m_s": 8327.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8393.046472514692,
+          "pems_cluster_n2_systems": 8371.474058193942,
+          "pems_cluster_n3_systems": 8379.628614587038
+        },
+        "grand_mean_m_s": 8381.383048431891,
+        "grand_std_m_s": 8.893847817208524,
+        "error_m_s": 54.38304843189144,
+        "abs_error_m_s": 54.38304843189144,
+        "n_clusters": 3
+      },
+      "DAP-O4": {
+        "material": "DAP-O4",
+        "exp_m_s": 8900.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8453.20203880463,
+          "pems_cluster_n2_systems": 8503.121247083147,
+          "pems_cluster_n3_systems": 8469.211911584529
+        },
+        "grand_mean_m_s": 8475.178399157434,
+        "grand_std_m_s": 20.811552388945525,
+        "error_m_s": -424.8216008425661,
+        "abs_error_m_s": 424.8216008425661,
+        "n_clusters": 3
+      },
+      "PAN-2": {
+        "material": "PAN-2",
+        "exp_m_s": 8140.000000000001,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7579.576834677462,
+          "pems_cluster_n2_systems": 7614.391644935268,
+          "pems_cluster_n3_systems": 7579.576834677462
+        },
+        "grand_mean_m_s": 7591.181771430063,
+        "grand_std_m_s": 16.411858946011794,
+        "error_m_s": -548.8182285699377,
+        "abs_error_m_s": 548.8182285699377,
+        "n_clusters": 3
+      },
+      "PAN-H2": {
+        "material": "PAN-H2",
+        "exp_m_s": 7500.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7504.26265401582,
+          "pems_cluster_n2_systems": 7504.26265401582,
+          "pems_cluster_n3_systems": 7504.26265401582
+        },
+        "grand_mean_m_s": 7504.26265401582,
+        "grand_std_m_s": 0.0,
+        "error_m_s": 4.262654015819862,
+        "abs_error_m_s": 4.262654015819862,
+        "n_clusters": 3
+      },
+      "PAN-M2": {
+        "material": "PAN-M2",
+        "exp_m_s": 7200.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 7477.802480570324,
+          "pems_cluster_n2_systems": 7477.802480570324,
+          "pems_cluster_n3_systems": 7477.802480570325
+        },
+        "grand_mean_m_s": 7477.802480570324,
+        "grand_std_m_s": 5.250970108951385e-13,
+        "error_m_s": 277.8024805703244,
+        "abs_error_m_s": 277.8024805703244,
+        "n_clusters": 3
+      },
+      "PAP-1": {
+        "material": "PAP-1",
+        "exp_m_s": 8917.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8917.189872067112,
+          "pems_cluster_n2_systems": 8915.057055507916,
+          "pems_cluster_n3_systems": 8915.057055507916
+        },
+        "grand_mean_m_s": 8915.767994360982,
+        "grand_std_m_s": 1.0054193680233097,
+        "error_m_s": -1.232005639018098,
+        "abs_error_m_s": 1.232005639018098,
+        "n_clusters": 3
+      },
+      "PAP-4": {
+        "material": "PAP-4",
+        "exp_m_s": 8629.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8648.446933373785,
+          "pems_cluster_n2_systems": 8651.461706530405,
+          "pems_cluster_n3_systems": 8631.430502814002
+        },
+        "grand_mean_m_s": 8643.779714239397,
+        "grand_std_m_s": 8.818521471626163,
+        "error_m_s": 14.779714239397435,
+        "abs_error_m_s": 14.779714239397435,
+        "n_clusters": 3
+      },
+      "PAP-5": {
+        "material": "PAP-5",
+        "exp_m_s": 8961.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8960.756217587477,
+          "pems_cluster_n2_systems": 8958.343382556885,
+          "pems_cluster_n3_systems": 8960.756217587477
+        },
+        "grand_mean_m_s": 8959.951939243947,
+        "grand_std_m_s": 1.137421341344394,
+        "error_m_s": -1.0480607560530188,
+        "abs_error_m_s": 1.0480607560530188,
+        "n_clusters": 3
+      },
+      "PAP-H4": {
+        "material": "PAP-H4",
+        "exp_m_s": 8756.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8519.55388254995,
+          "pems_cluster_n2_systems": 8499.105768618983,
+          "pems_cluster_n3_systems": 8503.842818174822
+        },
+        "grand_mean_m_s": 8507.500823114586,
+        "grand_std_m_s": 8.739454252142714,
+        "error_m_s": -248.49917688541427,
+        "abs_error_m_s": 248.49917688541427,
+        "n_clusters": 3
+      },
+      "PAP-H5": {
+        "material": "PAP-H5",
+        "exp_m_s": 8756.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8772.937368793291,
+          "pems_cluster_n2_systems": 8793.98184988107,
+          "pems_cluster_n3_systems": 8774.887204332434
+        },
+        "grand_mean_m_s": 8780.602141002264,
+        "grand_std_m_s": 9.494311346576456,
+        "error_m_s": 24.602141002264034,
+        "abs_error_m_s": 24.602141002264034,
+        "n_clusters": 3
+      },
+      "PAP-M4": {
+        "material": "PAP-M4",
+        "exp_m_s": 8311.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8486.077650900868,
+          "pems_cluster_n2_systems": 8491.004324460366,
+          "pems_cluster_n3_systems": 8500.46744560259
+        },
+        "grand_mean_m_s": 8492.516473654608,
+        "grand_std_m_s": 5.971124644412008,
+        "error_m_s": 181.5164736546085,
+        "abs_error_m_s": 181.5164736546085,
+        "n_clusters": 3
+      },
+      "PAP-M5": {
+        "material": "PAP-M5",
+        "exp_m_s": 8778.0,
+        "per_cluster_means": {
+          "pems_cluster_n1_systems": 8777.970926201862,
+          "pems_cluster_n2_systems": 8804.870620513482,
+          "pems_cluster_n3_systems": 8777.63853521988
+        },
+        "grand_mean_m_s": 8786.826693978408,
+        "grand_std_m_s": 12.759704399491188,
+        "error_m_s": 8.826693978408002,
+        "abs_error_m_s": 8.826693978408002,
+        "n_clusters": 3
+      }
+    }
+  }
+}

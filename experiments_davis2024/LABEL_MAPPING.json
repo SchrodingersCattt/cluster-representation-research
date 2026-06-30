@@ -1,0 +1,56 @@
+{
+  "_comment": "Maps internal experiment codes and analysis codes to manuscript-facing names. Use these labels in figure titles, legends, and captions — never the raw internal codes.",
+
+  "models": {
+    "exp7a":          "Multi-task baseline",
+    "exp7a_lr1e4":    "Multi-task high-LR variant",
+    "exp7b":          "Multi-task auxiliary-head variant",
+    "exp7c":          "Single-task pretrained variant",
+    "exp7d":          "Single-task scratch variant",
+    "exp6v1_allpems": "Multi-task full-data model (v1)",
+    "exp6v2_allpems": "Multi-task full-data model"
+  },
+
+  "mechanisms": {
+    "M0":        "Perturbation robustness analysis",
+    "M1":        "Geometry-scrambling rank-preservation analysis",
+    "M2":        "Uniform scaling sensitivity analysis",
+    "M2-bridge": "Density-in-embedding bridge analysis",
+    "M3":        "Linear probe analysis",
+    "M3b":       "Nonlinear probe analysis",
+    "M4a":       "Embedding compactness and family-clustering analysis",
+    "M4b":       "Site-resolved atomic embedding analysis"
+  },
+
+  "figure_files": {
+    "figure_m0_perturbation_sensitivity.png":  "M0 — Perturbation robustness analysis",
+    "figure_m1_composition_probe.png":         "M1 — Geometry-scrambling rank-preservation analysis",
+    "figure_m2_density_probe_scaled.png":      "M2 — Uniform scaling sensitivity analysis",
+    "figure_m2_distance_scaling.png":          "M2 — Uniform scaling sensitivity analysis (distance)",
+    "figure_m2_embedding_distance.png":        "M2 — Uniform scaling sensitivity analysis (embedding distance)",
+    "figure_m2_head_gradient_alignment.png":   "M2-bridge — Density-in-embedding bridge analysis",
+    "figure_m3_linear_probe.png":              "M3 — Linear probe analysis",
+    "figure_m3b_nonlinear_probe.png":          "M3b — Nonlinear probe analysis",
+    "figure_m4a_embedding_umap.png":           "M4a — Embedding compactness and family-clustering analysis (UMAP)",
+    "figure_m4a_quantitative.png":             "M4a — Embedding compactness and family-clustering analysis (quantitative)",
+    "figure_m4b_anova.png":                    "M4b — Site-resolved atomic embedding analysis (ANOVA)",
+    "figure_m4b_atomic_umap_combined.png":     "M4b — Site-resolved atomic embedding analysis (atomic UMAP, combined)",
+    "figure_m4b_atomic_umap_exp7a.png":        "M4b — Site-resolved atomic embedding analysis (atomic UMAP, multi-task baseline)",
+    "figure_m4b_atomic_umap_exp7c.png":        "M4b — Site-resolved atomic embedding analysis (atomic UMAP, single-task pretrained variant)",
+    "figure_m4b_coupling.png":                 "M4b — Site-resolved atomic embedding analysis (site coupling)",
+    "figure_m4b_pca_anova.png":                "M4b — Site-resolved atomic embedding analysis (PCA ANOVA)",
+    "figure_m4b_site_umap_exp7a.png":          "M4b — Site-resolved atomic embedding analysis (site UMAP, multi-task baseline)",
+    "figure_m4b_site_umap_exp7c.png":          "M4b — Site-resolved atomic embedding analysis (site UMAP, single-task pretrained variant)"
+  },
+
+  "colors": {
+    "exp7a":      "#205C77",
+    "exp7b":      "#657217",
+    "exp7c":      "#931143",
+    "exp7d":      "#474747",
+    "gray":       "#474747",
+    "ref":        "#474747",
+    "mid_gray":   "#D6D6D6",
+    "light_gray": "#F2F2F2"
+  }
+}

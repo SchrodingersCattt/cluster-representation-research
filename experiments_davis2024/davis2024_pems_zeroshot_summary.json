@@ -1,0 +1,134 @@
+{
+  "baselines": {
+    "CHNO-only DPA crystal": {
+      "internal_id": "exp1a",
+      "run_id": "exp1a_crystal_dpa32",
+      "configuration": "DPA3.2-5M, CHNO labels, crystal training input",
+      "checkpoint": "exp1a_crystal_dpa32/model.ckpt-200000.pt",
+      "head": null,
+      "datasets": {
+        "pems_crystal": {
+          "n_samples": 25,
+          "mae_m_s": 1151.3,
+          "median_ae_m_s": 1467.4,
+          "rmse_m_s": 1296.2
+        },
+        "pems_cluster_n1": {
+          "n_samples": 25,
+          "mae_m_s": 6876.6,
+          "median_ae_m_s": 7165.3,
+          "rmse_m_s": 6931.4
+        }
+      }
+    },
+    "CHNO-only DPA molecule": {
+      "internal_id": "exp1b",
+      "run_id": "exp1b_molecule_dpa32",
+      "configuration": "DPA3.2-5M, CHNO labels, molecular training input",
+      "checkpoint": "exp1b_molecule_dpa32/model.ckpt-200000.pt",
+      "head": null,
+      "datasets": {
+        "pems_crystal": {
+          "n_samples": 25,
+          "mae_m_s": 4021.1,
+          "median_ae_m_s": 4128.6,
+          "rmse_m_s": 4138.1
+        },
+        "pems_cluster_n1": {
+          "n_samples": 25,
+          "mae_m_s": 2110.0,
+          "median_ae_m_s": 2174.6,
+          "rmse_m_s": 2234.6
+        }
+      }
+    },
+    "CHNO-only DeepEMs crystal": {
+      "internal_id": "exp3a",
+      "run_id": "exp3a_crystal_deepems",
+      "configuration": "DeepEMs-LAM, CHNO labels, crystal training input",
+      "checkpoint": "exp3a_crystal_deepems/model.ckpt-200000.pt",
+      "head": null,
+      "datasets": {
+        "pems_crystal": {
+          "n_samples": 25,
+          "mae_m_s": 1372.6,
+          "median_ae_m_s": 1736.6,
+          "rmse_m_s": 1533.9
+        },
+        "pems_cluster_n1": {
+          "n_samples": 25,
+          "mae_m_s": 3253.9,
+          "median_ae_m_s": 3562.9,
+          "rmse_m_s": 3330.7
+        }
+      }
+    },
+    "CHNO-only DeepEMs molecule": {
+      "internal_id": "exp3b",
+      "run_id": "exp3b_molecule_deepems",
+      "configuration": "DeepEMs-LAM, CHNO labels, molecular training input",
+      "checkpoint": "exp3b_molecule_deepems/model.ckpt-200000.pt",
+      "head": null,
+      "datasets": {
+        "pems_crystal": {
+          "n_samples": 25,
+          "mae_m_s": 1827.4,
+          "median_ae_m_s": 2171.8,
+          "rmse_m_s": 1995.4
+        },
+        "pems_cluster_n1": {
+          "n_samples": 25,
+          "mae_m_s": 1486.7,
+          "median_ae_m_s": 1743.0,
+          "rmse_m_s": 1630.5
+        }
+      }
+    },
+    "CHNO+DFT+experiment transfer": {
+      "internal_id": "exp4c_kj",
+      "run_id": "exp4c_multitask_deepems_mol_kj",
+      "configuration": "DeepEMs-LAM, CHNO labels + DFT + experimental-property head",
+      "checkpoint": "exp4c_multitask_deepems_mol/model.ckpt-400000.pt",
+      "head": "david2024_vdet_kj",
+      "datasets": {
+        "pems_crystal": {
+          "n_samples": 25,
+          "mae_m_s": 2543.5,
+          "median_ae_m_s": 2943.5,
+          "rmse_m_s": 2683.9
+        },
+        "pems_cluster_n1": {
+          "n_samples": 25,
+          "mae_m_s": 1706.7,
+          "median_ae_m_s": 2069.6,
+          "rmse_m_s": 1853.2
+        }
+      }
+    },
+    "CHNO+DFT transfer": {
+      "internal_id": "exp4d_kj",
+      "run_id": "exp4d_multitask_deepems_mol_kj",
+      "configuration": "DeepEMs-LAM, CHNO labels + DFT",
+      "checkpoint": "exp4d_multitask_deepems_mol/model.ckpt-400000.pt",
+      "head": "david2024_vdet_kj",
+      "datasets": {
+        "pems_crystal": {
+          "n_samples": 25,
+          "mae_m_s": 2364.8,
+          "median_ae_m_s": 2724.6,
+          "rmse_m_s": 2558.9
+        },
+        "pems_cluster_n1": {
+          "n_samples": 25,
+          "mae_m_s": 1417.8,
+          "median_ae_m_s": 1632.1,
+          "rmse_m_s": 1551.8
+        }
+      }
+    }
+  },
+  "datasets": [
+    "pems_crystal",
+    "pems_cluster_n1"
+  ]
+}

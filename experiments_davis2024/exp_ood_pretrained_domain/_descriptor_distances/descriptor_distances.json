@@ -1,0 +1,611 @@
+{
+  "description": "Pretrained descriptor (deepEMS-LAM) distances from PEMs materials to DFT training manifold. Two metrics: knn_mean = mean L2 distance to k=5 nearest DFT systems; pca_resid = PCA reconstruction error (components explaining >=90% variance). pems_cluster = 25 cluster_n1 systems (nopbc, DAC-4 excluded). cif_crystals = same 25 PEM materials as periodic CIFs (DAC-4 excluded). DAP-8 = DFT-covered (dabco A-site). Coverage boundary = DAP-8 max knn_mean distance. Type-map remapping follows _descriptor_infer.py and run_mechanism_analysis.py::extract_descriptor_per_atom().",
+  "model": "./pretrained_model/deepems-lam.pt",
+  "n_dft_systems": 83,
+  "descriptor_dim": 256,
+  "max_frames_per_dft_sys": 5,
+  "knn_k": 5,
+  "pca_n_components": 7,
+  "pca_var_explained": 0.9034248506977018,
+  "coverage_thresholds": {
+    "dap_max_knn": 0.5635490821059878,
+    "dap_median_knn": 0.5427005106092144,
+    "note": "dap_max_knn = max kNN-mean distance of any DAP-8 material to DFT manifold (primary coverage boundary). dap_median_knn = median kNN-mean distance of DAP-8 materials."
+  },
+  "dft_sys_names": [
+    "init.000",
+    "init.001",
+    "init.002",
+    "init.003",
+    "init.004",
+    "init.005",
+    "init.006",
+    "init.007",
+    "init.008",
+    "init.009",
+    "init.010",
+    "init.011",
+    "init.012",
+    "init.013",
+    "init.014",
+    "init.015",
+    "init.016",
+    "init.017",
+    "init.018",
+    "init.019",
+    "init.020",
+    "init.021",
+    "init.022",
+    "init.023",
+    "init.024",
+    "init.025",
+    "init.026",
+    "init.027",
+    "init.028",
+    "init.029",
+    "init.030",
+    "init.031",
+    "init.032",
+    "init.033",
+    "init.034",
+    "init.035",
+    "init.036",
+    "init.037",
+    "init.038",
+    "init.039",
+    "init.040",
+    "init.041",
+    "init.042",
+    "init.043",
+    "init.044",
+    "init.045",
+    "init.046",
+    "init.047",
+    "init.048",
+    "init.049",
+    "init.050",
+    "init.051",
+    "init.052",
+    "init.053",
+    "init.054",
+    "init.055",
+    "init.056",
+    "sys.000",
+    "sys.001",
+    "sys.002",
+    "sys.003",
+    "sys.004",
+    "sys.005",
+    "sys.006",
+    "sys.007",
+    "sys.008",
+    "sys.009",
+    "sys.010",
+    "sys.011",
+    "sys.012",
+    "sys.013",
+    "sys.014",
+    "sys.015",
+    "sys.016",
+    "sys.017",
+    "sys.018",
+    "sys.019",
+    "sys.020",
+    "sys.021",
+    "sys.022",
+    "sys.023",
+    "sys.024",
+    "sys.025"
+  ],
+  "pems_cluster_materials": [
+    "DAI-1",
+    "DAI-2",
+    "DAI-4",
+    "DAI-X1",
+    "DAN-2",
+    "DAP-1",
+    "DAP-2",
+    "DAP-3",
+    "DAP-4",
+    "DAP-5",
+    "DAP-6",
+    "DAP-7",
+    "DAP-M4",
+    "DAP-O2",
+    "DAP-O4",
+    "PAN-2",
+    "PAN-H2",
+    "PAN-M2",
+    "PAP-1",
+    "PAP-4",
+    "PAP-5",
+    "PAP-H4",
+    "PAP-H5",
+    "PAP-M4",
+    "PAP-M5"
+  ],
+  "cif_materials": [
+    "DAI-1",
+    "DAI-2",
+    "DAI-4",
+    "DAI-X1",
+    "DAN-2",
+    "DAP-1",
+    "DAP-2",
+    "DAP-3",
+    "DAP-4",
+    "DAP-5",
+    "DAP-6",
+    "DAP-7",
+    "DAP-M4",
+    "DAP-O2",
+    "DAP-O4",
+    "PAN-2",
+    "PAN-H2",
+    "PAN-M2",
+    "PAP-1",
+    "PAP-4",
+    "PAP-5",
+    "PAP-H4",
+    "PAP-H5",
+    "PAP-M4",
+    "PAP-M5"
+  ],
+  "dap_materials": [
+    "DAP-1",
+    "DAP-2",
+    "DAP-3",
+    "DAP-4",
+    "DAP-5",
+    "DAP-6",
+    "DAP-7",
+    "DAP-M4"
+  ],
+  "pems_cluster_distances": {
+    "DAI-1": {
+      "knn_mean_l2": 0.912733146202811,
+      "knn_min_l2": 0.8907343991197963,
+      "pca_resid": 0.8504405670455367,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "DAI-2": {
+      "knn_mean_l2": 0.8879889278869074,
+      "knn_min_l2": 0.8614643330436409,
+      "pca_resid": 0.8293059104907999,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "DAI-4": {
+      "knn_mean_l2": 0.9093328431340328,
+      "knn_min_l2": 0.887645281838898,
+      "pca_resid": 0.854820910745781,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "DAI-X1": {
+      "knn_mean_l2": 0.9199365201838792,
+      "knn_min_l2": 0.881360239781236,
+      "pca_resid": 0.8334837997693774,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "DAN-2": {
+      "knn_mean_l2": 0.6438312248357878,
+      "knn_min_l2": 0.629979827054101,
+      "pca_resid": 0.6641700172007319,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "DAP-1": {
+      "knn_mean_l2": 0.5113150354077087,
+      "knn_min_l2": 0.48258895961913967,
+      "pca_resid": 0.5391542545183059,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-2": {
+      "knn_mean_l2": 0.5325117120886576,
+      "knn_min_l2": 0.4983345348183347,
+      "pca_resid": 0.5603140506783885,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-3": {
+      "knn_mean_l2": 0.5342852574694812,
+      "knn_min_l2": 0.4948485769886083,
+      "pca_resid": 0.5631738894332643,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-4": {
+      "knn_mean_l2": 0.5361851476022951,
+      "knn_min_l2": 0.5222965141963893,
+      "pca_resid": 0.5595239804159332,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-5": {
+      "knn_mean_l2": 0.5635490821059878,
+      "knn_min_l2": 0.5378879574976688,
+      "pca_resid": 0.5868704536427257,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-6": {
+      "knn_mean_l2": 0.5610731727206902,
+      "knn_min_l2": 0.5399737501623776,
+      "pca_resid": 0.5965139997288026,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-7": {
+      "knn_mean_l2": 0.5598367993875277,
+      "knn_min_l2": 0.539828352185445,
+      "pca_resid": 0.5907202837197765,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-M4": {
+      "knn_mean_l2": 0.5492158736161339,
+      "knn_min_l2": 0.5223851903959853,
+      "pca_resid": 0.5700561738930281,
+      "is_dap": true,
+      "inside_dap_max": true
+    },
+    "DAP-O2": {
+      "knn_mean_l2": 0.5917057534047974,
+      "knn_min_l2": 0.5571174393776105,
+      "pca_resid": 0.6304366414095671,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "DAP-O4": {
+      "knn_mean_l2": 0.6276064695546106,
+      "knn_min_l2": 0.6048682383482143,
+      "pca_resid": 0.6591748979769314,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAN-2": {
+      "knn_mean_l2": 0.5846431705362974,
+      "knn_min_l2": 0.5703060985183201,
+      "pca_resid": 0.5984304089692554,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAN-H2": {
+      "knn_mean_l2": 0.5921719640174506,
+      "knn_min_l2": 0.5848554775039608,
+      "pca_resid": 0.6092284644430462,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAN-M2": {
+      "knn_mean_l2": 0.5793911222423518,
+      "knn_min_l2": 0.570324641723983,
+      "pca_resid": 0.5877516233188168,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAP-1": {
+      "knn_mean_l2": 0.5704807932111591,
+      "knn_min_l2": 0.5421504801729614,
+      "pca_resid": 0.6031945857426901,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAP-4": {
+      "knn_mean_l2": 0.6289084596523139,
+      "knn_min_l2": 0.6028230524429349,
+      "pca_resid": 0.6558267235936374,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAP-5": {
+      "knn_mean_l2": 0.5440077504139467,
+      "knn_min_l2": 0.5187856482951861,
+      "pca_resid": 0.5695589892529614,
+      "is_dap": false,
+      "inside_dap_max": true
+    },
+    "PAP-H4": {
+      "knn_mean_l2": 0.5712589351274076,
+      "knn_min_l2": 0.5496370084407941,
+      "pca_resid": 0.5986824314939039,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAP-H5": {
+      "knn_mean_l2": 0.5740200725346757,
+      "knn_min_l2": 0.5544947881413306,
+      "pca_resid": 0.6108195585814175,
+      "is_dap": false,
+      "inside_dap_max": false
+    },
+    "PAP-M4": {
+      "knn_mean_l2": 0.5506648813904753,
+      "knn_min_l2": 0.5267610423672305,
+      "pca_resid": 0.5755790421899203,
+      "is_dap": false,
+      "inside_dap_max": true
+    },
+    "PAP-M5": {
+      "knn_mean_l2": 0.5490777772802646,
+      "knn_min_l2": 0.5285207410049928,
+      "pca_resid": 0.5824056667843429,
+      "is_dap": false,
+      "inside_dap_max": true
+    }
+  },
+  "cif_distances": {
+    "DAI-1": {
+      "knn_mean_l2": 0.7825176945628424,
+      "pca_resid": 0.7162511302057383,
+      "inside_dap_max": false
+    },
+    "DAI-2": {
+      "knn_mean_l2": 0.7725681114987688,
+      "pca_resid": 0.7121743041529521,
+      "inside_dap_max": false
+    },
+    "DAI-4": {
+      "knn_mean_l2": 0.8178848069747593,
+      "pca_resid": 0.7556044748440633,
+      "inside_dap_max": false
+    },
+    "DAI-X1": {
+      "knn_mean_l2": 0.841154767303993,
+      "pca_resid": 0.7556299546258659,
+      "inside_dap_max": false
+    },
+    "DAN-2": {
+      "knn_mean_l2": 0.411583159006953,
+      "pca_resid": 0.38521941895402906,
+      "inside_dap_max": true
+    },
+    "DAP-1": {
+      "knn_mean_l2": 0.29054135857727614,
+      "pca_resid": 0.2885307364484493,
+      "inside_dap_max": true
+    },
+    "DAP-2": {
+      "knn_mean_l2": 0.28829419277853224,
+      "pca_resid": 0.2851921202875295,
+      "inside_dap_max": true
+    },
+    "DAP-3": {
+      "knn_mean_l2": 0.29111483829114304,
+      "pca_resid": 0.2880405564480753,
+      "inside_dap_max": true
+    },
+    "DAP-4": {
+      "knn_mean_l2": 0.2854544640501694,
+      "pca_resid": 0.2737259611396616,
+      "inside_dap_max": true
+    },
+    "DAP-5": {
+      "knn_mean_l2": 0.29464871127187686,
+      "pca_resid": 0.28239346449951525,
+      "inside_dap_max": true
+    },
+    "DAP-6": {
+      "knn_mean_l2": 0.39131248404729285,
+      "pca_resid": 0.35815895011306664,
+      "inside_dap_max": true
+    },
+    "DAP-7": {
+      "knn_mean_l2": 0.3710272315819272,
+      "pca_resid": 0.3471211898489895,
+      "inside_dap_max": true
+    },
+    "DAP-M4": {
+      "knn_mean_l2": 0.32332201489056434,
+      "pca_resid": 0.32300787332090786,
+      "inside_dap_max": true
+    },
+    "DAP-O2": {
+      "knn_mean_l2": 0.34695555313652204,
+      "pca_resid": 0.332248849694481,
+      "inside_dap_max": true
+    },
+    "DAP-O4": {
+      "knn_mean_l2": 0.4879809263448777,
+      "pca_resid": 0.45064709111911205,
+      "inside_dap_max": true
+    },
+    "PAN-2": {
+      "knn_mean_l2": 0.4218306913432494,
+      "pca_resid": 0.36096220182823663,
+      "inside_dap_max": true
+    },
+    "PAN-H2": {
+      "knn_mean_l2": 0.4172565052745158,
+      "pca_resid": 0.3701112464643971,
+      "inside_dap_max": true
+    },
+    "PAN-M2": {
+      "knn_mean_l2": 0.4028348900270192,
+      "pca_resid": 0.3584598677252368,
+      "inside_dap_max": true
+    },
+    "PAP-1": {
+      "knn_mean_l2": 0.42840924467880637,
+      "pca_resid": 0.38223885726161155,
+      "inside_dap_max": true
+    },
+    "PAP-4": {
+      "knn_mean_l2": 0.5087238668604364,
+      "pca_resid": 0.4675588304971797,
+      "inside_dap_max": true
+    },
+    "PAP-5": {
+      "knn_mean_l2": 0.4131239597158508,
+      "pca_resid": 0.35900870304120946,
+      "inside_dap_max": true
+    },
+    "PAP-H4": {
+      "knn_mean_l2": 0.39033935718645363,
+      "pca_resid": 0.3551913621663684,
+      "inside_dap_max": true
+    },
+    "PAP-H5": {
+      "knn_mean_l2": 0.42722799189563576,
+      "pca_resid": 0.39127938529788236,
+      "inside_dap_max": true
+    },
+    "PAP-M4": {
+      "knn_mean_l2": 0.40130070199178675,
+      "pca_resid": 0.3757098182452599,
+      "inside_dap_max": true
+    },
+    "PAP-M5": {
+      "knn_mean_l2": 0.3915598716558156,
+      "pca_resid": 0.3539172964774837,
+      "inside_dap_max": true
+    }
+  },
+  "threshold_analysis": {
+    "dap_max_knn": {
+      "threshold_value": 0.5635490821059878,
+      "cluster_n_inside": 11,
+      "cluster_n_outside": 14,
+      "cluster_inside_materials": [
+        "DAP-1",
+        "DAP-2",
+        "DAP-3",
+        "DAP-4",
+        "DAP-5",
+        "DAP-6",
+        "DAP-7",
+        "DAP-M4",
+        "PAP-5",
+        "PAP-M4",
+        "PAP-M5"
+      ],
+      "cluster_outside_materials": [
+        "DAI-1",
+        "DAI-2",
+        "DAI-4",
+        "DAI-X1",
+        "DAN-2",
+        "DAP-O2",
+        "DAP-O4",
+        "PAN-2",
+        "PAN-H2",
+        "PAN-M2",
+        "PAP-1",
+        "PAP-4",
+        "PAP-H4",
+        "PAP-H5"
+      ],
+      "cif_n_inside": 21,
+      "cif_n_outside": 4,
+      "cif_inside_materials": [
+        "DAN-2",
+        "DAP-1",
+        "DAP-2",
+        "DAP-3",
+        "DAP-4",
+        "DAP-5",
+        "DAP-6",
+        "DAP-7",
+        "DAP-M4",
+        "DAP-O2",
+        "DAP-O4",
+        "PAN-2",
+        "PAN-H2",
+        "PAN-M2",
+        "PAP-1",
+        "PAP-4",
+        "PAP-5",
+        "PAP-H4",
+        "PAP-H5",
+        "PAP-M4",
+        "PAP-M5"
+      ],
+      "cif_outside_materials": [
+        "DAI-1",
+        "DAI-2",
+        "DAI-4",
+        "DAI-X1"
+      ]
+    },
+    "dap_median_knn": {
+      "threshold_value": 0.5427005106092144,
+      "cluster_n_inside": 4,
+      "cluster_n_outside": 21,
+      "cluster_inside_materials": [
+        "DAP-1",
+        "DAP-2",
+        "DAP-3",
+        "DAP-4"
+      ],
+      "cluster_outside_materials": [
+        "DAI-1",
+        "DAI-2",
+        "DAI-4",
+        "DAI-X1",
+        "DAN-2",
+        "DAP-5",
+        "DAP-6",
+        "DAP-7",
+        "DAP-M4",
+        "DAP-O2",
+        "DAP-O4",
+        "PAN-2",
+        "PAN-H2",
+        "PAN-M2",
+        "PAP-1",
+        "PAP-4",
+        "PAP-5",
+        "PAP-H4",
+        "PAP-H5",
+        "PAP-M4",
+        "PAP-M5"
+      ],
+      "cif_n_inside": 21,
+      "cif_n_outside": 4,
+      "cif_inside_materials": [
+        "DAN-2",
+        "DAP-1",
+        "DAP-2",
+        "DAP-3",
+        "DAP-4",
+        "DAP-5",
+        "DAP-6",
+        "DAP-7",
+        "DAP-M4",
+        "DAP-O2",
+        "DAP-O4",
+        "PAN-2",
+        "PAN-H2",
+        "PAN-M2",
+        "PAP-1",
+        "PAP-4",
+        "PAP-5",
+        "PAP-H4",
+        "PAP-H5",
+        "PAP-M4",
+        "PAP-M5"
+      ],
+      "cif_outside_materials": [
+        "DAI-1",
+        "DAI-2",
+        "DAI-4",
+        "DAI-X1"
+      ]
+    }
+  },
+  "statistics": {
+    "dft_knn_mean_mean": 0.26262224422365177,
+    "dft_knn_mean_std": 0.12721421374284173,
+    "dft_knn_mean_max": 0.5976631751211903,
+    "dap_knn_mean": 0.5434965100498103,
+    "dap_knn_std": 0.01697563394723203,
+    "nondap_knn_mean": 0.6610446948005394,
+    "nondap_knn_std": 0.13938526127887013,
+    "mannwhitney_u": 11.0,
+    "mannwhitney_p_dap_less_nondap": 0.00017382058571989922
+  }
+}

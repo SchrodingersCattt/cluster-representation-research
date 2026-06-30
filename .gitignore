@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Checkpoints & large files
+*.pt
+*.ckpt
+*.lmdb
+*.npz
+*.npy
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Output
+*.png
+*.pdf
+*.eps
+!README.md
+!AGENTS.md
+!MANIFEST.md

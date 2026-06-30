@@ -1,0 +1,59 @@
+{
+  "seed": 42,
+  "num_folds": 5,
+  "num_materials": 17,
+  "all_materials": [
+    "DAI-4",
+    "DAI-X1",
+    "DAN-2",
+    "DAP-2",
+    "DAP-3",
+    "DAP-4",
+    "DAP-5",
+    "DAP-7",
+    "DAP-O2",
+    "DAP-O4",
+    "PAN-2",
+    "PAP-4",
+    "PAP-5",
+    "PAP-H4",
+    "PAP-H5",
+    "PAP-M4",
+    "PAP-M5"
+  ],
+  "folds": {
+    "0": [
+      "DAP-7",
+      "PAN-2",
+      "DAP-4",
+      "DAP-5"
+    ],
+    "1": [
+      "PAP-M4",
+      "PAP-H5",
+      "PAP-H4",
+      "DAP-O4"
+    ],
+    "2": [
+      "DAP-O2",
+      "DAI-X1",
+      "DAN-2"
+    ],
+    "3": [
+      "PAP-5",
+      "PAP-M5",
+      "DAP-3"
+    ],
+    "4": [
+      "PAP-4",
+      "DAI-4",
+      "DAP-2"
+    ]
+  },
+  "cluster_variants": [
+    "pems_cluster_n1_systems",
+    "pems_cluster_n2_systems",
+    "pems_cluster_n3_systems"
+  ],
+  "_comment": "5-fold CV split for PEMs cluster data. Each fold k: train on all variants of folds != k, validate on all variants of fold k."
+}
