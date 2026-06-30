@@ -148,11 +148,5 @@ MIT License. See [LICENSE](LICENSE) for details.
 If you use this code or data, please cite:
 
 ```bibtex
-@article{guo2026cluster,
-  title={Stoichiometric cluster learning for few-shot property prediction
-         of multi-ionic energetic salts},
-  author={Guo, Ming-Yu and Zou, Wei-Jia and Shang, Yu and Zhang, Wei-Xiong},
-  journal={Nature Computational Science},
-  year={2026}
-}
+todo
 ```
