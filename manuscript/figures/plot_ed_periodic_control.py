@@ -16,7 +16,7 @@ from figure_style import CHARCOAL, heatmap_text_color, save_figure, setup_style
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 CROSS_JSON = EXP_DIR / "cross_infer_rep.json"
 OUT = THIS_DIR / "_ed_periodic_control_heatmap"
 
@@ -142,7 +142,7 @@ from figure_style import CHARCOAL, heatmap_text_color, save_figure, setup_style
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 CROSS_JSON = EXP_DIR / "cross_infer_rep.json"
 OUT = THIS_DIR / "_ed_periodic_control_heatmap"
 

@@ -21,7 +21,7 @@ Templates:
 
 Usage:
     python -u \
-        experiments_davis2024/predict_eap4_paph6.py [--exp EXP_NAME]
+        experiments/predict_eap4_paph6.py [--exp EXP_NAME]
 """
 from __future__ import annotations
 
@@ -43,7 +43,7 @@ from molcrys_kit.structures.crystal import MolecularCrystal
 # Paths
 # ---------------------------------------------------------------------------
 ROOT = Path(__file__).resolve().parents[1]
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 CLEANED_CIF_DIR = EXP_DIR / "00_data_prep" / "pems_cleaned_cifs"
 CLUSTER_N1_DIR = EXP_DIR / "00_data_prep" / "pems_cluster_n1_systems"
 CLUSTER_N2_DIR = EXP_DIR / "00_data_prep" / "pems_cluster_n2_systems"

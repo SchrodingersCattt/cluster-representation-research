@@ -3,10 +3,10 @@
 Convert filtered David 2024 SMILES into isolated-molecule DeepMD `deepmd/npy` systems.
 
 Input:
-- [`experiments_davis2024/00_data_prep/filtered_index.json`](experiments_davis2024/00_data_prep/filtered_index.json)
+- [`experiments/00_data_prep/filtered_index.json`](experiments/00_data_prep/filtered_index.json)
 
 Output layout:
-- [`experiments_davis2024/00_data_prep/molecule_systems/<refcode>/`](experiments_davis2024/00_data_prep/molecule_systems)
+- [`experiments/00_data_prep/molecule_systems/<refcode>/`](experiments/00_data_prep/molecule_systems)
   - `nopbc`
   - `type.raw`
   - `type_map.raw`
@@ -19,7 +19,7 @@ Output layout:
 Implementation notes:
 - Molecules are generated from SMILES with RDKit ETKDGv3 + MMFF/UFF optimization.
 - Non-periodic systems use a large 100×100×100 Å box.
-- [`nopbc`](experiments_davis2024/00_data_prep/molecule_systems) marker file is written explicitly.
+- [`nopbc`](experiments/00_data_prep/molecule_systems) marker file is written explicitly.
 """
 
 from __future__ import annotations
@@ -33,8 +33,8 @@ from rdkit.Chem import AllChem
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FILTERED_INDEX = ROOT / "experiments_davis2024/00_data_prep/filtered_index.json"
-OUT_DIR = ROOT / "experiments_davis2024/00_data_prep/molecule_systems"
+FILTERED_INDEX = ROOT / "experiments/00_data_prep/filtered_index.json"
+OUT_DIR = ROOT / "experiments/00_data_prep/molecule_systems"
 BOX = np.eye(3, dtype=np.float64) * 100.0
 TYPE_MAP = [
     'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',

@@ -2,7 +2,7 @@
   "pretrained_domain_mt": {
     "exp_name": "pretrained_domain_mt",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_pretrained_domain/pretrained_domain_mt/model.ckpt.pt",
+    "ckpt_path": "experiments/exp_ood_pretrained_domain/pretrained_domain_mt/model.ckpt.pt",
     "train_materials": [
       "DAI-1",
       "DAI-2",
@@ -398,7 +398,7 @@
   "pretrained_domain_st": {
     "exp_name": "pretrained_domain_st",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_pretrained_domain/pretrained_domain_st/model.ckpt.pt",
+    "ckpt_path": "experiments/exp_ood_pretrained_domain/pretrained_domain_st/model.ckpt.pt",
     "train_materials": [
       "DAI-1",
       "DAI-2",
@@ -794,7 +794,7 @@
   "pretrained_domain_sd": {
     "exp_name": "pretrained_domain_sd",
     "config_type": "sd",
-    "ckpt_path": "experiments_davis2024/exp_ood_pretrained_domain/pretrained_domain_sd/model.ckpt.pt",
+    "ckpt_path": "experiments/exp_ood_pretrained_domain/pretrained_domain_sd/model.ckpt.pt",
     "train_materials": [
       "DAI-1",
       "DAI-2",

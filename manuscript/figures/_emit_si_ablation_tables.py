@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Emit the LaTeX bodies for the SI hyperparameter / robustness ablation tables.
 
-Reads `experiments_davis2024/ablation_full_eval_summary.json` and prints two
+Reads `experiments/ablation_full_eval_summary.json` and prints two
 tabular bodies that are pasted (not auto-generated) into `manuscript/SI.tex`
 under \\section{Training-variant ablations}, \\subsection*{Hyperparameter and
 split-robustness ablations}:
@@ -18,7 +18,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SUMMARY = ROOT / "experiments_davis2024" / "ablation_full_eval_summary.json"
+SUMMARY = ROOT / "experiments" / "ablation_full_eval_summary.json"
 
 ROW_ORDER: list[tuple[str, list[tuple[str, str]]]] = [
     ("Default learning-rate baselines", [

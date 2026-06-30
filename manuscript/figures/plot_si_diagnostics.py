@@ -21,7 +21,7 @@ from figure_style import (
 
 THIS = Path(__file__).resolve().parent
 ROOT = THIS.parent.parent
-EXP = ROOT / "experiments_davis2024"
+EXP = ROOT / "experiments"
 MECH = EXP / "mechanism_results"
 OUT = THIS / "_si_diagnostics"
 MODEL_LABELS = {"exp7a":"MT-FT", "exp7c":"ST-FT", "exp7d":"ST-TFS"}

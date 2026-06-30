@@ -36,7 +36,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 DATA_DIR = ROOT / "data" / "pems"
 PEMS_CSV = DATA_DIR / "pems.csv"
 CLUSTER_N1_DIR = EXP_DIR / "00_data_prep" / "pems_cluster_n1_systems"

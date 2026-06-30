@@ -4,7 +4,7 @@
     "split_id": "loso_a_dabco",
     "level": "A",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_dabco_mt/model.ckpt-200000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_dabco_mt/model.ckpt-200000.pt",
     "val_materials": [
       "DAI-1",
       "DAI-2",
@@ -257,7 +257,7 @@
     "split_id": "loso_a_dabco",
     "level": "A",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_dabco_st/model.ckpt-100000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_dabco_st/model.ckpt-100000.pt",
     "val_materials": [
       "DAI-1",
       "DAI-2",
@@ -510,7 +510,7 @@
     "split_id": "loso_a_hpz",
     "level": "A",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_hpz_mt/model.ckpt-440000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_hpz_mt/model.ckpt-440000.pt",
     "val_materials": [
       "PAN-H2",
       "PAP-H4",
@@ -595,7 +595,7 @@
     "split_id": "loso_a_hpz",
     "level": "A",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_hpz_st/model.ckpt-220000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_hpz_st/model.ckpt-220000.pt",
     "val_materials": [
       "PAN-H2",
       "PAP-H4",
@@ -680,7 +680,7 @@
     "split_id": "loso_a_mepz",
     "level": "A",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_mepz_mt/model.ckpt-440000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_mepz_mt/model.ckpt-440000.pt",
     "val_materials": [
       "PAN-M2",
       "PAP-M4",
@@ -765,7 +765,7 @@
     "split_id": "loso_a_mepz",
     "level": "A",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_mepz_st/model.ckpt-220000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_mepz_st/model.ckpt-220000.pt",
     "val_materials": [
       "PAN-M2",
       "PAP-M4",
@@ -850,7 +850,7 @@
     "split_id": "loso_a_pz",
     "level": "A",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_pz_mt/model.ckpt-420000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_pz_mt/model.ckpt-420000.pt",
     "val_materials": [
       "PAN-2",
       "PAP-1",
@@ -949,7 +949,7 @@
     "split_id": "loso_a_pz",
     "level": "A",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_a_pz_st/model.ckpt-210000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_a_pz_st/model.ckpt-210000.pt",
     "val_materials": [
       "PAN-2",
       "PAP-1",
@@ -1048,7 +1048,7 @@
     "split_id": "loso_b_ag",
     "level": "B",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_ag_mt/model.ckpt-420000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_ag_mt/model.ckpt-420000.pt",
     "val_materials": [
       "DAP-5",
       "PAP-5",
@@ -1147,7 +1147,7 @@
     "split_id": "loso_b_ag",
     "level": "B",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_ag_st/model.ckpt-210000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_ag_st/model.ckpt-210000.pt",
     "val_materials": [
       "DAP-5",
       "PAP-5",
@@ -1246,7 +1246,7 @@
     "split_id": "loso_b_k",
     "level": "B",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_k_mt/model.ckpt-360000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_k_mt/model.ckpt-360000.pt",
     "val_materials": [
       "DAI-2",
       "DAN-2",
@@ -1387,7 +1387,7 @@
     "split_id": "loso_b_k",
     "level": "B",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_k_st/model.ckpt-180000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_k_st/model.ckpt-180000.pt",
     "val_materials": [
       "DAI-2",
       "DAN-2",
@@ -1528,7 +1528,7 @@
     "split_id": "loso_b_na",
     "level": "B",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_na_mt/model.ckpt-420000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_na_mt/model.ckpt-420000.pt",
     "val_materials": [
       "DAI-1",
       "DAP-1",
@@ -1627,7 +1627,7 @@
     "split_id": "loso_b_na",
     "level": "B",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_na_st/model.ckpt-210000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_na_st/model.ckpt-210000.pt",
     "val_materials": [
       "DAI-1",
       "DAP-1",
@@ -1726,7 +1726,7 @@
     "split_id": "loso_b_nh4",
     "level": "B",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_nh4_mt/model.ckpt-380000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_nh4_mt/model.ckpt-380000.pt",
     "val_materials": [
       "DAI-4",
       "DAP-4",
@@ -1853,7 +1853,7 @@
     "split_id": "loso_b_nh4",
     "level": "B",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_b_nh4_st/model.ckpt-190000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_b_nh4_st/model.ckpt-190000.pt",
     "val_materials": [
       "DAI-4",
       "DAP-4",
@@ -1980,7 +1980,7 @@
     "split_id": "loso_x_clo4",
     "level": "X",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_x_clo4_mt/model.ckpt-160000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_x_clo4_mt/model.ckpt-160000.pt",
     "val_materials": [
       "DAP-1",
       "DAP-2",
@@ -2261,7 +2261,7 @@
     "split_id": "loso_x_clo4",
     "level": "X",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_x_clo4_st/model.ckpt-80000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_x_clo4_st/model.ckpt-80000.pt",
     "val_materials": [
       "DAP-1",
       "DAP-2",
@@ -2542,7 +2542,7 @@
     "split_id": "loso_x_io4",
     "level": "X",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_x_io4_mt/model.ckpt-420000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_x_io4_mt/model.ckpt-420000.pt",
     "val_materials": [
       "DAI-1",
       "DAI-2",
@@ -2641,7 +2641,7 @@
     "split_id": "loso_x_io4",
     "level": "X",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_x_io4_st/model.ckpt-210000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_x_io4_st/model.ckpt-210000.pt",
     "val_materials": [
       "DAI-1",
       "DAI-2",
@@ -2740,7 +2740,7 @@
     "split_id": "loso_x_no3",
     "level": "X",
     "config_type": "mt",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_x_no3_mt/model.ckpt-420000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_x_no3_mt/model.ckpt-420000.pt",
     "val_materials": [
       "DAN-2",
       "PAN-2",
@@ -2839,7 +2839,7 @@
     "split_id": "loso_x_no3",
     "level": "X",
     "config_type": "st",
-    "ckpt_path": "experiments_davis2024/exp_ood_loso/loso_x_no3_st/model.ckpt-210000.pt",
+    "ckpt_path": "experiments/exp_ood_loso/loso_x_no3_st/model.ckpt-210000.pt",
     "val_materials": [
       "DAN-2",
       "PAN-2",

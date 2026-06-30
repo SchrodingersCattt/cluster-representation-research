@@ -1,6 +1,6 @@
 {
   "config": {
-    "input": "experiments_davis2024/pems_predictions.json",
+    "input": "experiments/pems_predictions.json",
     "n_boot": 10000,
     "seed": 42,
     "resample_unit": "per-material absolute error (mean across 3 held-out cluster variants)",

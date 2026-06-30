@@ -2,15 +2,15 @@
 """
 Create experimental detonation-velocity validation systems for Exp2.
 
-These are crystal-structure systems whose [`property.npy`](experiments_davis2024/00_data_prep/exp_val_systems)
+These are crystal-structure systems whose [`property.npy`](experiments/00_data_prep/exp_val_systems)
 contains experimental detonation velocity instead of calculated detonation velocity.
 
 Inputs:
 - [`data/davis2024/energetic_crystals_dataset/energetic_crystals.npz`](data/davis2024/energetic_crystals_dataset/energetic_crystals.npz)
-- [`experiments_davis2024/00_data_prep/filtered_index.json`](experiments_davis2024/00_data_prep/filtered_index.json)
+- [`experiments/00_data_prep/filtered_index.json`](experiments/00_data_prep/filtered_index.json)
 
 Output:
-- [`experiments_davis2024/00_data_prep/exp_val_systems/`](experiments_davis2024/00_data_prep/exp_val_systems)
+- [`experiments/00_data_prep/exp_val_systems/`](experiments/00_data_prep/exp_val_systems)
 """
 
 from __future__ import annotations
@@ -24,8 +24,8 @@ from pymatgen.core import Lattice, Structure
 
 ROOT = Path(__file__).resolve().parents[2]
 NPZ_PATH = ROOT / "data/davis2024/energetic_crystals_dataset/energetic_crystals.npz"
-FILTERED_INDEX = ROOT / "experiments_davis2024/00_data_prep/filtered_index.json"
-OUT_DIR = ROOT / "experiments_davis2024/00_data_prep/exp_val_systems"
+FILTERED_INDEX = ROOT / "experiments/00_data_prep/filtered_index.json"
+OUT_DIR = ROOT / "experiments/00_data_prep/exp_val_systems"
 TYPE_MAP = [
     'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',
     'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y',

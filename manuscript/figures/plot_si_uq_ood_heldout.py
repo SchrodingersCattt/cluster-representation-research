@@ -17,7 +17,7 @@ from _uq_lollipop import draw_lollipop
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 SUMMARY_JSON = EXP_DIR / "ablation_full_eval_summary.json"
 OUT = THIS_DIR / "_si_uq_ood_heldout"
 

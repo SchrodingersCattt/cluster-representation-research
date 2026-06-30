@@ -83,7 +83,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PEMS_DIR = ROOT / "data" / "pems"
 CSV_PATH = PEMS_DIR / "pems.csv"
 CIF_DIR = PEMS_DIR / "confs"
-OUT_ROOT = ROOT / "experiments_davis2024" / "00_data_prep"
+OUT_ROOT = ROOT / "experiments" / "00_data_prep"
 
 CRYSTAL_OUT_DIR = OUT_ROOT / "pems_crystal_systems"
 CLUSTER_DIRS = {

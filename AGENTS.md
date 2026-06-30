@@ -96,13 +96,13 @@ pred = model.eval(coords=coords, atom_types=atom_types_for_model, cells=None)
 
 | File | Purpose |
 |------|---------|
-| `experiments_davis2024/00_data_prep/prep_pems_npy.py` | Cluster build pipeline |
-| `experiments_davis2024/infer_pems.py` | Unified inference (IND CV, OOD, UQ) |
-| `experiments_davis2024/cross_infer_rep.py` | Cluster vs crystal MAE |
-| `experiments_davis2024/predict_abx_grid.py` | ABX combinatorial grid |
-| `experiments_davis2024/run_mechanism_analysis.py` | M-series dispatcher |
-| `experiments_davis2024/mechanism/` | Mechanism analysis subpackage |
-| `experiments_davis2024/paper_plot_style.py` | Publication figure style |
+| `experiments/00_data_prep/prep_pems_npy.py` | Cluster build pipeline |
+| `experiments/infer_pems.py` | Unified inference (IND CV, OOD, UQ) |
+| `experiments/cross_infer_rep.py` | Cluster vs crystal MAE |
+| `experiments/predict_abx_grid.py` | ABX combinatorial grid |
+| `experiments/run_mechanism_analysis.py` | M-series dispatcher |
+| `experiments/mechanism/` | Mechanism analysis subpackage |
+| `experiments/paper_plot_style.py` | Publication figure style |
 | `manuscript/figures/plot_fig{3,4,5}.py` | Main figure scripts |
 | `data/pems/mix.csv` | Ground truth (39 materials) |
 

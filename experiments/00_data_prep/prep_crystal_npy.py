@@ -4,10 +4,10 @@ Convert filtered David 2024 crystal structures into DeepMD `deepmd/npy` systems.
 
 Input:
 - [`data/davis2024/energetic_crystals_dataset/energetic_crystals.npz`](data/davis2024/energetic_crystals_dataset/energetic_crystals.npz)
-- [`experiments_davis2024/00_data_prep/filtered_index.json`](experiments_davis2024/00_data_prep/filtered_index.json)
+- [`experiments/00_data_prep/filtered_index.json`](experiments/00_data_prep/filtered_index.json)
 
 Output layout:
-- [`experiments_davis2024/00_data_prep/crystal_systems/<refcode>/`](experiments_davis2024/00_data_prep/crystal_systems)
+- [`experiments/00_data_prep/crystal_systems/<refcode>/`](experiments/00_data_prep/crystal_systems)
   - `type.raw`
   - `type_map.raw`
   - `set.000/coord.npy`
@@ -17,7 +17,7 @@ Output layout:
   - `set.000/property.npy`
 
 Notes:
-- Property target is stored as fake energy and then copied to [`property.npy`](experiments_davis2024/00_data_prep/crystal_systems).
+- Property target is stored as fake energy and then copied to [`property.npy`](experiments/00_data_prep/crystal_systems).
 - Forces are zero-filled placeholders.
 """
 
@@ -32,8 +32,8 @@ from pymatgen.core import Lattice, Structure
 
 ROOT = Path(__file__).resolve().parents[2]
 NPZ_PATH = ROOT / "data/davis2024/energetic_crystals_dataset/energetic_crystals.npz"
-FILTERED_INDEX = ROOT / "experiments_davis2024/00_data_prep/filtered_index.json"
-OUT_DIR = ROOT / "experiments_davis2024/00_data_prep/crystal_systems"
+FILTERED_INDEX = ROOT / "experiments/00_data_prep/filtered_index.json"
+OUT_DIR = ROOT / "experiments/00_data_prep/crystal_systems"
 TYPE_MAP = [
     'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',
     'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y',

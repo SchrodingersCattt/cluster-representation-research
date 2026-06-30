@@ -18,7 +18,7 @@ Two stacked panels:
 Sources:
   manuscript/figures/_si_abx4_ood_predictions.json
     -> ABX3-template predictions (newly run, 16 checkpoints x 4 mats x 3 variants)
-  experiments_davis2024/pems_ood_5fold_exp{7a,7c,7d}.json
+  experiments/pems_ood_5fold_exp{7a,7c,7d}.json
     -> own-CIF predictions (cached; 5 folds x 3 cluster variants per material)
 
 Outputs: manuscript/figures/figure_si_abx4_ood.{png,pdf}
@@ -46,7 +46,7 @@ from figure_style import (
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parents[1]
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 
 ABX3_TPL_JSON = THIS_DIR / "_si_abx4_ood_predictions.json"
 

@@ -2,7 +2,7 @@
 
 Public API: each experiment module exposes ``run_mX(output_dir)`` and a
 plotting helper. The CLI dispatcher lives at
-``experiments_davis2024/run_mechanism_analysis.py``.
+``experiments/run_mechanism_analysis.py``.
 
 Layout:
 - runtime         -- mutable runtime state (CKPT_STEP, PLOT_STYLE, ACTIVE_FOLD_IDS)
@@ -20,7 +20,7 @@ Layout:
 
 Public API: each experiment module exposes ``run_mX(output_dir)`` and a
 plotting helper. The CLI dispatcher lives at
-``experiments_davis2024/run_mechanism_analysis.py``.
+``experiments/run_mechanism_analysis.py``.
 
 Layout:
 - runtime         -- mutable runtime state (CKPT_STEP, PLOT_STYLE, ACTIVE_FOLD_IDS)

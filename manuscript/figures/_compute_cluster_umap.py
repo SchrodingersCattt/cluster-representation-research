@@ -15,7 +15,7 @@ from ase.io import read as ase_read
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 DATA_PREP = EXP_DIR / "00_data_prep"
 CLUSTER_N1_DIR = DATA_PREP / "pems_cluster_n1_systems"
 CLUSTER_N1_OOD_DIR = DATA_PREP / "pems_cluster_n1_systems_ood"

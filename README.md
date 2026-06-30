@@ -12,10 +12,10 @@ Code and data for:
 
 | Directory | Contents |
 |-----------|----------|
-| `experiments_davis2024/` | Core inference, data preparation, and mechanism analysis scripts |
-| `experiments_davis2024/mechanism/` | Mechanism analysis subpackage (M0–M5a probes) |
-| `experiments_davis2024/00_data_prep/` | Data preparation pipeline + cleaned CIFs + CV splits |
-| `experiments_davis2024/*.json` | Pre-computed result files consumed by figure scripts |
+| `experiments/` | Core inference, data preparation, and mechanism analysis scripts |
+| `experiments/mechanism/` | Mechanism analysis subpackage (M0–M5a probes) |
+| `experiments/00_data_prep/` | Data preparation pipeline + cleaned CIFs + CV splits |
+| `experiments/*.json` | Pre-computed result files consumed by figure scripts |
 | `manuscript/figures/` | All publication figure scripts (Figures 3–5, SI, ED) |
 | `data/pems/mix.csv` | Full MIX dataset (39 materials, 25 with experimental Vdet) |
 | `data/pems/confs/` | Original CIF files for MIX materials |
@@ -34,7 +34,7 @@ complete mapping between these codes and the names used in the manuscript**
 
 ### Naming: `davis2024` and `pems`
 
-- The directory `experiments_davis2024/` refers to the Davis et al. (2024)
+- The directory `experiments/` refers to the Davis et al. (2024)
   energetic crystal dataset. The codebase historically used the misspelling
   `david2024`; this has been corrected to `davis2024` in this release. However,
   **model head names embedded in checkpoint files** (e.g., `david2024_vdet_kj`)
@@ -87,7 +87,7 @@ pip install molcrys-kit  # or install from source
 ### 1. Data preparation
 
 ```bash
-cd experiments_davis2024/00_data_prep
+cd experiments/00_data_prep
 python prep_pems_npy.py          # Build cluster + crystal training systems
 python prep_crystal_npy.py       # Build Davis2024 crystal systems
 ```
@@ -95,7 +95,7 @@ python prep_crystal_npy.py       # Build Davis2024 crystal systems
 ### 2. Training (requires DeepMD-kit)
 
 ```bash
-cd experiments_davis2024/exp7a_fold0  # Example: multi-task baseline, fold 0
+cd experiments/exp7a_fold0  # Example: multi-task baseline, fold 0
 dp --pt train input.json --finetune deepems-lam.pt
 ```
 
@@ -105,7 +105,7 @@ repository alongside each model checkpoint.
 ### 3. Inference
 
 ```bash
-cd experiments_davis2024
+cd experiments
 python infer_pems.py cv           # 5-fold cross-validation
 python infer_pems.py ood          # OOD ensemble predictions
 python predict_abx_grid.py       # ABX combinatorial grid
@@ -131,7 +131,7 @@ python plot_fig5.py               # Figure 5: OOD predictions + synthesis
 ├── data/pems/
 │   ├── mix.csv                    # 39 materials (ground truth)
 │   └── confs/                     # Original CIF files
-├── experiments_davis2024/
+├── experiments/
 │   ├── infer_pems.py              # Unified PEMs inference
 │   ├── predict_abx_grid.py        # ABX combinatorial grid
 │   ├── run_mechanism_analysis.py   # Mechanism analysis dispatcher

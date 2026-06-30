@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-# experiments_davis2024/mechanism/paths.py -> experiments_davis2024/
+# experiments/mechanism/paths.py -> experiments/
 ROOT = Path(__file__).resolve().parent.parent
 DATA_ROOT = ROOT / "00_data_prep"
 MECHANISM_DIR = DATA_ROOT / "pems_mechanism_systems"

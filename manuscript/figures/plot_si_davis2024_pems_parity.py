@@ -15,7 +15,7 @@ from figure_style import CHARCOAL, FAINT_GRID, MID_GRAY_DARK, save_figure, setup
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 PRED_JSON = EXP_DIR / "davis2024_pems_zeroshot_predictions.json"
 SUMMARY_JSON = EXP_DIR / "davis2024_pems_zeroshot_summary.json"
 OUT = THIS_DIR / "_si_davis2024_pems_parity"

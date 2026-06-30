@@ -82,10 +82,10 @@ plt.rcParams.update({
 
 # ---- Paths ---------------------------------------------------------------
 TRN_CIF_BASE = os.path.join(
-    REPO_ROOT, "experiments_davis2024", "00_data_prep", "pems_cluster_cifs",
+    REPO_ROOT, "experiments", "00_data_prep", "pems_cluster_cifs",
 )
 OOD_CIF_BASE = os.path.join(
-    REPO_ROOT, "experiments_davis2024", "00_data_prep", "pems_cluster_cifs_ood",
+    REPO_ROOT, "experiments", "00_data_prep", "pems_cluster_cifs_ood",
 )
 
 TRN_MATERIALS = [
@@ -357,7 +357,7 @@ def ood_cif_path(material, variant):
 def _load_degenerate_pairs():
     """Return {material: set_of_pair_strings} from pems_manifest.json."""
     manifest_path = os.path.join(
-        REPO_ROOT, "experiments_davis2024", "00_data_prep", "pems_manifest.json"
+        REPO_ROOT, "experiments", "00_data_prep", "pems_manifest.json"
     )
     try:
         import json

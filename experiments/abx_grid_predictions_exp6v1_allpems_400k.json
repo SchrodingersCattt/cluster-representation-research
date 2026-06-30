@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "checkpoint": "experiments_davis2024/exp6v1_allpems/model.ckpt-400000.pt",
+    "checkpoint": "experiments/exp6v1_allpems/model.ckpt-400000.pt",
     "head": "pems_vdet_kj",
     "timestamp": "2026-04-21T16:37:52.183844+00:00",
     "wall_time_seconds": 11.1,

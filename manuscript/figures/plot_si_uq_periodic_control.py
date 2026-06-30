@@ -17,7 +17,7 @@ from _uq_lollipop import draw_lollipop
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 CROSS_JSON = EXP_DIR / "cross_infer_rep.json"
 OUT = THIS_DIR / "_si_uq_periodic_control"
 

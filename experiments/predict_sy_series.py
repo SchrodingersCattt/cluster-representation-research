@@ -15,11 +15,11 @@ Prediction modes:
   2. SY template (A-site substitution): HPEP, PEP, MPEP (9 clusters each)
 
 Cluster CIFs are saved to:
-  experiments_davis2024/00_data_prep/pems_cluster_cifs_ood/
+  experiments/00_data_prep/pems_cluster_cifs_ood/
 
 Usage:
     python -u \\
-        experiments_davis2024/predict_sy_series.py [--exp EXP_NAME] [--use-exp7a-folds]
+        experiments/predict_sy_series.py [--exp EXP_NAME] [--use-exp7a-folds]
 """
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ from molcrys_kit.structures.crystal import MolecularCrystal
 # Paths
 # ---------------------------------------------------------------------------
 ROOT = Path(__file__).resolve().parents[1]
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 CLEANED_CIF_DIR = EXP_DIR / "00_data_prep" / "pems_cleaned_cifs"
 CLUSTER_CIF_OOD_DIR = EXP_DIR / "00_data_prep" / "pems_cluster_cifs_ood"
 CLUSTER_N1_DIR = EXP_DIR / "00_data_prep" / "pems_cluster_n1_systems"

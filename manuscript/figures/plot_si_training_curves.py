@@ -2,7 +2,7 @@
 """Fig S4 — training curves for all five folds of every adaptation variant.
 
 Mirrors the EMA smoothing (alpha = 0.01) used by
-``experiments_davis2024/plot_lcurves.py`` so the SI figure matches what the
+``experiments/plot_lcurves.py`` so the SI figure matches what the
 training-side audit notebooks already show.
 """
 from __future__ import annotations
@@ -16,7 +16,7 @@ from figure_style import TRAIN_COLOR as CANONICAL_TRAIN_COLOR, VALIDATION_COLOR,
 
 THIS = Path(__file__).resolve().parent
 ROOT = THIS.parent.parent
-EXP = ROOT / "experiments_davis2024"
+EXP = ROOT / "experiments"
 OUT = THIS / "_si_training_curves"
 
 VARIANTS = [

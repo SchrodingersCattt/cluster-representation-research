@@ -18,7 +18,7 @@ import pandas as pd
 
 THIS = Path(__file__).resolve().parent
 ROOT = THIS.parent.parent
-EXP = ROOT / "experiments_davis2024"
+EXP = ROOT / "experiments"
 DATA_CSV = ROOT / "data" / "pems" / "pems.csv"
 LOSO_JSON = EXP / "exp_ood_loso" / "loso_results_summary.json"
 ANOVA_JSON = EXP / "mechanism_results" / "mechanism_m4b_results.json"

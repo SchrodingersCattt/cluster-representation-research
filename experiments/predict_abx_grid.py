@@ -16,7 +16,7 @@ Usage:
     python predict_abx_grid.py --exp exp5v1_fold0
 
     # Use a specific checkpoint file
-    python predict_abx_grid.py --ckpt experiments_davis2024/exp5v1_fold0/model.ckpt-100000.pt
+    python predict_abx_grid.py --ckpt experiments/exp5v1_fold0/model.ckpt-100000.pt
 
     # Skip inference, only re-plot from cached results
     python predict_abx_grid.py --plot-only

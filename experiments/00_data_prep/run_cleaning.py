@@ -28,7 +28,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data" / "davis2024" / "energetic_crystals_dataset"
 NPZ_PATH = DATA_DIR / "energetic_crystals.npz"
-PREP_DIR = ROOT / "experiments_davis2024" / "00_data_prep"
+PREP_DIR = ROOT / "experiments" / "00_data_prep"
 FILTERED_INDEX = PREP_DIR / "filtered_index.json"
 OUTPUT_DIR = PREP_DIR
 

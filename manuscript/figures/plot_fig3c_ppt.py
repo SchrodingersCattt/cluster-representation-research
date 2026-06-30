@@ -18,7 +18,7 @@ import numpy as np
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO_ROOT = THIS_DIR.parent.parent
-EXP_DIR = REPO_ROOT / "experiments_davis2024"
+EXP_DIR = REPO_ROOT / "experiments"
 OOD_HELDOUT_PATH = EXP_DIR / "pems_ood_heldout_exp7_all.json"
 OUT_PATH = THIS_DIR / "_ppt_figure3c.png"
 

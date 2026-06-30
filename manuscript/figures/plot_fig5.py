@@ -60,7 +60,7 @@ warnings.filterwarnings(
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
 ABX4_DATA_DIR = ROOT / "ABX4_expdata"
-EXP_DIR = ROOT / "experiments_davis2024"
+EXP_DIR = ROOT / "experiments"
 FIGURES_HELPER_DIR = ABX4_DATA_DIR / "_figures"
 PEMS_DATA_ROOT = ROOT / "data" / "pems"
 ALT_DATA_PERO_ROOT = ROOT.parent / "data_pero"
@@ -150,7 +150,7 @@ ABX4_SITES = {
 }
 
 # Reference / experimental constants only. Model predictions (D_pred, D_pred_std)
-# are loaded at runtime from experiments_davis2024/pems_ood_5fold_exp7a.json
+# are loaded at runtime from experiments/pems_ood_5fold_exp7a.json
 # via _load_v3_ensemble_predictions() and injected into this dict in main().
 NEW_MATERIALS = {
     "PEP": {
@@ -3361,7 +3361,7 @@ def _load_v3_ensemble_predictions(
     if not json_path.exists():
         raise FileNotFoundError(
             f"Required v3 ensemble JSON missing: {json_path}\n"
-            "Re-run experiments_davis2024/infer_pems.py to regenerate."
+            "Re-run experiments/infer_pems.py to regenerate."
         )
     with json_path.open("r", encoding="utf-8") as handle:
         records = json.load(handle)

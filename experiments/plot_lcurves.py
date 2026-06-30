@@ -7,7 +7,7 @@ Handles single-task lcurve files plus multi-head DeePMD logs by parsing the
 header row to find the property head that actually has validation metrics.
 Log-log scale, EMA smoothed, tiled subplots.
 
-Output: [`experiments_davis2024/training_curves.png`](experiments_davis2024/training_curves.png)
+Output: [`experiments/training_curves.png`](experiments/training_curves.png)
 """
 from __future__ import annotations
 

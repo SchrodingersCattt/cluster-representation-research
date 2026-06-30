@@ -45,7 +45,7 @@ DATA_CSV  = REPO_ROOT / "data" / "pems" / "pems.csv"
 OUT_DIR   = Path(__file__).resolve().parent
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-sys.path.insert(0, str(REPO_ROOT / "experiments_davis2024"))
+sys.path.insert(0, str(REPO_ROOT / "experiments"))
 from paper_plot_style import setup_nature_style, style_axes, save_png_pdf
 
 # ---------------------------------------------------------------------------

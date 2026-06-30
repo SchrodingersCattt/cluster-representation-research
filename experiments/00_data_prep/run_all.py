@@ -3,15 +3,15 @@
 Run the David 2024 experiment preparation pipeline in order.
 
 Steps:
-1. [`inspect_dataset_and_models.py`](experiments_davis2024/00_data_prep/inspect_dataset_and_models.py)
-2. [`build_filtered_index.py`](experiments_davis2024/00_data_prep/build_filtered_index.py)
-3. [`run_cleaning.py`](experiments_davis2024/00_data_prep/run_cleaning.py) — removes >500 atoms, close contacts, missing H
-4. [`prep_crystal_npy.py`](experiments_davis2024/00_data_prep/prep_crystal_npy.py)
-5. [`prep_molecule_npy.py`](experiments_davis2024/00_data_prep/prep_molecule_npy.py)
-6. [`prep_exp_val.py`](experiments_davis2024/00_data_prep/prep_exp_val.py)
-7. [`make_splits.py`](experiments_davis2024/00_data_prep/make_splits.py)
-8. [`gen_inputs.py`](experiments_davis2024/00_data_prep/gen_inputs.py)
-9. [`gen_submit_yaml.py`](experiments_davis2024/00_data_prep/gen_submit_yaml.py)
+1. [`inspect_dataset_and_models.py`](experiments/00_data_prep/inspect_dataset_and_models.py)
+2. [`build_filtered_index.py`](experiments/00_data_prep/build_filtered_index.py)
+3. [`run_cleaning.py`](experiments/00_data_prep/run_cleaning.py) — removes >500 atoms, close contacts, missing H
+4. [`prep_crystal_npy.py`](experiments/00_data_prep/prep_crystal_npy.py)
+5. [`prep_molecule_npy.py`](experiments/00_data_prep/prep_molecule_npy.py)
+6. [`prep_exp_val.py`](experiments/00_data_prep/prep_exp_val.py)
+7. [`make_splits.py`](experiments/00_data_prep/make_splits.py)
+8. [`gen_inputs.py`](experiments/00_data_prep/gen_inputs.py)
+9. [`gen_submit_yaml.py`](experiments/00_data_prep/gen_submit_yaml.py)
 
 Preflight checks:
 - [`rdkit`](https://www.rdkit.org/) is required for molecule filtering/generation.

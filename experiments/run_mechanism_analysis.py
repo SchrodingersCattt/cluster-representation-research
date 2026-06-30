@@ -28,9 +28,9 @@ Experiments:
 
 Usage:
     conda activate dpa3
-    python experiments_davis2024/run_mechanism_analysis.py --experiments m0,m1,m2,m3,m4a
-    python experiments_davis2024/run_mechanism_analysis.py --ckpt-step 400000   # default; -1 = latest
-    python experiments_davis2024/run_mechanism_analysis.py --experiments m1 --skip-inference
+    python experiments/run_mechanism_analysis.py --experiments m0,m1,m2,m3,m4a
+    python experiments/run_mechanism_analysis.py --ckpt-step 400000   # default; -1 = latest
+    python experiments/run_mechanism_analysis.py --experiments m1 --skip-inference
 """
 from __future__ import annotations
 

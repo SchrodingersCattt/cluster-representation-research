@@ -37,7 +37,7 @@ Checkpoint resolution (all subcommands):
   2. highest model.ckpt-*.pt
   3. Error if neither found
 
-Output files (written to experiments_davis2024/):
+Output files (written to experiments/):
   cv      → pems_inference_summary.json, pems_predictions.json
             pems_parity_plots.png/.pdf, pems_ood_heatmap.png/.pdf
             pems_sensitivity_summary.json, pems_sensitivity_heatmap.png/.pdf

@@ -17,7 +17,7 @@ from _uq_lollipop import draw_lollipop
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-EXP_DIR = ROOT / "experiments_davis2024" / "exp_ood_pretrained_domain"
+EXP_DIR = ROOT / "experiments" / "exp_ood_pretrained_domain"
 RESULTS_JSON = EXP_DIR / "pretrained_domain_results.json"
 OUT = THIS_DIR / "_si_uq_pretrained_domain"
 

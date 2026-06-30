@@ -12,7 +12,7 @@ from pathlib import Path
 
 import numpy as np
 
-# paper_plot_style lives at experiments_davis2024/paper_plot_style.py.
+# paper_plot_style lives at experiments/paper_plot_style.py.
 # Modules in this package live one level deeper, so make sure the parent
 # directory is importable when this module is imported.
 _PARENT = str(Path(__file__).resolve().parent.parent)

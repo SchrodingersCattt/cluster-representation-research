@@ -2,7 +2,7 @@
 """Figure 3 -- Why few-shot adaptation works and how well it predicts.
 
 This script rebuilds the manuscript figure directly from refreshed experiment
-outputs under ``experiments_davis2024``.
+outputs under ``experiments``.
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ from scipy.stats import spearmanr
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO_ROOT = THIS_DIR.parent.parent
-EXP_DIR = REPO_ROOT / "experiments_davis2024"
+EXP_DIR = REPO_ROOT / "experiments"
 OUT_PATH = THIS_DIR / "figure3.png"
 SI_DESC_DIST_PATH = THIS_DIR / "figure_si_descriptor_distance.png"
 OOD_HELDOUT_PATH = EXP_DIR / "pems_ood_heldout_exp7_all.json"
@@ -124,7 +124,7 @@ CROSS_LABELS = {
 }
 
 # Refreshed exp4d zero-shot MAE on cleaned PEM clusters. The refresh did not keep a
-# dedicated per-material JSON under experiments_davis2024, so the scalar summary is
+# dedicated per-material JSON under experiments, so the scalar summary is
 # stored directly for the adaptation ladder.
 ZERO_SHOT_MAE_M_S = 1422.6
 
