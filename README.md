@@ -1,12 +1,5 @@
 # Stoichiometric Cluster Learning for Multi-ionic Energetic Salts
 
-Code and data for:
-
-> **Stoichiometric cluster learning for few-shot property prediction of multi-ionic energetic salts**
->
-> Ming-Yu Guo†, Wei-Jia Zou†, Yu Shang\*, Wei-Xiong Zhang\*
->
-> Sun Yat-sen University, Guangzhou
 
 ## What this repository contains
 
