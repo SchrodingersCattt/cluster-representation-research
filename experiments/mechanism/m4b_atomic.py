@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 import matplotlib
@@ -37,7 +38,8 @@ def _build_molecular_crystal(coord: np.ndarray, symbols: list[str]):
     molecules (AGENTS.md warning).
     """
     import sys
-    sys.path.insert(0, "/path/to/MolCrysKit")
+    if os.environ.get("MOLCRYSKIT_ROOT"):
+        sys.path.insert(0, os.environ["MOLCRYSKIT_ROOT"])
     from ase import Atoms as _AseAtoms
     from molcrys_kit.structures.crystal import MolecularCrystal as _MC
     atoms = _AseAtoms(symbols=symbols, positions=coord, cell=np.eye(3) * 100.0, pbc=False)

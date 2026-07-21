@@ -57,11 +57,9 @@ except Exception:
 # ---- crystal_viewer (MatterVis) imports ----------------------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
-CRYSTAL_VIEWER_ROOT = os.path.join(
-    REPO_ROOT, "ABX4_expdata", "crystal_viewer"
-)
-if CRYSTAL_VIEWER_ROOT not in sys.path:
-    sys.path.insert(0, CRYSTAL_VIEWER_ROOT)
+SRC_ROOT = os.path.join(REPO_ROOT, "src")
+if SRC_ROOT not in sys.path:
+    sys.path.insert(0, SRC_ROOT)
 
 from crystal_viewer.presets import DEFAULT_STYLE, deep_merge  # noqa: E402
 from crystal_viewer.renderer import build_figure, uniform_viewport  # noqa: E402

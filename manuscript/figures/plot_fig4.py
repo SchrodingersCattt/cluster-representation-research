@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -310,7 +311,8 @@ def _extract_per_atom_embedding(dp, coord: np.ndarray, symbols: list[str]) -> np
 
 
 def _build_molecular_crystal(coord: np.ndarray, symbols: list[str]):
-    sys.path.insert(0, "/path/to/MolCrysKit")
+    if os.environ.get("MOLCRYSKIT_ROOT"):
+        sys.path.insert(0, os.environ["MOLCRYSKIT_ROOT"])
     from ase import Atoms
     from molcrys_kit.structures.crystal import MolecularCrystal
 

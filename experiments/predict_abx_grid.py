@@ -27,6 +27,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import sys
 import time
 from collections import OrderedDict
@@ -37,7 +38,8 @@ from pathlib import Path
 import numpy as np
 from paper_plot_style import save_png_pdf, setup_nature_style, style_axes
 
-sys.path.insert(0, "/path/to/MolCrysKit")
+if os.environ.get("MOLCRYSKIT_ROOT"):
+    sys.path.insert(0, os.environ["MOLCRYSKIT_ROOT"])
 from molcrys_kit.structures.crystal import MolecularCrystal
 from molcrys_kit.structures.molecule import CrystalMolecule
 from molcrys_kit.operations.molecule_manipulation import MoleculeManipulator, MoleculeClashError
