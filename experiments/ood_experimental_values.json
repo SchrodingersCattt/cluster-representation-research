@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "units": "m/s",
+    "note": "Experimental Vdet overrides / additions for OOD reporting. Values not present or not reliably parsed from data/pems/pems.csv.",
+    "updated": "2026-05-02"
+  },
+  "values_m_s": {
+    "DAC-4": 8430.0,
+    "TAP-2": 8680.0,
+    "DAI-1_0.5 4_0.5": 5156.0,
+    "EAP-4": 8977.0,
+    "SY": 8867.0,
+    "PEP": 9090.0,
+    "MPEP": 8729.0,
+    "HPEP": 8764.0
+  },
+  "sources": {
+    "DAC-4": "data/pems/pems.csv D_km_s=8.43; CSV row has a malformed comma in ref fields, so this file keeps an explicit canonical value.",
+    "TAP-2": "User-provided value on 2026-05-02: 8.68 km/s.",
+    "DAI-1_0.5 4_0.5": "User-provided value on 2026-05-02: 5156 m/s.",
+    "EAP-4": "User-provided value on 2026-05-02: 8.977 km/s.",
+    "SY": "SI ABX4 OOD reference value: 8867 m/s; treated as OOD_heldout because it is not a new compound.",
+    "PEP": "SI ABX4 OOD reference value: 9090 m/s; OOD_new ABX4 series.",
+    "MPEP": "SI ABX4 OOD reference value: 8729 m/s; OOD_new ABX4 series.",
+    "HPEP": "SI ABX4 OOD reference value: 8764 m/s; OOD_new ABX4 series."
+  }
+}

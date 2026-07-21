@@ -1,0 +1,14 @@
+{
+  "PEP": {
+    "measured": "PEP_measured.csv",
+    "simulated": "PEP_simulated.csv"
+  },
+  "MPEP": {
+    "measured": "MPEP_measured.csv",
+    "simulated": "MPEP_simulated.csv"
+  },
+  "HPEP": {
+    "measured": "HPEP_measured.csv",
+    "simulated": "HPEP_simulated.csv"
+  }
+}

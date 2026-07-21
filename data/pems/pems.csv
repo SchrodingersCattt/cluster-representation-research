@@ -1,0 +1,41 @@
+material,A_site,B_site,X_site,D_km_s,p_GPa,FS_N,ref,ref_url,has_cif,ccdc_refcode
+DAC-4,H2dabco2+,NH4+,ClO3-,8.43,32.6,36,Chin. J. Energetic Mater. 2024, 32, 1014,https://doi.org/10.11943/CJEM2024166,Y,
+DAI-1,H2dabco2+,Na+,IO4-,6.438,30.79,,Sci. China Mater. 2023 66 1641,https://doi.org/10.1007/s40843-022-2257-6,Y,
+DAI-2,H2dabco2+,K+,IO4-,6.331,30.88,,Sci. China Mater. 2023 66 1641,https://doi.org/10.1007/s40843-022-2257-6,Y,
+DAI-3,H2dabco2+,Rb+,IO4-,,,,Sci. China Mater. 2023 66 1641,https://doi.org/10.1007/s40843-022-2257-6,Y,
+DAI-4,H2dabco2+,NH4+,IO4-,6.558,30.69,<5,Sci. China Mater. 2023 66 1641,https://doi.org/10.1007/s40843-022-2257-6,Y,
+DAI-X1,H2dabco2+,Na+,H4IO6-,7.07,,,Crystals 2025 15 530,https://doi.org/10.3390/cryst15060530,Y,
+DAN-2,H2dabco2+,K+,NO3-,7.651,23.9,>360,Energ. Mater. Front. 2022 3 122,https://doi.org/10.1016/j.enmf.2022.07.003,Y,BEMBUU
+DAN-4,H2dabco2+,NH4+,NO3-,8.163,25.5,>360,Energ. Mater. Front. 2022 3 122; Sci. Rep. 2025 15 17733,https://doi.org/10.1016/j.enmf.2022.01.002; https://doi.org/10.1038/s41598-025-99700-7,N,
+DAI-1,H2dabco2+,Na+,ClO4-,8.781,36.5,36,Sci. China Mater. 2018 61 1123; CrystEngComm 2018 20 7458,https://doi.org/10.1007/s40843-017-9219-9; https://doi.org/10.1039/C8CE01350K,Y,
+DAP-2,H2dabco2+,K+,ClO4-,8.591,35.2,42,Sci. China Mater. 2018 61 1123; CrystEngComm 2018 20 7458,https://doi.org/10.1007/s40843-017-9219-9; https://doi.org/10.1039/C8CE01350K,Y,
+DAP-3,H2dabco2+,Rb+,ClO4-,8.425,35.1,28,Sci. China Mater. 2018 61 1123,https://doi.org/10.1007/s40843-017-9219-9,Y,
+DAP-4,H2dabco2+,NH4+,ClO4-,8.806,35.2,36,Sci. China Mater. 2018 61 1123; Cryst. Growth Des. 2020 20 1891,https://doi.org/10.1007/s40843-017-9219-9; https://doi.org/10.1021/acs.cgd.9b01592,Y,
+DAP-5,H2dabco2+,Ag+,ClO4-,8.534,37.9,5,Inorg. Chem. 2022 61 4143,https://doi.org/10.1021/acs.inorgchem.1c03958,Y,RATCOI
+DAP-6,H2dabco2+,NH3OH+,ClO4-,9.123,38.1,5,Engineering 2020 6 1013,https://doi.org/10.1016/j.eng.2020.05.018,Y,
+DAP-7,H2dabco2+,NH2NH3+,ClO4-,8.883,35.8,5,Engineering 2020 6 1013,https://doi.org/10.1016/j.eng.2020.05.018,Y,
+DAP-8,H2dabco2+,CH3NH3+,ClO4-,,,,Combust. Explos. Shock Waves 2017 53 319,https://doi.org/10.1134/S0010508217030091,N,
+DAP-H3O,H2dabco2+,H3O+,ClO4-,,,,Cryst. Growth Des. 2018 18 7106,https://doi.org/10.1021/acs.cgd.8b01282,Y,ZIDYET01
+DAP-M4,MeHdabco2+,NH4+,ClO4-,8.085,28.8,10,Cryst. Growth Des. 2020 20 1891,https://doi.org/10.1021/acs.cgd.9b01592,Y,
+DAP-O2,H2odabco2+,K+,ClO4-,8.327,32.5,14,CrystEngComm 2018 20 7458,https://doi.org/10.1039/C8CE01350K,Y,
+DAP-O4,H2odabco2+,NH4+,ClO4-,8.900,35.7,5,Cryst. Growth Des. 2020 20 1891,https://doi.org/10.1021/acs.cgd.9b01592,Y,
+DPE-1,H2dabco2+,Na+/NH4+ (ordered),ClO4-,8.858,38.4,20,Chin. J. Energetic Mater. 2025 33 573,https://doi.org/10.11943/CJEM2025047,N,
+DAI-1_0.5 4_0.5,H2dabco2+,Na+/NH4+ (ordered),IO4-,,,5,Nat. Commun. 2023 14 7765,https://doi.org/10.1038/s41467-023-43320-0,Y,
+PAN-2,H2pz2+,K+,NO3-,8.14,,,Results Eng. 2025 28 107117,https://doi.org/10.1016/j.rineng.2025.107117,Y,KOVFIO01
+PAN-H2,H2hpz2+,K+,NO3-,7.500,,,Results Eng. 2025 28 107117,https://doi.org/10.1016/j.rineng.2025.107117,Y,MUPTOK01
+PAN-M2,MeHpz2+,K+,NO3-,7.200,,,Results Eng. 2025 28 107117,https://doi.org/10.1016/j.rineng.2025.107117,Y,BUVHEJ01
+PAP-1,H2pz2+,Na+,ClO4-,8.917,38.2,5,CrystEngComm 2018 20 7458,https://doi.org/10.1039/C8CE01350K,Y,
+PAP-2,H2pz2+,K+,ClO4-,8.993,40.8,16,Chin. J. Energetic Mater. 2025 33 573,https://doi.org/10.11943/CJEM2025047,N,
+PAP-4,H2pz2+,NH4+,ClO4-,8.629,32.4,,Cryst. Growth Des. 2020 20 1891,https://doi.org/10.1021/acs.cgd.9b01592,Y,
+PAP-5,H2pz2+,Ag+,ClO4-,8.961,42.4,5,Inorg. Chem. 2022 61 4143,https://doi.org/10.1021/acs.inorgchem.1c03958,Y,RATCIC
+PAP-H2,H2hpz2+,K+,ClO4-,8.172,31.1,7,EMF 2020,https://doi.org/10.1021/acs.inorgchem.1c03958,N,
+PAP-H4,H2hpz2+,NH4+,ClO4-,8.756,34.3,6,Cryst. Growth Des. 2020 20 1891,https://doi.org/10.1021/acs.cgd.9b01592,Y,
+PAP-H5,H2hpz2+,Ag+,ClO4-,8.756,39.5,5,Inorg. Chem. 2022 61 4143,https://doi.org/10.1021/acs.inorgchem.1c03958,Y,RATCUO
+PAP-M4,MeHpz2+,NH4+,ClO4-,8.311,30.3,6,Cryst. Growth Des. 2020 20 1891,https://doi.org/10.1021/acs.cgd.9b01592,Y,
+PAP-M5,MeHpz2+,Ag+,ClO4-,8.778,39.7,5,Inorg. Chem. 2022 61 4143,https://doi.org/10.1021/acs.inorgchem.1c03958,Y,RATDAV
+QBP,HQ+,Ba2+,ClO4-,,,144,Inorg. Chem. Front. 2025 12 4645,https://doi.org/10.1039/d5qi00442j,Y,
+TAP-1,Huru+,Na+,ClO4-,,,>200,Adv. Sci. 2025 12 2415680,https://doi.org/10.1002/advs.202415680,Y,VUVFOL
+TAP-2,Huru+,K+,ClO4-,,,>200,Adv. Sci. 2025 12 2415680,https://doi.org/10.1002/advs.202415680,Y,VUVGOM
+TAP-3,Huru+,Rb+,ClO4-,,,>200,Adv. Sci. 2025 12 2415680,https://doi.org/10.1002/advs.202415680,N,
+TAP-4,Huru+,NH4+,ClO4-,9.94,45.1,>200,Adv. Sci. 2025 12 2415680,https://doi.org/10.1002/advs.202415680,Y,NEZYAW01
+,,,,,,,,,,

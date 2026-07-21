@@ -1,0 +1,76 @@
+{
+  "seed": 7,
+  "num_folds": 5,
+  "num_materials": 25,
+  "all_materials": [
+    "DAI-1",
+    "DAI-2",
+    "DAI-4",
+    "DAI-X1",
+    "DAN-2",
+    "DAI-1",
+    "DAP-2",
+    "DAP-3",
+    "DAP-4",
+    "DAP-5",
+    "DAP-6",
+    "DAP-7",
+    "DAP-M4",
+    "DAP-O2",
+    "DAP-O4",
+    "PAN-2",
+    "PAN-H2",
+    "PAN-M2",
+    "PAP-1",
+    "PAP-4",
+    "PAP-5",
+    "PAP-H4",
+    "PAP-H5",
+    "PAP-M4",
+    "PAP-M5"
+  ],
+  "folds": {
+    "0": [
+      "DAP-O2",
+      "PAP-4",
+      "DAI-1",
+      "PAP-H5",
+      "PAP-M4"
+    ],
+    "1": [
+      "PAN-H2",
+      "DAP-3",
+      "PAP-M5",
+      "DAP-5",
+      "DAP-2"
+    ],
+    "2": [
+      "PAN-2",
+      "DAI-1",
+      "PAP-1",
+      "DAP-4",
+      "DAP-O4"
+    ],
+    "3": [
+      "PAP-H4",
+      "DAP-7",
+      "DAI-X1",
+      "PAN-M2",
+      "DAI-4"
+    ],
+    "4": [
+      "DAI-2",
+      "PAP-5",
+      "DAP-M4",
+      "DAN-2",
+      "DAP-6"
+    ]
+  },
+  "cluster_variants": [
+    "pems_cluster_n1_systems",
+    "pems_cluster_n2_systems",
+    "pems_cluster_n3_systems"
+  ],
+  "source": "generated from pems_5fold_splits_v2.json material pool with random.Random(7)",
+  "_comment": "Alternate 5-fold CV split for exp7a/exp7c split-seed ablation. Each fold k: train on all variants of folds != k, validate on all variants of fold k."
+}

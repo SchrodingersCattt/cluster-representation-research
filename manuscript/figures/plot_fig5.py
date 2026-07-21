@@ -2,22 +2,20 @@
 """Figure 5 -- synthesis and validation for the DEP-derived ABX4 branch.
 
 This manuscript-side driver centralizes the assembled Figure 5 workflow under
-`manuscript/figures/` while continuing to read verified wet-lab assets from
-`ABX4_expdata/`.
+`manuscript/figures/` while reading curated release assets from `data/abx4/`
+and reusable visualization modules from `src/`.
 
-Compared with the older `ABX4_expdata/_figures/agg_fig5.py`, this version
-uses the manuscript-side layout and reuses the validated `_figures/` assets
-for the topology/crystal rows while keeping PXRD, detonation comparison,
-thermal summary, and the OB-vs-Vdet landscape in one script.
+The original working `ABX4_expdata/` tree is intentionally not required by
+the code-availability package.
 """
 
 from __future__ import annotations
 
 import csv
 import io
-import importlib.util
 import json
 import math
+import os
 import re
 import sys
 import warnings
@@ -59,31 +57,22 @@ warnings.filterwarnings(
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT = THIS_DIR.parent.parent
-ABX4_DATA_DIR = ROOT / "ABX4_expdata"
+SRC_DIR = ROOT / "src"
 EXP_DIR = ROOT / "experiments"
-FIGURES_HELPER_DIR = ABX4_DATA_DIR / "_figures"
 PEMS_DATA_ROOT = ROOT / "data" / "pems"
-ALT_DATA_PERO_ROOT = ROOT.parent / "data_pero"
-NEW_CIF_DIR = ABX4_DATA_DIR / "confs" / "cleaned"
-TRAIN_PEMS_FALLBACK = ABX4_DATA_DIR / "_figures" / "fig5_train_pems.csv"
-DSC_FILE = ABX4_DATA_DIR / "DSC相变数据" / "DSC相变.xlsx"
-MOLCRYSKIT_ROOT = Path("/path/to/MolCrysKit")
+MOLCRYSKIT_ROOT = Path(os.environ["MOLCRYSKIT_ROOT"]) if os.environ.get("MOLCRYSKIT_ROOT") else None
 
-CRYSTAL_VIEWER_ROOT = ABX4_DATA_DIR / "crystal_viewer"
-
+sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(EXP_DIR))
-if FIGURES_HELPER_DIR.exists():
-    sys.path.insert(0, str(FIGURES_HELPER_DIR))
-if MOLCRYSKIT_ROOT.exists():
+if MOLCRYSKIT_ROOT is not None and MOLCRYSKIT_ROOT.exists():
     sys.path.insert(0, str(MOLCRYSKIT_ROOT))
-if CRYSTAL_VIEWER_ROOT.exists():
-    sys.path.insert(0, str(CRYSTAL_VIEWER_ROOT))
 from paper_plot_style import save_png_pdf, setup_nature_style  # noqa: E402
 
-try:
-    import plot_topology as topology_helpers  # noqa: E402
-except Exception:
-    topology_helpers = None
+from stoich_cluster_learning.data.fig5 import ABX4_CIF_DIR, load_pxrd_specs  # noqa: E402
+from stoich_cluster_learning.viz import polyhedra as fig2d_polyhedra  # noqa: E402
+from stoich_cluster_learning.viz import topology_projection as topology_helpers  # noqa: E402
+
+NEW_CIF_DIR = ABX4_CIF_DIR
 
 # Programmatic figure-QA helpers (see FIGURE_QA.md for the binding rules).
 sys.path.insert(0, str(THIS_DIR))
@@ -245,18 +234,11 @@ TRAINING_MATERIALS = [
 ]
 
 PXRD_SPECS = {
-    "PEP": {
-        "meas": (ABX4_DATA_DIR / "PXRD" / "PEP-PXRD" / "20181108-PEP.txt", 0, 1),
-        "sim": (ABX4_DATA_DIR / "PXRD" / "PEP-PXRD" / "Simulated-PEP.txt", 0, 1),
-    },
-    "MPEP": {
-        "meas": (ABX4_DATA_DIR / "PXRD" / "MPEP-PXRD" / "MPEP.txt", 0, 1),
-        "sim": (ABX4_DATA_DIR / "PXRD" / "MPEP-PXRD" / "MPEP.txt", 2, 3),
-    },
-    "HPEP": {
-        "meas": (ABX4_DATA_DIR / "PXRD" / "HPEP-PXRD" / "20181108-6-HPEP.txt", 0, 1),
-        "sim": (ABX4_DATA_DIR / "PXRD" / "HPEP-PXRD" / "Simulated-HPEP.txt", 0, 1),
-    },
+    name: {
+        "meas": entries["measured"],
+        "sim": entries["simulated"],
+    }
+    for name, entries in load_pxrd_specs().items()
 }
 
 DSC_SHEETS = {
@@ -716,7 +698,6 @@ def _load_train_pems_from_source(table_path: Path, cif_dir: Path) -> list[dict[s
 def load_train_pems_from_sources() -> list[dict[str, float | str]]:
     candidates = [
         (PEMS_DATA_ROOT / "pems.csv", PEMS_DATA_ROOT / "confs"),
-        (ALT_DATA_PERO_ROOT / "pems.csv", ALT_DATA_PERO_ROOT / "confs"),
     ]
     best_rows: list[dict[str, float | str]] = []
     for table_path, cif_dir in candidates:
@@ -733,31 +714,11 @@ def load_train_pems() -> list[dict[str, float | str]]:
     if len(primary_rows) == len(TRAINING_MATERIALS):
         return primary_rows
 
-    if TRAIN_PEMS_FALLBACK.exists():
-        loaded_rows = []
-        with TRAIN_PEMS_FALLBACK.open("r", encoding="utf-8-sig", newline="") as handle:
-            reader = csv.DictReader(handle)
-            for row in reader:
-                name = (row.get("name") or "").strip()
-                formula = (row.get("formula") or "").strip()
-                d_text = (row.get("D_KJ") or "").strip()
-                if not name or not formula or not d_text:
-                    continue
-                try:
-                    d_kj = float(d_text)
-                except ValueError:
-                    continue
-                loaded_rows.append({"name": name, "formula": formula, "D_KJ": d_kj})
-        if loaded_rows:
-            return loaded_rows
-
     return primary_rows
 
 
 def inspect_missing_inputs(train_pems: list[dict[str, float | str]]) -> list[str]:
     missing = []
-    if topology_helpers is None:
-        missing.append("Topology helper import unavailable for panel a redraw.")
     for name, spec in PXRD_SPECS.items():
         for role in ("meas", "sim"):
             path = spec[role][0]
@@ -792,8 +753,6 @@ _TOPOLOGY_BUNDLE_CACHE: dict[str, tuple[object, np.ndarray, list[str]]] = {}
 def _load_topology_bundle(name: str) -> tuple[object, np.ndarray, list[str]]:
     if name in _TOPOLOGY_BUNDLE_CACHE:
         return _TOPOLOGY_BUNDLE_CACHE[name]
-    if topology_helpers is None:
-        raise RuntimeError("plot_topology import unavailable")
     cif_path = NEW_CIF_DIR / f"{name}.cif"
     crys = topology_helpers.read_mol_crystal(str(cif_path))
     sa = topology_helpers.StoichiometryAnalyzer(crys)
@@ -821,8 +780,6 @@ _TOPOLOGY_BUNDLE_CACHE: dict[str, tuple[object, np.ndarray, list[str]]] = {}
 def _load_topology_bundle(name: str) -> tuple[object, np.ndarray, list[str]]:
     if name in _TOPOLOGY_BUNDLE_CACHE:
         return _TOPOLOGY_BUNDLE_CACHE[name]
-    if topology_helpers is None:
-        raise RuntimeError("plot_topology import unavailable")
     cif_path = NEW_CIF_DIR / f"{name}.cif"
     crys = topology_helpers.read_mol_crystal(str(cif_path))
     sa = topology_helpers.StoichiometryAnalyzer(crys)
@@ -1200,8 +1157,6 @@ def _topology_axis_triad(ax: plt.Axes,
 def _topology_projected_axes(name: str) -> tuple[np.ndarray | None, np.ndarray | None]:
     """Return projected in-plane unit vectors for lattice axes shown in the
     topology tile (matching plot_topology's ``pick_layer_proj``)."""
-    if topology_helpers is None:
-        return None, None
     try:
         crys, centroids, point_types = _load_topology_bundle(name)
     except Exception:
@@ -1243,14 +1198,8 @@ def _load_fig2d_polyhedra_module():
     global _FIG2D_POLY_MODULE
     if _FIG2D_POLY_MODULE is not None:
         return _FIG2D_POLY_MODULE
-    module_path = THIS_DIR / "_plot_fig2d_polyhedra.py"
-    spec = importlib.util.spec_from_file_location("_figure5a_fig2d_polyhedra", module_path)
-    if spec is None or spec.loader is None:
-        raise ImportError(f"Cannot load Figure 2d polyhedra renderer from {module_path}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    _FIG2D_POLY_MODULE = module
-    return module
+    _FIG2D_POLY_MODULE = fig2d_polyhedra
+    return _FIG2D_POLY_MODULE
 
 
 def _configure_fig5a_polyhedra_renderer(module) -> None:
@@ -2098,8 +2047,6 @@ def draw_structure_panel(ax: plt.Axes, name: str) -> None:
     _draw_axes_triad_2d(ax)
     ax.set_title(DISPLAY_TITLES[name], pad=1.8, fontsize=10.0, fontweight="bold")
 
-
-CRYSTAL_ROW_IMAGE = FIGURES_HELPER_DIR / "crystal_structures_nolabel.png"
 
 # ── Panel b: formula-unit structure row via crystal_viewer ──────────────────
 STRUCTURE_ROW_ELEV = 18.0      # camera elevation above the xy plane (deg)
