@@ -9,9 +9,12 @@
 | `experiments/mechanism/` | Mechanism analysis subpackage (M0–M5a probes) |
 | `experiments/00_data_prep/` | Data preparation pipeline + cleaned CIFs + CV splits |
 | `experiments/*.json` | Pre-computed result files consumed by figure scripts |
+| `src/` | Reusable release modules, including `crystal_viewer` and visualization utilities |
 | `manuscript/figures/` | All publication figure scripts (Figures 3–5, SI, ED) |
 | `data/pems/mix.csv` | Full MIX dataset (39 materials, 25 with experimental Vdet) |
+| `data/pems/pems.csv` | Compatibility alias used by historical scripts |
 | `data/pems/confs/` | Original CIF files for MIX materials |
+| `data/abx4/` | Curated ABX4 CIF, PXRD, and property assets for Figure 5 |
 | `AGENTS.md` | AI collaboration document (see note below) |
 | `MANIFEST.md` | **Experiment code ↔ manuscript name mapping** |
 
@@ -65,6 +68,19 @@ and Performance.* Propellants Explos. Pyrotech. **49**, e202400060 (2024).
 
 ## Environment setup
 
+For cached figure/result reproduction, use the lightweight `uv` environment:
+
+```bash
+uv sync --extra figures --extra viewer
+python scripts/check_release_assets.py --tier figures
+```
+
+The original working `ABX4_expdata/` tree is not required. Its reusable code
+has been moved to `src/`, and the public ABX4 assets used by Figure 5 live in
+`data/abx4/`.
+
+For DeepMD inference/training workflows, use a DeepMD-compatible environment:
+
 ```bash
 # Create conda environment with deepmd-kit >= 3.0
 conda create -n cluster-rep python=3.10
@@ -74,6 +90,9 @@ pip install deepmd-kit[torch] ase pymatgen scikit-learn matplotlib
 # MolCrysKit (required for cluster pipeline)
 pip install molcrys-kit  # or install from source
 ```
+
+If MolCrysKit is installed from source, set `MOLCRYSKIT_ROOT` to that source
+tree before running scripts.
 
 ## Reproduction workflow
 
@@ -88,6 +107,8 @@ python prep_crystal_npy.py       # Build Davis2024 crystal systems
 ### 2. Training (requires DeepMD-kit)
 
 ```bash
+mkdir -p experiments/exp7a_fold0
+cp experiments/training_configs/exp7a_fold0_input.json experiments/exp7a_fold0/input.json
 cd experiments/exp7a_fold0  # Example: multi-task baseline, fold 0
 dp --pt train input.json --finetune deepems-lam.pt
 ```
@@ -123,7 +144,12 @@ python plot_fig5.py               # Figure 5: OOD predictions + synthesis
 ├── MANIFEST.md                    # Experiment code mapping
 ├── data/pems/
 │   ├── mix.csv                    # 39 materials (ground truth)
+│   ├── pems.csv                   # compatibility alias
 │   └── confs/                     # Original CIF files
+├── data/abx4/                     # Curated Figure 5 ABX4 assets
+├── src/
+│   ├── crystal_viewer/            # Vendored structure renderer
+│   └── stoich_cluster_learning/   # Release utilities and visualization modules
 ├── experiments/
 │   ├── infer_pems.py              # Unified PEMs inference
 │   ├── predict_abx_grid.py        # ABX combinatorial grid

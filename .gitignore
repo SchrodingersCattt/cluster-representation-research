@@ -12,6 +12,9 @@ build/
 *.lmdb
 *.npz
 *.npy
+!manuscript/figures/fig4_cache.npz
+!manuscript/figures/_cluster_umap_cache.npz
+!manuscript/figures/_material_pooled_umap_cache.npz
 
 # OS
 .DS_Store
@@ -25,6 +28,12 @@ Thumbs.db
 *.png
 *.pdf
 *.eps
+!manuscript/figures/figure4-hypergraph.png
+!manuscript/figures/figure4-hypergraph.pdf
 !README.md
 !AGENTS.md
 !MANIFEST.md
+
+# Do not publish the original working-directory mirror. Curated ABX4 assets
+# live under data/abx4/ and reusable code under src/.
+ABX4_expdata/

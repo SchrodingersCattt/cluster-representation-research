@@ -1,0 +1,28 @@
+name: stoichiometric-cluster-learning-deepmd
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pillow
+  - openpyxl
+  - ase
+  - pymatgen
+  - gemmi
+  - plotly
+  - kaleido
+  - pikepdf
+  - pip:
+      # Install DeepMD-kit with the accelerator/PyTorch build appropriate for
+      # your platform; CUDA/PyTorch compatibility is environment-specific and
+      # is intentionally not locked by uv.lock.
+      - deepmd-kit[torch]
+      - dpdata
+      # MolCrysKit may also be installed from source. If using a source tree,
+      # set MOLCRYSKIT_ROOT=/path/to/MolCrysKit before running scripts.
+      - molcrys-kit
