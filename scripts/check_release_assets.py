@@ -57,7 +57,7 @@ LIGHTWEIGHT_REQUIRED = [
     RequiredFile("manuscript/figures/plot_fig4.py", "figures", "error"),
     RequiredFile("manuscript/figures/plot_fig5.py", "figures", "error"),
     RequiredFile("manuscript/figures/fig4_cache.npz", "figures", "error", "needed for plot_fig4.py without checkpoints"),
-    RequiredFile("manuscript/figures/fig4_counterfactual_abx3_abx4.json", "figures", "warning"),
+    RequiredFile("manuscript/figures/fig4_pre_synthesis_abx3_abx4.json", "figures", "warning"),
     RequiredFile("manuscript/figures/figure4-hypergraph.pdf", "figures", "warning", "vector panel-a overlay"),
     RequiredFile("manuscript/figures/figure4-hypergraph.png", "figures", "warning", "raster fallback"),
     RequiredFile("manuscript/figures/_cluster_umap_cache.npz", "figures", "error", "needed for plot_fig5.py without recomputing descriptors"),

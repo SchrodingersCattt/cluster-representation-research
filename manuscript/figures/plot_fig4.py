@@ -42,7 +42,7 @@ DATA_DIR = ROOT / "data" / "pems"
 PEMS_CSV = DATA_DIR / "pems.csv"
 CLUSTER_N1_DIR = EXP_DIR / "00_data_prep" / "pems_cluster_n1_systems"
 CACHE_PATH = THIS_DIR / "fig4_cache.npz"
-COUNTERFACTUAL_CACHE = THIS_DIR / "fig4_counterfactual_abx3_abx4.json"
+PRE_SYNTHESIS_CACHE = THIS_DIR / "fig4_pre_synthesis_abx3_abx4.json"
 HYPERGRAPH_PDF = THIS_DIR / "figure4-hypergraph.pdf"
 HYPERGRAPH_PNG = THIS_DIR / "figure4-hypergraph.png"
 M4B_PATH = EXP_DIR / "mechanism_results" / "mechanism_m4b_results.json"
@@ -773,9 +773,9 @@ def compute_additive_residual(matrix: np.ndarray) -> np.ndarray:
     return matrix - (row_mean + col_mean - float(matrix.mean()))
 
 
-def compute_abx4_counterfactual(refresh: bool = False) -> dict[str, dict[str, float]]:
-    if COUNTERFACTUAL_CACHE.exists() and not refresh:
-        return _load_json(COUNTERFACTUAL_CACHE)
+def compute_abx4_pre_synthesis(refresh: bool = False) -> dict[str, dict[str, float]]:
+    if PRE_SYNTHESIS_CACHE.exists() and not refresh:
+        return _load_json(PRE_SYNTHESIS_CACHE)
 
     from ase.io import read as ase_read
     from deepmd.pt.infer.deep_eval import DeepProperty
@@ -832,7 +832,7 @@ def compute_abx4_counterfactual(refresh: bool = False) -> dict[str, dict[str, fl
             "delta_m_s": float(np.mean(abx4_preds) - np.mean(abx3_preds)),
         }
 
-    COUNTERFACTUAL_CACHE.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
+    PRE_SYNTHESIS_CACHE.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
     return results
 
 

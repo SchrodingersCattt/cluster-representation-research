@@ -3,7 +3,7 @@
 
 Two stacked panels:
 
- (a) ABX3 template + ClO4- counterfactual predictions for the four
+ (a) ABX3 template + ClO4- pre-synthesis screening predictions for the four
      ABX4 OOD perchlorate hits (PEP / PEP-M / PEP-H / DEP) across four
      model-checkpoint families: exp6v1 (canonical single model),
      exp7a (multi-task 5-fold), exp7c (single-task pretrained 5-fold),
@@ -184,7 +184,7 @@ def main() -> None:
 
     _draw_panel(
         ax_a, abx3_data, FAMILY_ORDER_PANEL_A,
-        title=r"a  ABX$_3$ template + ClO$_4^-$ (DAP-4 scaffold): counterfactual chemistry",
+        title=r"a  Pre-synthesis DAP-4 scaffold screen (ABX$_3$ template + ClO$_4^-$)",
     )
     _draw_panel(
         ax_b, own_data, FAMILY_ORDER_PANEL_B,
