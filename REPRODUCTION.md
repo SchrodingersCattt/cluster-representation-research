@@ -45,12 +45,12 @@ rounded references. The manuscript text quotes the same MAE after rounding.
 ### Template-built ABX4 MAE, 91 m/s
 
 - Manuscript: abstract and the template-cluster paragraph. Same three compounds and the same MT-FT ensemble, with ions placed on the DAP-4 cluster instead of the new crystals.
-- Tier: 1 once the cache file below is present. It is not in this git repository, so tier 1 cannot be run from a fresh clone. Tier 2 is the inference that writes that cache. Tier 3 retrains `exp7a` first.
-- Command (tier 1): `python manuscript/figures/plot_si_abx4_ood.py` after the cache exists.
-- Inputs: `manuscript/figures/_si_abx4_ood_predictions.json` (absent from git). Own-crystal panels of the same script read `experiments/pems_ood_5fold_exp7{a,c,d}.json`, which are present.
+- Tier: 1 reads the cache already in git. Tier 2 is the inference that rewrites that cache. Tier 3 retrains `exp7a` first.
+- Command (tier 1): `python manuscript/figures/plot_si_abx4_ood.py`
+- Inputs: `manuscript/figures/_si_abx4_ood_predictions.json`. Own-crystal panels of the same script read `experiments/pems_ood_5fold_exp7{a,c,d}.json`.
 - Output: `aggregated.exp7a.<material>.abx3_template.mean_m_s` for `PEP`, `MPEP`, and `HPEP`.
 - Expected: means 8922.953948734217, 8756.969249847518, and 8840.534785735557 (15 samples = 5 folds × 3 cluster realizations). Against the unrounded Kamlet–Jacobs references 9090.284, 8728.664, and 8763.850, the absolute errors are 167.33005126578246, 28.30524984751719, and 76.68478573555694. Their mean is 90.77336228295219, printed as 91.
-- Missing: `manuscript/figures/_si_abx4_ood_predictions.json`, plus the same checkpoints and backbone as the crystal-derived entry.
+- Missing for tier 2–3: the same checkpoints and backbone as the crystal-derived entry. The tier-1 cache is in git.
 
 ### Five-fold in-distribution MAE, 273 m/s
 
@@ -87,7 +87,7 @@ Tier 1 for every figure below is the plotting command. It only reads files alrea
   - `experiments/cross_infer_rep.json` → `exp7a.cluster_n1.mean_mae` = 270.5686104066625 and `exp7a.crystal.mean_mae` = 405.4248682427654 (cluster-trained model on crystals, printed 405). `exp8a.crystal.mean_mae` = 201.45655902027966 (crystal-trained in-distribution, printed 201). `exp8a.cluster_n1.mean_mae` = 1314.317887025996 (crystal-trained model on clusters, printed 1314).
   - `experiments/exp_ood_pretrained_domain/pretrained_domain_results.json` → `pretrained_domain_mt.dap_mae_m_s` = 143.50336283171976 (printed 144), `pretrained_domain_st.dap_mae_m_s` = 162.51008119057974 (printed 163), `pretrained_domain_sd.dap_mae_m_s` = 296.791533559781 (printed 297).
   - `experiments/pems_sensitivity_summary.json`, `experiments/pems_uq_calibration.json`, and `experiments/pems_ood_model_deviation_exp7a.json` — sensitivity and uncertainty panels. Panel-to-file names are in [MANIFEST.md](MANIFEST.md).
-- The manuscript's 1624 m/s figure for the crystal-trained model on the three new ABX4 clusters is not a field in these JSON files, so a fresh clone cannot recompute it at tier 1.
+- Crystal-trained model on the three new ABX4 clusters, printed 1624: `experiments/pems_ood_5fold_exp8a.json`. Absolute errors are PEP 1837.1722600166886, HPEP 1491.781333374951, MPEP 1542.6027276583382. Their mean is 1623.8521070166591. Fold-wise predictions sit under each row's `predictions`. Uncertainty for this run is `experiments/pems_ood_model_deviation_exp8a.json`. The calibration summary for `exp8a` is already `experiments/pems_uq_calibration.json` → `exp8a` (`mean_abs_error` 1332.7507146392525 over 29 materials).
 
 ### Figure 4
 
@@ -107,7 +107,7 @@ Run the matching script from the repository root. Each script reads the files in
 
 | Command | Primary inputs |
 | --- | --- |
-| `python manuscript/figures/plot_si_abx4_ood.py` | `experiments/pems_ood_5fold_exp7{a,c,d}.json`; template panel also needs `manuscript/figures/_si_abx4_ood_predictions.json`, which is absent |
+| `python manuscript/figures/plot_si_abx4_ood.py` | `experiments/pems_ood_5fold_exp7{a,c,d}.json`; template panel reads `manuscript/figures/_si_abx4_ood_predictions.json` |
 | `python manuscript/figures/plot_si_ood_heldout.py` | `experiments/ablation_full_eval_summary.json` |
 | `python manuscript/figures/plot_si_uq_ood_heldout.py` | `experiments/ablation_full_eval_summary.json` |
 | `python manuscript/figures/plot_si_davis2024_pems_parity.py` | `experiments/davis2024_pems_zeroshot_predictions.json`, `experiments/davis2024_pems_zeroshot_summary.json` |

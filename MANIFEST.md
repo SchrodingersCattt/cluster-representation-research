@@ -96,10 +96,12 @@ Each JSON file is consumed by one or more figure scripts.
 |-----------|--------------|
 | `exp_ood_loso/loso_results_summary.json` | `plot_ed_loso_hierarchy.py` |
 | `cross_infer_rep.json` | `plot_ed_periodic_control.py` |
+| `pems_ood_5fold_exp8a.json` | crystal-trained MT-FT on the three new ABX4 clusters (manuscript 1624 m/s); not read by a plot script |
 | `ablation_full_eval_summary.json` | `plot_si_ood_heldout.py`, `plot_si_uq_ood_heldout.py`, `_emit_si_ablation_tables.py` |
 | `pems_ood_5fold_exp7a.json` | `plot_si_abx4_ood.py` |
 | `pems_ood_5fold_exp7c.json` | `plot_si_abx4_ood.py` |
 | `pems_ood_5fold_exp7d.json` | `plot_si_abx4_ood.py` |
+| `manuscript/figures/_si_abx4_ood_predictions.json` | `plot_si_abx4_ood.py` (template-built clusters) |
 | `davis2024_pems_zeroshot_predictions.json` | `plot_si_davis2024_pems_parity.py` |
 | `davis2024_pems_zeroshot_summary.json` | `plot_si_davis2024_pems_parity.py` |
 | `exp_ood_pretrained_domain/pretrained_domain_results.json` | `plot_fig3.py`, `plot_si_uq_pretrained_domain.py` |

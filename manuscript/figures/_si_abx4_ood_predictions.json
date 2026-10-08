@@ -1,0 +1,614 @@
+{
+  "families": {
+    "exp6v1": {
+      "exp6v1_allpems": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8893.972048110116,
+            "cluster_n2": 8913.882992938756,
+            "cluster_n3": 8898.722827926702
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8758.140957396907,
+            "cluster_n2": 8807.609606313139,
+            "cluster_n3": 8785.489828330385
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8823.897332136265,
+            "cluster_n2": 8812.818800620182,
+            "cluster_n3": 8833.2974856904
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8859.043017262107,
+            "cluster_n2": 8867.806277801614,
+            "cluster_n3": 8866.530288180697
+          }
+        }
+      }
+    },
+    "exp7a": {
+      "exp7a_fold0": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8899.07751407441,
+            "cluster_n2": 8926.685959825063,
+            "cluster_n3": 8941.750357769455
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8650.561452211075,
+            "cluster_n2": 8700.04917687306,
+            "cluster_n3": 8720.23246004324
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8780.374570526981,
+            "cluster_n2": 8790.44291532696,
+            "cluster_n3": 8831.30842339949
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8848.749080331485,
+            "cluster_n2": 8876.232890291838,
+            "cluster_n3": 8888.981426161805
+          }
+        }
+      },
+      "exp7a_fold1": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8898.249215492939,
+            "cluster_n2": 8814.641515202477,
+            "cluster_n3": 8883.825079640817
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8686.091004519474,
+            "cluster_n2": 8654.322985815976,
+            "cluster_n3": 8688.668127929393
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8778.395142889181,
+            "cluster_n2": 8706.039936479137,
+            "cluster_n3": 8759.21893317957
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8752.420554583461,
+            "cluster_n2": 8701.92258429334,
+            "cluster_n3": 8735.159939161915
+          }
+        }
+      },
+      "exp7a_fold2": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8777.572732046763,
+            "cluster_n2": 8808.025152266522,
+            "cluster_n3": 8799.55165026988
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8690.388697221768,
+            "cluster_n2": 8746.857936569297,
+            "cluster_n3": 8724.774235871319
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8734.93756246889,
+            "cluster_n2": 8747.389686739769,
+            "cluster_n3": 8770.470889727512
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8698.473717481025,
+            "cluster_n2": 8733.797904419353,
+            "cluster_n3": 8718.957606017802
+          }
+        }
+      },
+      "exp7a_fold3": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 9005.080697842697,
+            "cluster_n2": 9011.60691130438,
+            "cluster_n3": 9001.449034132513
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8848.158571361244,
+            "cluster_n2": 8902.869128879673,
+            "cluster_n3": 8874.867831613765
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8940.061973210895,
+            "cluster_n2": 8895.103004222636,
+            "cluster_n3": 8930.363979927994
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8948.625310862315,
+            "cluster_n2": 8947.27052565935,
+            "cluster_n3": 8941.65454080913
+          }
+        }
+      },
+      "exp7a_fold4": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 9081.750546126503,
+            "cluster_n2": 8970.287858833948,
+            "cluster_n3": 9024.755006184896
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8816.502084591071,
+            "cluster_n2": 8824.242627318079,
+            "cluster_n3": 8825.952426894342
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 9053.774656790758,
+            "cluster_n2": 8902.676451794578,
+            "cluster_n3": 8987.463659349009
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 9026.41191648484,
+            "cluster_n2": 8954.576953961126,
+            "cluster_n3": 8964.527740780308
+          }
+        }
+      }
+    },
+    "exp7c": {
+      "exp7c_fold0": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 9386.616392414422,
+            "cluster_n2": 9447.491560938388,
+            "cluster_n3": 9676.111120183488
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 9010.966423580145,
+            "cluster_n2": 9159.884632990646,
+            "cluster_n3": 9346.13898639416
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 9382.289616593702,
+            "cluster_n2": 9442.862595998944,
+            "cluster_n3": 9600.621518136892
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 9205.844936691954,
+            "cluster_n2": 9422.086494988887,
+            "cluster_n3": 9548.272102245657
+          }
+        }
+      },
+      "exp7c_fold1": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 9060.384442765733,
+            "cluster_n2": 9151.179673645522,
+            "cluster_n3": 9434.032601790195
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8879.320041954097,
+            "cluster_n2": 9033.479855730906,
+            "cluster_n3": 9270.194366592308
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 9185.064949124482,
+            "cluster_n2": 9277.56412959045,
+            "cluster_n3": 9470.837744963366
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8972.147163324853,
+            "cluster_n2": 9196.377431044863,
+            "cluster_n3": 9373.43091860885
+          }
+        }
+      },
+      "exp7c_fold2": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 9556.829001430793,
+            "cluster_n2": 9702.980077615573,
+            "cluster_n3": 9968.38195174259
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 9381.142880314957,
+            "cluster_n2": 9666.675188217854,
+            "cluster_n3": 9866.819936917798
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 9769.097779242422,
+            "cluster_n2": 9778.960980182994,
+            "cluster_n3": 10047.156109214846
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 9491.329758146061,
+            "cluster_n2": 9741.215238982462,
+            "cluster_n3": 9940.113361310632
+          }
+        }
+      },
+      "exp7c_fold3": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 9105.703552722633,
+            "cluster_n2": 9237.217996765805,
+            "cluster_n3": 9521.491628107276
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8928.613382476768,
+            "cluster_n2": 9129.92085274591,
+            "cluster_n3": 9385.322137623334
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 9270.935868194665,
+            "cluster_n2": 9350.391683064323,
+            "cluster_n3": 9582.566958124426
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 9098.054775156133,
+            "cluster_n2": 9349.084096166442,
+            "cluster_n3": 9546.541273052793
+          }
+        }
+      },
+      "exp7c_fold4": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 9231.16977085457,
+            "cluster_n2": 9156.117907176756,
+            "cluster_n3": 9521.690438339509
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 9084.849464197121,
+            "cluster_n2": 9063.12404550069,
+            "cluster_n3": 9359.929770067536
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 9349.440469765783,
+            "cluster_n2": 9342.45604885758,
+            "cluster_n3": 9586.457835761412
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 9143.064739767593,
+            "cluster_n2": 9229.176552236946,
+            "cluster_n3": 9468.095644038302
+          }
+        }
+      }
+    },
+    "exp7d": {
+      "exp7d_fold0": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8905.758611766669,
+            "cluster_n2": 8970.642189832794,
+            "cluster_n3": 8892.412109167797
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8864.695592315908,
+            "cluster_n2": 8944.13535363778,
+            "cluster_n3": 8863.86155651881
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8898.860193246841,
+            "cluster_n2": 8915.83500727003,
+            "cluster_n3": 8905.322806644148
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8870.74342653567,
+            "cluster_n2": 8918.908497989341,
+            "cluster_n3": 8874.60185151339
+          }
+        }
+      },
+      "exp7d_fold1": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8564.719434476412,
+            "cluster_n2": 8546.780410841358,
+            "cluster_n3": 8571.68725367278
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8471.38838499625,
+            "cluster_n2": 8418.506106642575,
+            "cluster_n3": 8470.494687570521
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8430.340466435518,
+            "cluster_n2": 8425.853064541403,
+            "cluster_n3": 8441.31741036063
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8354.84848838625,
+            "cluster_n2": 8329.759455129028,
+            "cluster_n3": 8363.133351924193
+          }
+        }
+      },
+      "exp7d_fold2": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8638.537805860147,
+            "cluster_n2": 8643.924665717606,
+            "cluster_n3": 8644.366725766497
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8554.343481412072,
+            "cluster_n2": 8516.707574578635,
+            "cluster_n3": 8553.816202826989
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8513.676876236648,
+            "cluster_n2": 8517.014315089858,
+            "cluster_n3": 8531.727800581377
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8436.946344139882,
+            "cluster_n2": 8428.053684370547,
+            "cluster_n3": 8449.94069660128
+          }
+        }
+      },
+      "exp7d_fold3": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8915.953132769264,
+            "cluster_n2": 8962.25087313814,
+            "cluster_n3": 8912.352546886894
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8846.587724296807,
+            "cluster_n2": 8884.049211045944,
+            "cluster_n3": 8849.550536096185
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8850.519174727644,
+            "cluster_n2": 8861.806474936857,
+            "cluster_n3": 8864.837727854117
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8782.018967593436,
+            "cluster_n2": 8809.685122988238,
+            "cluster_n3": 8793.379747342808
+          }
+        }
+      },
+      "exp7d_fold4": {
+        "PEP": {
+          "abx3_template": {
+            "cluster_n1": 8664.50037525952,
+            "cluster_n2": 8671.847499325699,
+            "cluster_n3": 8663.552578817966
+          }
+        },
+        "MPEP": {
+          "abx3_template": {
+            "cluster_n1": 8608.852698865629,
+            "cluster_n2": 8622.831251696156,
+            "cluster_n3": 8613.402131720912
+          }
+        },
+        "HPEP": {
+          "abx3_template": {
+            "cluster_n1": 8615.933068671227,
+            "cluster_n2": 8613.509868883808,
+            "cluster_n3": 8621.366735504589
+          }
+        },
+        "SY": {
+          "abx3_template": {
+            "cluster_n1": 8583.50581525121,
+            "cluster_n2": 8589.743391545753,
+            "cluster_n3": 8588.925303351512
+          }
+        }
+      }
+    }
+  },
+  "aggregated": {
+    "exp6v1": {
+      "PEP": {
+        "abx3_template": {
+          "mean_m_s": 8902.192622991859,
+          "std_m_s": 8.490820114999519,
+          "n_samples": 3
+        }
+      },
+      "MPEP": {
+        "abx3_template": {
+          "mean_m_s": 8783.74679734681,
+          "std_m_s": 20.233065744907723,
+          "n_samples": 3
+        }
+      },
+      "HPEP": {
+        "abx3_template": {
+          "mean_m_s": 8823.337872815615,
+          "std_m_s": 8.369742393482738,
+          "n_samples": 3
+        }
+      },
+      "SY": {
+        "abx3_template": {
+          "mean_m_s": 8864.459861081474,
+          "std_m_s": 3.8655474041605786,
+          "n_samples": 3
+        }
+      }
+    },
+    "exp7a": {
+      "PEP": {
+        "abx3_template": {
+          "mean_m_s": 8922.953948734217,
+          "std_m_s": 90.5423249202482,
+          "n_samples": 15
+        }
+      },
+      "MPEP": {
+        "abx3_template": {
+          "mean_m_s": 8756.969249847518,
+          "std_m_s": 80.84542655452826,
+          "n_samples": 15
+        }
+      },
+      "HPEP": {
+        "abx3_template": {
+          "mean_m_s": 8840.534785735557,
+          "std_m_s": 100.46071592757886,
+          "n_samples": 15
+        }
+      },
+      "SY": {
+        "abx3_template": {
+          "mean_m_s": 8849.184179419939,
+          "std_m_s": 110.524394148186,
+          "n_samples": 15
+        }
+      }
+    },
+    "exp7c": {
+      "PEP": {
+        "abx3_template": {
+          "mean_m_s": 9410.493207766216,
+          "std_m_s": 248.3999991911287,
+          "n_samples": 15
+        }
+      },
+      "MPEP": {
+        "abx3_template": {
+          "mean_m_s": 9237.758797686949,
+          "std_m_s": 263.12621364404293,
+          "n_samples": 15
+        }
+      },
+      "HPEP": {
+        "abx3_template": {
+          "mean_m_s": 9495.780285787752,
+          "std_m_s": 225.49744446924194,
+          "n_samples": 15
+        }
+      },
+      "SY": {
+        "abx3_template": {
+          "mean_m_s": 9381.655632384163,
+          "std_m_s": 246.56432456507434,
+          "n_samples": 15
+        }
+      }
+    },
+    "exp7d": {
+      "PEP": {
+        "abx3_template": {
+          "mean_m_s": 8744.619080886636,
+          "std_m_s": 153.81541037920707,
+          "n_samples": 15
+        }
+      },
+      "MPEP": {
+        "abx3_template": {
+          "mean_m_s": 8672.214832948079,
+          "std_m_s": 175.46945927804094,
+          "n_samples": 15
+        }
+      },
+      "HPEP": {
+        "abx3_template": {
+          "mean_m_s": 8667.194732732312,
+          "std_m_s": 186.22382644573176,
+          "n_samples": 15
+        }
+      },
+      "SY": {
+        "abx3_template": {
+          "mean_m_s": 8611.612942977501,
+          "std_m_s": 205.1482617983946,
+          "n_samples": 15
+        }
+      }
+    }
+  }
+}
