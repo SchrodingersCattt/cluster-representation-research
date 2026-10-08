@@ -3,6 +3,11 @@
 This file provides guidance to AI coding agents when working with this repository.
 It is **not** a human-readable README — see [README.md](README.md) for that.
 
+To reproduce a number from the manuscript, read [REPRODUCTION.md](REPRODUCTION.md)
+and follow that entry. Do not invent a path from an experiment code. Codes,
+figure scripts, and result files that the map sends you to are listed in
+[MANIFEST.md](MANIFEST.md).
+
 ## Project Overview
 
 Fine-tune DPA-3 / DeepEMs-LAM foundation models to predict detonation velocity

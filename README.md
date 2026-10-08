@@ -17,6 +17,7 @@
 | `data/abx4/` | Curated ABX4 CIF, PXRD, and property assets for Figure 5 |
 | `AGENTS.md` | AI collaboration document (see note below) |
 | `MANIFEST.md` | **Experiment code ↔ manuscript name mapping** |
+| `REPRODUCTION.md` | **Manuscript number → command, file, and expected value** |
 
 ## Important notes
 
@@ -96,6 +97,11 @@ tree before running scripts.
 
 ## Reproduction workflow
 
+Start from [`REPRODUCTION.md`](REPRODUCTION.md). It maps each headline
+manuscript number (and Figures 3–5) to a tier, a command, the JSON field, and
+the value stored there. Do not guess directories from experiment codes;
+[`MANIFEST.md`](MANIFEST.md) is the code-to-name list that the map points at.
+
 ### 1. Data preparation
 
 ```bash
@@ -142,6 +148,7 @@ python plot_fig5.py               # Figure 5: OOD predictions + synthesis
 ├── README.md
 ├── AGENTS.md                      # AI agent guidance document
 ├── MANIFEST.md                    # Experiment code mapping
+├── REPRODUCTION.md                # Manuscript number → command and value
 ├── data/pems/
 │   ├── mix.csv                    # 39 materials (ground truth)
 │   ├── pems.csv                   # compatibility alias
