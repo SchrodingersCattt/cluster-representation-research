@@ -72,3 +72,46 @@ rounded references. The manuscript text quotes the same MAE after rounding.
 - Output: `experiments/ablation_full_eval_summary.json` → `families.exp7c.OOD_new.mae_m_s`
 - Expected: 584.109100772288, printed as 584.
 - Missing for tier 2–3: the five `exp7c` checkpoints and, for tier 3, `pretrained_models/deepems-lam.pt`.
+
+## Figures
+
+Tier 1 for every figure below is the plotting command. It only reads files already named here. Tier 2 and tier 3 are the inference and training commands in the headline section, or the dispatcher named in [MANIFEST.md](MANIFEST.md). Checkpoints, `.npy` systems, and `pretrained_models/deepems-lam.pt` stay outside git.
+
+### Figure 3
+
+- Command: `python manuscript/figures/plot_fig3.py`
+- Inputs and the manuscript numbers they support:
+  - `experiments/00_data_prep/pems_5fold_splits_v2.json` — five-fold membership.
+  - `experiments/ablation_full_eval_summary.json` → `families.exp7a.IND_25.mae_m_s` = 273.2291890068937 (printed 273). `families.exp7a.OOD_heldout.mae_m_s` = 34.46599664726273 (printed 35; the four-material set, with `DAI-1_0.5 4_0.5` excluded). `families.exp7c.IND_25.mae_m_s` is the ST-FT in-distribution error; `families.exp7d.IND_25.mae_m_s` = 297.24107807303386 (printed 297).
+  - `experiments/pems_ood_heldout_exp7_all.json` — per-material held-out predictions plotted with that summary.
+  - `experiments/cross_infer_rep.json` → `exp7a.cluster_n1.mean_mae` = 270.5686104066625 and `exp7a.crystal.mean_mae` = 405.4248682427654 (cluster-trained model on crystals, printed 405). `exp8a.crystal.mean_mae` = 201.45655902027966 (crystal-trained in-distribution, printed 201). `exp8a.cluster_n1.mean_mae` = 1314.317887025996 (crystal-trained model on clusters, printed 1314).
+  - `experiments/exp_ood_pretrained_domain/pretrained_domain_results.json` → `pretrained_domain_mt.dap_mae_m_s` = 143.50336283171976 (printed 144), `pretrained_domain_st.dap_mae_m_s` = 162.51008119057974 (printed 163), `pretrained_domain_sd.dap_mae_m_s` = 296.791533559781 (printed 297).
+  - `experiments/pems_sensitivity_summary.json`, `experiments/pems_uq_calibration.json`, and `experiments/pems_ood_model_deviation_exp7a.json` — sensitivity and uncertainty panels. Panel-to-file names are in [MANIFEST.md](MANIFEST.md).
+- The manuscript's 1624 m/s figure for the crystal-trained model on the three new ABX4 clusters is not a field in these JSON files, so a fresh clone cannot recompute it at tier 1.
+
+### Figure 4
+
+- Command: `python manuscript/figures/plot_fig4.py`
+- Inputs: `experiments/abx_grid_predictions_exp6v1_allpems_400k.json`, `experiments/mechanism_results/mechanism_m{1,3,4a,4b,5a}_results.json`, and `experiments/_stats_bootstrap/bootstrap_results.json`.
+- Mechanism probes M0–M5a and the hyperparameter ablation grid are not given separate entries. Their codes, scripts, and result files are the tables in [MANIFEST.md](MANIFEST.md).
+
+### Figure 5
+
+- Command: `python manuscript/figures/plot_fig5.py`
+- Inputs: `experiments/pems_ood_5fold_exp7a.json` (crystal-derived PEP / MPEP / HPEP predictions; the 92 m/s MAE is the headline entry above) and the curated assets under `data/abx4/` (`cifs/`, `pxrd/`, `properties.csv`).
+- Tier 2 that rewrites the prediction file: `python experiments/infer_pems.py ood --series exp7a`.
+
+### Supplementary and extended-data figures
+
+Run the matching script from the repository root. Each script reads the files in the table. Further panel maps are in [MANIFEST.md](MANIFEST.md).
+
+| Command | Primary inputs |
+| --- | --- |
+| `python manuscript/figures/plot_si_abx4_ood.py` | `experiments/pems_ood_5fold_exp7{a,c,d}.json`; template panel also needs `manuscript/figures/_si_abx4_ood_predictions.json`, which is absent |
+| `python manuscript/figures/plot_si_ood_heldout.py` | `experiments/ablation_full_eval_summary.json` |
+| `python manuscript/figures/plot_si_uq_ood_heldout.py` | `experiments/ablation_full_eval_summary.json` |
+| `python manuscript/figures/plot_si_davis2024_pems_parity.py` | `experiments/davis2024_pems_zeroshot_predictions.json`, `experiments/davis2024_pems_zeroshot_summary.json` |
+| `python manuscript/figures/plot_si_uq_pretrained_domain.py` | `experiments/exp_ood_pretrained_domain/pretrained_domain_results.json` |
+| `python manuscript/figures/plot_ed_loso_hierarchy.py` | `experiments/exp_ood_loso/loso_results_summary.json` |
+| `python manuscript/figures/plot_ed_periodic_control.py` | `experiments/cross_infer_rep.json` |
+| `python manuscript/figures/plot_ed_ood_heldout_umap.py` | `manuscript/figures/_cluster_umap_cache.npz` via `plot_fig5.plot_cluster_umap_panel` |
